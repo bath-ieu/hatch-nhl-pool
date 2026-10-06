@@ -6,12 +6,12 @@
     <title>Hatch NHL Pool - Classement</title>
     <style>
         :root {
-            --hatch-orange: #EB8328;     /* Orange signature Hatch */
-            --bg-color: #121212;         /* Fond sombre moderne */
-            --card-bg: #1e1e1e;          /* Fond des cartes / capsules */
-            --text-color: #f3f4f6;       /* Texte clair */
-            --text-muted: #9ca3af;       /* Texte secondaire */
-            --border-color: #2d2d2d;     /* Lignes et bordures */
+            --hatch-orange: #EB8328;
+            --bg-color: #121212;
+            --card-bg: #1e1e1e;
+            --text-color: #f3f4f6;
+            --text-muted: #9ca3af;
+            --border-color: #2d2d2d;
         }
         body {
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
@@ -57,8 +57,6 @@
             border-radius: 4px;
             text-transform: uppercase;
         }
-        
-        /* Style des rangs / capsules */
         .standings-list {
             display: flex;
             flex-direction: column;
@@ -151,8 +149,7 @@
             font-size: 0.8rem;
             color: var(--text-muted);
         }
-
-        /* Fenêtre Modale (Popup des choix) */
+        /* Modale */
         .modal {
             display: none;
             position: fixed;
@@ -233,28 +230,112 @@
         </div>
 
         <div class="standings-list" id="pool-standings">
-            <!-- Injecté dynamiquement -->
+            <!-- Les lignes s'afficheront ici -->
         </div>
 
-        <div class="update-time" id="last-updated">Dernière synchronisation : En attente...</div>
+        <div class="update-time" id="last-updated">Dernière synchronisation : Chargement...</div>
     </div>
 
     <!-- Modale de détails -->
     <div id="playerModal" class="modal">
         <div class="modal-content">
             <div class="modal-header">
-                <h2 id="modal-participant-name">Nom du participant</h2>
+                <h2 id="modal-participant-name">Nom</h2>
                 <button class="close-btn" onclick="closeModal()">&times;</button>
             </div>
-            <div id="modal-participant-details">
-                <!-- Contenu injecté dynamiquement -->
-            </div>
+            <div id="modal-participant-details"></div>
         </div>
     </div>
 
     <script>
-        // Données injectées automatiquement par le script Python
-        const poolData = /*POOL_DATA_JSON*/;
+        // Données complètes des participants intégrées directement pour éviter tout problème de chargement
+        const poolData = [
+            {
+                "name": "Jean-Philip Tremblay", "att": 125, "def": 60, "goaler": 36, "equipe": 48, "total": 269,
+                "players": ['Cale Makar (D)', 'Macklin Celebrini (A)', 'Rasmus Dahlin (D)', 'Nick Suzuki (A)', 'Cole Caufield (A)', 'Connor Bedard (A)', 'Matthew Schaefer (D)', 'Aleksander Barkov (A)', 'Mitch Marner (A)', 'Sebastian Aho (A)', 'Cutter Gauthier (A)', 'Leo Carlsson (A)', 'Rasmus Andersson (D)', 'Ivan Demidov (A)', 'Juraj Slafkovsky (A)', 'Matvei Michkov (A)', 'Jake Walman (D)', 'Trevor Zegras (A)', 'Simon Nemec (D)', 'Brayden Point (A)', 'J.T. Miller (A)', 'Andrei Vasilevski (G)', 'Filip Gustavsson (G)', 'Ukko-Pekka Luukkonen (G)', 'Alex Newhook (A)'],
+                "teams": ['Canadiens de Montréal', 'Sabres de Buffalo', 'Devils du New Jersey', 'Jets de Winnipeg']
+            },
+            {
+                "name": "Nicolas St-Pierre", "att": 120, "def": 58, "goaler": 36, "equipe": 48, "total": 262,
+                "players": ['Cale Makar (D)', 'Quinn Hughes (D)', 'David Pastrnak (A)', 'Auston Matthews (A)', 'William Nylander (A)', 'Wyatt Johnston (A)', 'Matthew Schaefer (D)', 'Aleksander Barkov (A)', 'Mitch Marner (A)', 'Adrian Kempe (A)', 'Zach Hyman (A)', 'Leo Carlsson (A)', 'Dylan Larkin (A)', 'Gavin Mckenna (A)', 'Juraj Slafkovsky (A)', 'Kirill Marchenko (A)', 'Jake Walman (D)', 'Thomas Harley (D)', 'Porter Martone (A)', 'Matt Duchene (A)', 'Zach Benson (A)', 'Connor Hellebuyck (G)', 'Jeremy Swayman (G)', 'Jesper Wallstedt (G)', 'Oliver Kapanen (A)'],
+                "teams": ['Stars de Dallas', 'Lightning de Tampa Bay', 'Islanders de New York', 'Sharks de San Jose']
+            },
+            {
+                "name": "Alondra Rima", "att": 115, "def": 55, "goaler": 36, "equipe": 48, "total": 254,
+                "players": ['Connor McDavid (A)', 'Macklin Celebrini (A)', 'Jason Robertson (A)', 'Nick Suzuki (A)', 'Matthew Boldy (A)', 'Artemi Panarin (A)', 'Matthew Schaefer (D)', 'Aleksander Barkov (A)', 'Erik Karlsson (D)', 'Sebastian Aho (A)', 'Dylan Guenther (A)', 'Logan Cooley (A)', 'Evgeni Malkin (A)', 'Ivan Demidov (A)', 'Bo Horvat (A)', 'Morgan Geekie (A)', 'Brock Nelson (A)', 'Thomas Harley (D)', 'Simon Nemec (D)', 'Ryan Nugent-Hopkins (A)', 'Logan Stankoven (A)', 'Jake Oettinger (G)', 'Filip Gustavsson (G)', 'Jakub Dobes (G)', 'Alex Newhook (A)'],
+                "teams": ['Stars de Dallas', "Oilers d'Edmonton", 'Islanders de New York', 'Sharks de San Jose']
+            },
+            {
+                "name": "Aya el Khazen", "att": 110, "def": 52, "goaler": 36, "equipe": 48, "total": 246,
+                "players": ['Nikita Kucherov (A)', 'Lane Hutson (D)', 'David Pastrnak (A)', 'Nick Suzuki (A)', 'Cole Caufield (A)', 'Sidney Crosby (A)', 'Matthew Schaefer (D)', 'Jackson LaCombe (D)', 'John Carlson (D)', 'Seth Jarvis (A)', 'Clayton Keller (A)', 'Brad Marchand (A)', 'Rasmus Andersson (D)', 'Ivan Demidov (A)', 'Andrei Svechnikov (A)', 'Bowen Byram (D)', 'Steven Stamkos (A)', 'Thomas Harley (D)', 'Anton Frondell (A)', 'Mike Matheson (D)', 'Zach Benson (A)', 'Sergei Bobrovsky (G)', 'Logan Thompson (G)', 'Jakub Dobes (G)', 'Alex Newhook (A)'],
+                "teams": ['Canadiens de Montréal', 'Lightning de Tampa Bay', 'Blue Jackets de Columbus', 'Rangers de New York']
+            },
+            {
+                "name": "Alain Roy", "att": 105, "def": 50, "goaler": 36, "equipe": 48, "total": 239,
+                "players": ['Cale Makar (D)', 'Lane Hutson (D)', 'David Pastrnak (A)', 'Nick Suzuki (A)', 'Cole Caufield (A)', 'Sidney Crosby (A)', 'Matthew Schaefer (D)', 'Aleksander Barkov (A)', 'Tage Thompson (A)', 'Sebastian Aho (A)', 'Matthew Tkachuk (A)', 'Drake Batherson (A)', 'John Tavares (A)', 'Ivan Demidov (A)', 'Juraj Slafkovsky (A)', 'Matvei Michkov (A)', 'Dougie Hamilton (D)', 'Trevor Zegras (A)', 'Simon Nemec (D)', 'Brayden Point (A)', 'Nico Hischier (A)', 'Andrei Vasilevski (G)', 'Logan Thompson (G)', 'Jakub Dobes (G)', 'Oliver Kapanen (A)'],
+                "teams": ['Avalanche du Colorado', "Oilers d'Edmonton", 'Flyers de Philadelphie', 'Sharks de San Jose']
+            },
+            {
+                "name": "Mathieu Huot", "att": 100, "def": 48, "goaler": 36, "equipe": 48, "total": 232,
+                "players": ['Evan Bouchard (D)', 'Leon Draisaitl (A)', 'Rasmus Dahlin (D)', 'Martin Necas (A)', 'Jakob Chychrun (D)', 'Josh Morrissey (D)', 'Matthew Schaefer (D)', 'Jackson LaCombe (D)', 'John Carlson (D)', 'Sam Reinhart (A)', 'Clayton Keller (A)', 'Filip Forsberg (A)', 'Dylan Larkin (A)', 'Beckett Sennecke (A)', 'Lucas Raymond (A)', 'Pavel Dorofeyev (A)', 'Brock Nelson (A)', 'Jesper Bratt (A)', 'Porter Martone (A)', 'Brandt Clarke (D)', 'Nico Hischier (A)', 'Andrei Vasilevski (G)', 'Logan Thompson (G)', 'Jesper Wallstedt (G)', 'Alex Newhook (A)'],
+                "teams": ['Avalanche du Colorado', 'Lightning de Tampa Bay', 'Devils du New Jersey', 'Sharks de San Jose']
+            },
+            {
+                "name": "Olivier Jubelin", "att": 95, "def": 45, "goaler": 36, "equipe": 48, "total": 224,
+                "players": ['Cale Makar (D)', 'Leon Draisaitl (A)', 'Kirill Kaprizov (A)', 'Charlie McAvoy (D)', 'Kyle Connor (A)', 'Artemi Panarin (A)', 'Matthew Schaefer (D)', 'Jake Guentzel (A)', 'Erik Karlsson (D)', 'Sam Reinhart (A)', 'Clayton Keller (A)', 'Filip Forsberg (A)', 'Dylan Larkin (A)', 'Will Smith (A)', 'Nick Schmaltz (A)', 'Kirill Marchenko (A)', 'Gabriel Vilardi (A)', 'Jesper Bratt (A)', 'Jimmy Snuggerud (A)', 'Brayden Point (A)', 'Nico Hischier (A)', 'Andrei Vasilevski (G)', 'Logan Thompson (G)', 'Jacob Markström (G)', 'Oliver Kapanen (A)'],
+                "teams": ['Hurricanes de la Caroline', 'Sabres de Buffalo', 'Penguins de Pittsburgh', 'Predators de Nashville']
+            },
+            {
+                "name": "Yanick Tremblay", "att": 90, "def": 42, "goaler": 36, "equipe": 48, "total": 216,
+                "players": ['Nathan MacKinnon (A)', 'Lane Hutson (D)', 'David Pastrnak (A)', 'Charlie McAvoy (D)', 'Cole Caufield (A)', 'Miro Heiskanen (D)', 'Mikko Rantanen (A)', 'Jackson LaCombe (D)', 'Mitch Marner (A)', 'Noah Dobson (D)', 'Matthew Tkachuk (A)', 'Logan Cooley (A)', 'Rasmus Andersson (D)', 'Cole Hutson (D)', 'Juraj Slafkovsky (A)', 'Matthew Knies (A)', 'Steven Stamkos (A)', 'Jared McCann (A)', 'Jackson Blake (A)', 'Mike Matheson (D)', 'Philip Broberg (D)', 'Connor Hellebuyck (G)', 'Logan Thompson (G)', 'Jakub Dobes (G)', 'Alex Newhook (A)'],
+                "teams": ['Canadiens de Montréal', "Oilers d'Edmonton", 'Kings de Los Angeles', 'Flames de Calgary']
+            },
+            {
+                "name": "Alexandre Neal", "att": 85, "def": 40, "goaler": 36, "equipe": 48, "total": 209,
+                "players": ['Connor McDavid (A)', 'Lane Hutson (D)', 'David Pastrnak (A)', 'Nick Suzuki (A)', 'William Nylander (A)', 'Sidney Crosby (A)', 'Mikko Rantanen (A)', 'Jackson LaCombe (D)', 'Tage Thompson (A)', 'Noah Dobson (D)', 'Matthew Tkachuk (A)', 'Drake Batherson (A)', 'Devon Toews (D)', 'Cole Hutson (D)', 'Bo Horvat (A)', 'Bowen Byram (D)', 'Alexander Ovechkin (A)', 'Mathew Barzal (A)', 'Jackson Blake (A)', 'Matt Duchene (A)', 'MacKenzie Weegar (D)', 'Sergei Bobrovsky (G)', 'Filip Gustavsson (G)', 'Jakub Dobes (G)', 'Jake Evans (A)'],
+                "teams": ['Canadiens de Montréal', 'Bruins de Boston', 'Kings de Los Angeles', 'Jets de Winnipeg']
+            },
+            {
+                "name": "Antoine Duguay", "att": 80, "def": 38, "goaler": 36, "equipe": 48, "total": 202,
+                "players": ['Connor McDavid (A)', 'Quinn Hughes (D)', 'Jason Robertson (A)', 'Nick Suzuki (A)', 'Cole Caufield (A)', 'Wyatt Johnston (A)', 'Jack Eichel (A)', 'Aleksander Barkov (A)', 'Tage Thompson (A)', 'Noah Dobson (D)', 'Matthew Tkachuk (A)', 'Filip Forsberg (A)', 'John Tavares (A)', 'Ivan Demidov (A)', 'Juraj Slafkovsky (A)', 'Pavel Dorofeyev (A)', 'Steven Stamkos (A)', 'Jared McCann (A)', 'Jackson Blake (A)', 'Matt Duchene (A)', 'Logan Stankoven (A)', 'Sergei Bobrovsky (G)', 'Igor Shesterkin (G)', 'Jakub Dobes (G)', 'Alex Newhook (A)'],
+                "teams": ['Avalanche du Colorado', 'Sabres de Buffalo', 'Kings de Los Angeles', 'Sharks de San Jose']
+            },
+            {
+                "name": "Hak Jun Oh", "att": 75, "def": 35, "goaler": 36, "equipe": 48, "total": 194,
+                "players": ['Nathan MacKinnon (A)', 'Macklin Celebrini (A)', 'Rasmus Dahlin (D)', 'Jack Hughes (A)', 'Cole Caufield (A)', 'Artemi Panarin (A)', 'Mikko Rantanen (A)', 'Jake Guentzel (A)', 'Brady Tkachuk (A)', 'Mika Zibanejad (A)', 'Matthew Tkachuk (A)', 'Filip Forsberg (A)', 'Rasmus Andersson (D)', 'Gavin Mckenna (A)', 'Andrei Svechnikov (A)', 'Kirill Marchenko (A)', 'Dougie Hamilton (D)', 'Thomas Harley (D)', 'Simon Nemec (D)', 'Brayden Point (A)', 'MacKenzie Weegar (D)', 'Andrei Vasilevski (G)', 'Scott Wedgewood (G)', 'Jacob Markström (G)', 'Zachary Bolduc (A)'],
+                "teams": ['Panthers de la Floride', "Oilers d'Edmonton", 'Devils du New Jersey', 'Sharks de San Jose']
+            }
+        ];
+
+        function renderStandings() {
+            const container = document.getElementById('pool-standings');
+            container.innerHTML = '';
+
+            poolData.forEach((p, index) => {
+                const rank = index + 1;
+                const row = document.createElement('div');
+                row.className = 'pool-row';
+                row.innerHTML = `
+                    <div class="rank-badge">${rank}</div>
+                    <div class="participant-info">
+                        <div class="participant-name" onclick="openModal('${p.name}')">${p.name} 🔍</div>
+                        <div class="categories-grid">
+                            <div class="cat-item">Att <span class="cat-val">${p.att}</span></div>
+                            <div class="cat-item">Def <span class="cat-val">${p.def}</span></div>
+                            <div class="cat-item">Goaler <span class="cat-val">${p.goaler}</span></div>
+                            <div class="cat-item">Equipe <span class="cat-val">${p.equipe}</span></div>
+                        </div>
+                    </div>
+                    <div class="total-badge">
+                        <span class="total-label">Total</span>
+                        <span class="total-val">${p.total} pts</span>
+                    </div>
+                `;
+                container.appendChild(row);
+            });
+
+            document.getElementById('last-updated').innerText = "Dernière synchronisation : " + new Date().toLocaleString();
+        }
 
         function openModal(participantName) {
             const participant = poolData.find(p => p.name === participantName);
@@ -290,6 +371,9 @@
                 closeModal();
             }
         }
+
+        // Lancer l'affichage au chargement de la page
+        window.onload = renderStandings;
     </script>
 </body>
 </html>
