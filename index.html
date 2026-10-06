@@ -1,0 +1,182 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hatch NHL Pool - Classement</title>
+    <style>
+        :root {
+            --hatch-orange: #EB8328;     /* Orange signature Hatch */
+            --bg-color: #121212;         /* Fond sombre moderne */
+            --card-bg: #1e1e1e;          /* Fond des cartes / capsules */
+            --text-color: #f3f4f6;       /* Texte clair */
+            --text-muted: #9ca3af;       /* Texte secondaire */
+            --border-color: #2d2d2d;     /* Lignes et bordures */
+        }
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            margin: 0;
+            padding: 20px;
+        }
+        .container {
+            max-width: 900px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 40px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
+            border-top: 6px solid var(--hatch-orange);
+        }
+        .header {
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 20px;
+            margin-bottom: 30px;
+        }
+        .logo-area h1 {
+            margin: 0;
+            color: var(--text-color);
+            font-size: 1.8rem;
+        }
+        .logo-area .subtitle {
+            color: var(--text-muted);
+            font-size: 0.95rem;
+            margin-top: 5px;
+        }
+        .hatch-badge {
+            background-color: var(--hatch-orange);
+            color: #ffffff;
+            padding: 8px 16px;
+            font-weight: bold;
+            font-size: 0.85rem;
+            letter-spacing: 1px;
+            border-radius: 4px;
+            text-transform: uppercase;
+        }
+        .standings-list {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+            margin-top: 20px;
+        }
+        .pool-row {
+            display: flex;
+            align-items: center;
+            background-color: #262626;
+            border: 2px solid var(--border-color);
+            border-radius: 50px;
+            padding: 12px 20px;
+            transition: border-color 0.2s;
+        }
+        .pool-row:hover {
+            border-color: var(--hatch-orange);
+        }
+        .rank-badge {
+            min-width: 45px;
+            height: 45px;
+            border: 2px solid var(--hatch-orange);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-weight: bold;
+            font-size: 1.1rem;
+            color: var(--hatch-orange);
+            margin-right: 20px;
+            background-color: #1a1a1a;
+        }
+        .participant-info {
+            flex-grow: 1;
+        }
+        .participant-name {
+            font-size: 1.15rem;
+            font-weight: bold;
+            color: var(--hatch-orange);
+            margin-bottom: 4px;
+        }
+        .categories-grid {
+            display: flex;
+            gap: 25px;
+            font-size: 0.85rem;
+            color: var(--text-muted);
+        }
+        .cat-item {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .cat-val {
+            color: var(--text-color);
+            font-weight: bold;
+            margin-top: 2px;
+        }
+        .total-badge {
+            min-width: 80px;
+            height: 55px;
+            border: 2px solid var(--hatch-orange);
+            border-radius: 30px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            background-color: #1a1a1a;
+            padding: 0 10px;
+        }
+        .total-label {
+            font-size: 0.65rem;
+            letter-spacing: 1px;
+            color: var(--text-muted);
+            text-transform: uppercase;
+        }
+        .total-val {
+            font-size: 1rem;
+            font-weight: bold;
+            color: var(--hatch-orange);
+        }
+        .update-time {
+            margin-top: 30px;
+            text-align: right;
+            font-size: 0.8rem;
+            color: var(--text-muted);
+        }
+    </style>
+</head>
+<body>
+
+    <div class="container">
+        <div class="header">
+            <div class="logo-area">
+                <h1>🏒 Hatch NHL Pool</h1>
+                <div class="subtitle">Classement officiel du bureau</div>
+            </div>
+            <div class="hatch-badge">Hatch Ltd</div>
+        </div>
+
+        <div class="standings-list" id="pool-standings">
+            <div class="pool-row">
+                <div class="rank-badge">1</div>
+                <div class="participant-info">
+                    <div class="participant-name">Chargement...</div>
+                    <div class="categories-grid">
+                        <div class="cat-item">Att <span class="cat-val">--</span></div>
+                        <div class="cat-item">Def <span class="cat-val">--</span></div>
+                        <div class="cat-item">Goaler <span class="cat-val">--</span></div>
+                        <div class="cat-item">Equipe <span class="cat-val">--</span></div>
+                    </div>
+                </div>
+                <div class="total-badge">
+                    <span class="total-label">Total</span>
+                    <span class="total-val">-- pts</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="update-time" id="last-updated">Dernière synchronisation : En attente...</div>
+    </div>
+
+</body>
+</html>
