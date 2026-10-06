@@ -1,0 +1,93 @@
+{
+    "last_update": "2026-10-06 19:20",
+    "participants": [
+        {
+            "name": "Mathieu Huot",
+            "att": 73,
+            "def": 3,
+            "goaler": 0,
+            "equipe": 14,
+            "total": 90
+        },
+        {
+            "name": "Jean-Philip Tremblay",
+            "att": 102,
+            "def": 11,
+            "goaler": 23,
+            "equipe": 9,
+            "total": 145
+        },
+        {
+            "name": "Nicolas St-Pierre",
+            "att": 67,
+            "def": 14,
+            "goaler": 0,
+            "equipe": 12,
+            "total": 93
+        },
+        {
+            "name": "Alondra Rima",
+            "att": 30,
+            "def": 5,
+            "goaler": 23,
+            "equipe": 13,
+            "total": 71
+        },
+        {
+            "name": "Aya el Khazen",
+            "att": 87,
+            "def": 7,
+            "goaler": 0,
+            "equipe": 12,
+            "total": 106
+        },
+        {
+            "name": "Alain Roy",
+            "att": 22,
+            "def": 66,
+            "goaler": 0,
+            "equipe": 15,
+            "total": 103
+        },
+        {
+            "name": "Olivier Jubelin",
+            "att": 93,
+            "def": 14,
+            "goaler": 18,
+            "equipe": 11,
+            "total": 136
+        },
+        {
+            "name": "Yanick Tremblay",
+            "att": 20,
+            "def": 6,
+            "goaler": 0,
+            "equipe": 6,
+            "total": 32
+        },
+        {
+            "name": "Alexandre Neal",
+            "att": 77,
+            "def": 1,
+            "goaler": 23,
+            "equipe": 10,
+            "total": 111
+        },
+        {
+            "name": "Antoine Duguay",
+            "att": 73,
+            "def": 3,
+            "goaler": 0,
+            "equipe": 11,
+            "total": 87
+        },
+        {
+            "name": "Hak Jun Oh",
+            "att": 30,
+            "def": 58,
+            "goaler": 18,
+            "equipe": 15,
+            "total": 121
+        }
+    ]
+}
