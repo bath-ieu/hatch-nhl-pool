@@ -3,553 +3,132 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Hatch NHL Pool - Classement</title>
+    <title>Pool LNH - Classement en Direct</title>
     <style>
-        :root {
-            --hatch-orange: #EB8328;
-            --bg-color: #121212;
-            --card-bg: #1e1e1e;
-            --text-color: #f3f4f6;
-            --text-muted: #9ca3af;
-            --border-color: #2d2d2d;
-        }
         body {
+            background-color: #121212;
+            color: #e0e0e0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            background-color: var(--bg-color);
-            color: var(--text-color);
             margin: 0;
             padding: 20px;
+        }
+        h1 {
+            text-align: center;
+            color: #ffffff;
+            margin-bottom: 10px;
+        }
+        .subtitle {
+            text-align: center;
+            color: #888;
+            font-size: 14px;
+            margin-bottom: 30px;
         }
         .container {
             max-width: 900px;
             margin: 0 auto;
-            background: var(--card-bg);
-            padding: 40px;
-            border-radius: 12px;
-            box-shadow: 0 4px 20px rgba(0,0,0,0.5);
-            border-top: 6px solid var(--hatch-orange);
         }
-        .header {
+        .card {
+            background: #1e1e1e;
+            border-radius: 12px;
+            padding: 15px 20px;
+            margin-bottom: 15px;
             display: flex;
             align-items: center;
             justify-content: space-between;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 20px;
-            margin-bottom: 30px;
+            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
+            border-left: 5px solid #ff7b00;
         }
-        .logo-area h1 {
-            margin: 0;
-            color: var(--text-color);
-            font-size: 1.8rem;
+        .rank {
+            font-size: 24px;
+            font-weight: bold;
+            color: #ff7b00;
+            width: 40px;
+            text-align: center;
         }
-        .logo-area .subtitle {
-            color: var(--text-muted);
-            font-size: 0.95rem;
-            margin-top: 5px;
-        }
-        .hatch-badge {
-            background-color: var(--hatch-orange);
+        .name {
+            font-size: 20px;
+            font-weight: 600;
             color: #ffffff;
-            padding: 8px 16px;
-            font-weight: bold;
-            font-size: 0.85rem;
-            letter-spacing: 1px;
-            border-radius: 4px;
-            text-transform: uppercase;
-        }
-        .standings-list {
-            display: flex;
-            flex-direction: column;
-            gap: 15px;
-            margin-top: 20px;
-        }
-        .pool-row {
-            display: flex;
-            align-items: center;
-            background-color: #262626;
-            border: 2px solid var(--border-color);
-            border-radius: 50px;
-            padding: 12px 20px;
-            transition: all 0.2s;
-        }
-        .pool-row:hover {
-            border-color: var(--hatch-orange);
-            background-color: #2a2a2a;
-        }
-        .rank-badge {
-            min-width: 45px;
-            height: 45px;
-            border: 2px solid var(--hatch-orange);
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            font-weight: bold;
-            font-size: 1.1rem;
-            color: var(--hatch-orange);
-            margin-right: 20px;
-            background-color: #1a1a1a;
-        }
-        .participant-info {
             flex-grow: 1;
+            margin-left: 15px;
         }
-        .participant-name {
-            font-size: 1.15rem;
-            font-weight: bold;
-            color: var(--hatch-orange);
-            margin-bottom: 4px;
-            cursor: pointer;
-            display: inline-block;
-        }
-        .participant-name:hover {
-            text-decoration: underline;
-        }
-        .categories-grid {
+        .stats {
             display: flex;
-            gap: 25px;
-            font-size: 0.85rem;
-            color: var(--text-muted);
+            gap: 20px;
+            text-align: center;
+            font-size: 14px;
+            color: #aaa;
         }
-        .cat-item {
+        .stat-box {
             display: flex;
             flex-direction: column;
-            align-items: center;
         }
-        .cat-val {
-            color: var(--text-color);
+        .stat-value {
+            font-size: 16px;
             font-weight: bold;
-            margin-top: 2px;
+            color: #fff;
         }
-        .total-badge {
-            min-width: 80px;
-            height: 55px;
-            border: 2px solid var(--hatch-orange);
-            border-radius: 30px;
-            display: flex;
-            flex-direction: column;
-            align-items: center;
-            justify-content: center;
-            background-color: #1a1a1a;
-            padding: 0 10px;
-        }
-        .total-label {
-            font-size: 0.65rem;
-            letter-spacing: 1px;
-            color: var(--text-muted);
-            text-transform: uppercase;
-        }
-        .total-val {
-            font-size: 1rem;
-            font-weight: bold;
-            color: var(--hatch-orange);
-        }
-        .update-time {
-            margin-top: 30px;
-            text-align: right;
-            font-size: 0.8rem;
-            color: var(--text-muted);
-        }
-        /* Modale */
-        .modal {
-            display: none;
-            position: fixed;
-            z-index: 1000;
-            left: 0;
-            top: 0;
-            width: 100%;
-            height: 100%;
-            background-color: rgba(0,0,0,0.8);
-            align-items: center;
-            justify-content: center;
-        }
-        .modal-content {
-            background-color: #1e1e1e;
-            border: 2px solid var(--hatch-orange);
-            border-radius: 12px;
-            width: 90%;
-            max-width: 600px;
-            max-height: 80vh;
-            overflow-y: auto;
-            padding: 30px;
-            box-shadow: 0 5px 25px rgba(0,0,0,0.7);
-        }
-        .modal-header {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            border-bottom: 2px solid var(--border-color);
-            padding-bottom: 15px;
-            margin-bottom: 20px;
-        }
-        .modal-header h2 {
-            margin: 0;
-            color: var(--hatch-orange);
-            font-size: 1.4rem;
-        }
-        .close-btn {
-            background: none;
-            border: none;
-            color: var(--text-muted);
-            font-size: 1.8rem;
-            cursor: pointer;
-        }
-        .close-btn:hover {
-            color: var(--hatch-orange);
-        }
-        .section-title {
-            font-size: 1rem;
-            color: var(--hatch-orange);
-            margin-top: 15px;
-            margin-bottom: 8px;
-            text-transform: uppercase;
-            letter-spacing: 0.5px;
-        }
-        .roster-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
-            gap: 8px;
-            font-size: 0.9rem;
-            background: #262626;
-            padding: 12px;
+        .total {
+            background: #ff7b00;
+            color: #fff;
+            padding: 8px 15px;
             border-radius: 8px;
+            font-size: 18px;
+            font-weight: bold;
+            margin-left: 20px;
+            min-width: 80px;
+            text-align: center;
         }
-        .roster-item {
-            color: var(--text-color);
+        .loading {
+            text-align: center;
+            font-size: 18px;
+            color: #ff7b00;
+            margin-top: 50px;
         }
     </style>
 </head>
 <body>
-
     <div class="container">
-        <div class="header">
-            <div class="logo-area">
-                <h1>🏒 Hatch NHL Pool</h1>
-                <div class="subtitle">Classement officiel du bureau</div>
-            </div>
-            <div class="hatch-badge">Hatch Ltd</div>
-        </div>
-
-        <div class="standings-list" id="pool-standings">
-
-            <div class="pool-row">
-                <div class="rank-badge">1</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Olivier Jubelin')">Olivier Jubelin 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">45</span></div>
-                        <div class="cat-item">Def <span class="cat-val">146</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">16</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">225 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">2</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Yanick Tremblay')">Yanick Tremblay 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">22</span></div>
-                        <div class="cat-item">Def <span class="cat-val">164</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">1</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">12</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">199 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">3</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Jean-Philip Tremblay')">Jean-Philip Tremblay 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">153</span></div>
-                        <div class="cat-item">Def <span class="cat-val">13</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">12</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">17</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">195 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">4</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Alondra Rima')">Alondra Rima 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">154</span></div>
-                        <div class="cat-item">Def <span class="cat-val">10</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">9</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">19</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">192 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">5</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Alain Roy')">Alain Roy 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">41</span></div>
-                        <div class="cat-item">Def <span class="cat-val">67</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">8</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">21</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">137 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">6</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Hak Jun Oh')">Hak Jun Oh 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">38</span></div>
-                        <div class="cat-item">Def <span class="cat-val">60</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">21</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">137 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">7</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Aya el Khazen')">Aya el Khazen 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">46</span></div>
-                        <div class="cat-item">Def <span class="cat-val">13</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">0</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">22</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">81 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">8</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Alexandre Neal')">Alexandre Neal 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">48</span></div>
-                        <div class="cat-item">Def <span class="cat-val">12</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">0</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">18</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">78 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">9</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Mathieu Huot')">Mathieu Huot 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">28</span></div>
-                        <div class="cat-item">Def <span class="cat-val">17</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">8</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">21</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">74 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">10</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Antoine Duguay')">Antoine Duguay 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">46</span></div>
-                        <div class="cat-item">Def <span class="cat-val">0</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">8</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">16</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">70 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">11</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Nicolas St-Pierre')">Nicolas St-Pierre 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">23</span></div>
-                        <div class="cat-item">Def <span class="cat-val">13</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">14</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">18</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">68 pts</span>
-                </div>
-            </div>
-        </div>
-
-        <div class="update-time" id="last-updated">Dernière synchronisation : 2026-10-06 18:53</div>
-    </div>
-
-    <!-- Modale de détails -->
-    <div id="playerModal" class="modal">
-        <div class="modal-content">
-            <div class="modal-header">
-                <h2 id="modal-participant-name">Nom</h2>
-                <button class="close-btn" onclick="closeModal()">&times;</button>
-            </div>
-            <div id="modal-participant-details"></div>
-        </div>
+        <h1>Classement du Pool LNH</h1>
+        <div id="update-time" class="subtitle">Chargement des données...</div>
+        <div id="pool-list"></div>
     </div>
 
     <script>
-        // Données complètes des participants intégrées directement pour éviter tout problème de chargement
-        const poolData = [
-            {
-                "name": "Jean-Philip Tremblay", "att": 125, "def": 60, "goaler": 36, "equipe": 48, "total": 269,
-                "players": ['Cale Makar (D)', 'Macklin Celebrini (A)', 'Rasmus Dahlin (D)', 'Nick Suzuki (A)', 'Cole Caufield (A)', 'Connor Bedard (A)', 'Matthew Schaefer (D)', 'Aleksander Barkov (A)', 'Mitch Marner (A)', 'Sebastian Aho (A)', 'Cutter Gauthier (A)', 'Leo Carlsson (A)', 'Rasmus Andersson (D)', 'Ivan Demidov (A)', 'Juraj Slafkovsky (A)', 'Matvei Michkov (A)', 'Jake Walman (D)', 'Trevor Zegras (A)', 'Simon Nemec (D)', 'Brayden Point (A)', 'J.T. Miller (A)', 'Andrei Vasilevski (G)', 'Filip Gustavsson (G)', 'Ukko-Pekka Luukkonen (G)', 'Alex Newhook (A)'],
-                "teams": ['Canadiens de Montréal', 'Sabres de Buffalo', 'Devils du New Jersey', 'Jets de Winnipeg']
-            },
-            {
-                "name": "Nicolas St-Pierre", "att": 120, "def": 58, "goaler": 36, "equipe": 48, "total": 262,
-                "players": ['Cale Makar (D)', 'Quinn Hughes (D)', 'David Pastrnak (A)', 'Auston Matthews (A)', 'William Nylander (A)', 'Wyatt Johnston (A)', 'Matthew Schaefer (D)', 'Aleksander Barkov (A)', 'Mitch Marner (A)', 'Adrian Kempe (A)', 'Zach Hyman (A)', 'Leo Carlsson (A)', 'Dylan Larkin (A)', 'Gavin Mckenna (A)', 'Juraj Slafkovsky (A)', 'Kirill Marchenko (A)', 'Jake Walman (D)', 'Thomas Harley (D)', 'Porter Martone (A)', 'Matt Duchene (A)', 'Zach Benson (A)', 'Connor Hellebuyck (G)', 'Jeremy Swayman (G)', 'Jesper Wallstedt (G)', 'Oliver Kapanen (A)'],
-                "teams": ['Stars de Dallas', 'Lightning de Tampa Bay', 'Islanders de New York', 'Sharks de San Jose']
-            },
-            {
-                "name": "Alondra Rima", "att": 115, "def": 55, "goaler": 36, "equipe": 48, "total": 254,
-                "players": ['Connor McDavid (A)', 'Macklin Celebrini (A)', 'Jason Robertson (A)', 'Nick Suzuki (A)', 'Matthew Boldy (A)', 'Artemi Panarin (A)', 'Matthew Schaefer (D)', 'Aleksander Barkov (A)', 'Erik Karlsson (D)', 'Sebastian Aho (A)', 'Dylan Guenther (A)', 'Logan Cooley (A)', 'Evgeni Malkin (A)', 'Ivan Demidov (A)', 'Bo Horvat (A)', 'Morgan Geekie (A)', 'Brock Nelson (A)', 'Thomas Harley (D)', 'Simon Nemec (D)', 'Ryan Nugent-Hopkins (A)', 'Logan Stankoven (A)', 'Jake Oettinger (G)', 'Filip Gustavsson (G)', 'Jakub Dobes (G)', 'Alex Newhook (A)'],
-                "teams": ['Stars de Dallas', "Oilers d'Edmonton", 'Islanders de New York', 'Sharks de San Jose']
-            },
-            {
-                "name": "Aya el Khazen", "att": 110, "def": 52, "goaler": 36, "equipe": 48, "total": 246,
-                "players": ['Nikita Kucherov (A)', 'Lane Hutson (D)', 'David Pastrnak (A)', 'Nick Suzuki (A)', 'Cole Caufield (A)', 'Sidney Crosby (A)', 'Matthew Schaefer (D)', 'Jackson LaCombe (D)', 'John Carlson (D)', 'Seth Jarvis (A)', 'Clayton Keller (A)', 'Brad Marchand (A)', 'Rasmus Andersson (D)', 'Ivan Demidov (A)', 'Andrei Svechnikov (A)', 'Bowen Byram (D)', 'Steven Stamkos (A)', 'Thomas Harley (D)', 'Anton Frondell (A)', 'Mike Matheson (D)', 'Zach Benson (A)', 'Sergei Bobrovsky (G)', 'Logan Thompson (G)', 'Jakub Dobes (G)', 'Alex Newhook (A)'],
-                "teams": ['Canadiens de Montréal', 'Lightning de Tampa Bay', 'Blue Jackets de Columbus', 'Rangers de New York']
-            },
-            {
-                "name": "Alain Roy", "att": 105, "def": 50, "goaler": 36, "equipe": 48, "total": 239,
-                "players": ['Cale Makar (D)', 'Lane Hutson (D)', 'David Pastrnak (A)', 'Nick Suzuki (A)', 'Cole Caufield (A)', 'Sidney Crosby (A)', 'Matthew Schaefer (D)', 'Aleksander Barkov (A)', 'Tage Thompson (A)', 'Sebastian Aho (A)', 'Matthew Tkachuk (A)', 'Drake Batherson (A)', 'John Tavares (A)', 'Ivan Demidov (A)', 'Juraj Slafkovsky (A)', 'Matvei Michkov (A)', 'Dougie Hamilton (D)', 'Trevor Zegras (A)', 'Simon Nemec (D)', 'Brayden Point (A)', 'Nico Hischier (A)', 'Andrei Vasilevski (G)', 'Logan Thompson (G)', 'Jakub Dobes (G)', 'Oliver Kapanen (A)'],
-                "teams": ['Avalanche du Colorado', "Oilers d'Edmonton", 'Flyers de Philadelphie', 'Sharks de San Jose']
-            },
-            {
-                "name": "Mathieu Huot", "att": 100, "def": 48, "goaler": 36, "equipe": 48, "total": 232,
-                "players": ['Evan Bouchard (D)', 'Leon Draisaitl (A)', 'Rasmus Dahlin (D)', 'Martin Necas (A)', 'Jakob Chychrun (D)', 'Josh Morrissey (D)', 'Matthew Schaefer (D)', 'Jackson LaCombe (D)', 'John Carlson (D)', 'Sam Reinhart (A)', 'Clayton Keller (A)', 'Filip Forsberg (A)', 'Dylan Larkin (A)', 'Beckett Sennecke (A)', 'Lucas Raymond (A)', 'Pavel Dorofeyev (A)', 'Brock Nelson (A)', 'Jesper Bratt (A)', 'Porter Martone (A)', 'Brandt Clarke (D)', 'Nico Hischier (A)', 'Andrei Vasilevski (G)', 'Logan Thompson (G)', 'Jesper Wallstedt (G)', 'Alex Newhook (A)'],
-                "teams": ['Avalanche du Colorado', 'Lightning de Tampa Bay', 'Devils du New Jersey', 'Sharks de San Jose']
-            },
-            {
-                "name": "Olivier Jubelin", "att": 95, "def": 45, "goaler": 36, "equipe": 48, "total": 224,
-                "players": ['Cale Makar (D)', 'Leon Draisaitl (A)', 'Kirill Kaprizov (A)', 'Charlie McAvoy (D)', 'Kyle Connor (A)', 'Artemi Panarin (A)', 'Matthew Schaefer (D)', 'Jake Guentzel (A)', 'Erik Karlsson (D)', 'Sam Reinhart (A)', 'Clayton Keller (A)', 'Filip Forsberg (A)', 'Dylan Larkin (A)', 'Will Smith (A)', 'Nick Schmaltz (A)', 'Kirill Marchenko (A)', 'Gabriel Vilardi (A)', 'Jesper Bratt (A)', 'Jimmy Snuggerud (A)', 'Brayden Point (A)', 'Nico Hischier (A)', 'Andrei Vasilevski (G)', 'Logan Thompson (G)', 'Jacob Markström (G)', 'Oliver Kapanen (A)'],
-                "teams": ['Hurricanes de la Caroline', 'Sabres de Buffalo', 'Penguins de Pittsburgh', 'Predators de Nashville']
-            },
-            {
-                "name": "Yanick Tremblay", "att": 90, "def": 42, "goaler": 36, "equipe": 48, "total": 216,
-                "players": ['Nathan MacKinnon (A)', 'Lane Hutson (D)', 'David Pastrnak (A)', 'Charlie McAvoy (D)', 'Cole Caufield (A)', 'Miro Heiskanen (D)', 'Mikko Rantanen (A)', 'Jackson LaCombe (D)', 'Mitch Marner (A)', 'Noah Dobson (D)', 'Matthew Tkachuk (A)', 'Logan Cooley (A)', 'Rasmus Andersson (D)', 'Cole Hutson (D)', 'Juraj Slafkovsky (A)', 'Matthew Knies (A)', 'Steven Stamkos (A)', 'Jared McCann (A)', 'Jackson Blake (A)', 'Mike Matheson (D)', 'Philip Broberg (D)', 'Connor Hellebuyck (G)', 'Logan Thompson (G)', 'Jakub Dobes (G)', 'Alex Newhook (A)'],
-                "teams": ['Canadiens de Montréal', "Oilers d'Edmonton", 'Kings de Los Angeles', 'Flames de Calgary']
-            },
-            {
-                "name": "Alexandre Neal", "att": 85, "def": 40, "goaler": 36, "equipe": 48, "total": 209,
-                "players": ['Connor McDavid (A)', 'Lane Hutson (D)', 'David Pastrnak (A)', 'Nick Suzuki (A)', 'William Nylander (A)', 'Sidney Crosby (A)', 'Mikko Rantanen (A)', 'Jackson LaCombe (D)', 'Tage Thompson (A)', 'Noah Dobson (D)', 'Matthew Tkachuk (A)', 'Drake Batherson (A)', 'Devon Toews (D)', 'Cole Hutson (D)', 'Bo Horvat (A)', 'Bowen Byram (D)', 'Alexander Ovechkin (A)', 'Mathew Barzal (A)', 'Jackson Blake (A)', 'Matt Duchene (A)', 'MacKenzie Weegar (D)', 'Sergei Bobrovsky (G)', 'Filip Gustavsson (G)', 'Jakub Dobes (G)', 'Jake Evans (A)'],
-                "teams": ['Canadiens de Montréal', 'Bruins de Boston', 'Kings de Los Angeles', 'Jets de Winnipeg']
-            },
-            {
-                "name": "Antoine Duguay", "att": 80, "def": 38, "goaler": 36, "equipe": 48, "total": 202,
-                "players": ['Connor McDavid (A)', 'Quinn Hughes (D)', 'Jason Robertson (A)', 'Nick Suzuki (A)', 'Cole Caufield (A)', 'Wyatt Johnston (A)', 'Jack Eichel (A)', 'Aleksander Barkov (A)', 'Tage Thompson (A)', 'Noah Dobson (D)', 'Matthew Tkachuk (A)', 'Filip Forsberg (A)', 'John Tavares (A)', 'Ivan Demidov (A)', 'Juraj Slafkovsky (A)', 'Pavel Dorofeyev (A)', 'Steven Stamkos (A)', 'Jared McCann (A)', 'Jackson Blake (A)', 'Matt Duchene (A)', 'Logan Stankoven (A)', 'Sergei Bobrovsky (G)', 'Igor Shesterkin (G)', 'Jakub Dobes (G)', 'Alex Newhook (A)'],
-                "teams": ['Avalanche du Colorado', 'Sabres de Buffalo', 'Kings de Los Angeles', 'Sharks de San Jose']
-            },
-            {
-                "name": "Hak Jun Oh", "att": 75, "def": 35, "goaler": 36, "equipe": 48, "total": 194,
-                "players": ['Nathan MacKinnon (A)', 'Macklin Celebrini (A)', 'Rasmus Dahlin (D)', 'Jack Hughes (A)', 'Cole Caufield (A)', 'Artemi Panarin (A)', 'Mikko Rantanen (A)', 'Jake Guentzel (A)', 'Brady Tkachuk (A)', 'Mika Zibanejad (A)', 'Matthew Tkachuk (A)', 'Filip Forsberg (A)', 'Rasmus Andersson (D)', 'Gavin Mckenna (A)', 'Andrei Svechnikov (A)', 'Kirill Marchenko (A)', 'Dougie Hamilton (D)', 'Thomas Harley (D)', 'Simon Nemec (D)', 'Brayden Point (A)', 'MacKenzie Weegar (D)', 'Andrei Vasilevski (G)', 'Scott Wedgewood (G)', 'Jacob Markström (G)', 'Zachary Bolduc (A)'],
-                "teams": ['Panthers de la Floride', "Oilers d'Edmonton", 'Devils du New Jersey', 'Sharks de San Jose']
-            }
-        ];
+        async function loadPool() {
+            try {
+                // Charge le fichier JSON généré automatiquement par le script Python sur GitHub
+                const response = await fetch('pool_data.json?' + new Date().getTime());
+                const data = await response.json();
+                
+                document.getElementById('update-time').innerText = `Dernière mise à jour : ${data.last_update}`;
+                
+                const container = document.getElementById('pool-list');
+                container.innerHTML = '';
+                
+                data.participants.sort((a, b) => b.total - a.total);
 
-        function renderStandings() {
-            const container = document.getElementById('pool-standings');
-            container.innerHTML = '';
-
-            poolData.forEach((p, index) => {
-                const rank = index + 1;
-                const row = document.createElement('div');
-                row.className = 'pool-row';
-                row.innerHTML = `
-                    <div class="rank-badge">${rank}</div>
-                    <div class="participant-info">
-                        <div class="participant-name" onclick="openModal('${p.name}')">${p.name} 🔍</div>
-                        <div class="categories-grid">
-                            <div class="cat-item">Att <span class="cat-val">${p.att}</span></div>
-                            <div class="cat-item">Def <span class="cat-val">${p.def}</span></div>
-                            <div class="cat-item">Goaler <span class="cat-val">${p.goaler}</span></div>
-                            <div class="cat-item">Equipe <span class="cat-val">${p.equipe}</span></div>
+                data.participants.forEach((p, index) => {
+                    const card = document.createElement('div');
+                    card.className = 'card';
+                    card.innerHTML = `
+                        <div class="rank">#${index + 1}</div>
+                        <div class="name">${p.name}</div>
+                        <div class="stats">
+                            <div class="stat-box"><span>Att</span><span class="stat-value">${p.att}</span></div>
+                            <div class="stat-box"><span>Def</span><span class="stat-value">${p.def}</span></div>
+                            <div class="stat-box"><span>Goaler</span><span class="stat-value">${p.goaler}</span></div>
+                            <div class="stat-box"><span>Equipe</span><span class="stat-value">${p.equipe}</span></div>
                         </div>
-                    </div>
-                    <div class="total-badge">
-                        <span class="total-label">Total</span>
-                        <span class="total-val">${p.total} pts</span>
-                    </div>
-                `;
-                container.appendChild(row);
-            });
-
-            document.getElementById('last-updated').innerText = "Dernière synchronisation : " + new Date().toLocaleString();
-        }
-
-        function openModal(participantName) {
-            const participant = poolData.find(p => p.name === participantName);
-            if (!participant) return;
-
-            document.getElementById('modal-participant-name').innerText = participant.name;
-            
-            let html = `
-                <div style="margin-bottom: 15px; color: #9ca3af; font-size: 0.95rem;">
-                    <strong>Résumé des points :</strong> Attaquants (${participant.att} pts) | Défenseurs (${participant.def} pts) | Gardiens (${participant.goaler} pts) | Équipes (${participant.equipe} pts) — <strong style="color: #EB8328;">Total : ${participant.total} pts</strong>
-                </div>
-                <div class="section-title">Équipes sélectionnées</div>
-                <div class="roster-grid" style="margin-bottom: 15px;">
-                    ${participant.teams.map(t => `<div class="roster-item">🏒 ${t}</div>`).join('')}
-                </div>
-                <div class="section-title">Alignement des joueurs</div>
-                <div class="roster-grid">
-                    ${participant.players.map(pl => `<div class="roster-item">• ${pl}</div>`).join('')}
-                </div>
-            `;
-
-            document.getElementById('modal-participant-details').innerHTML = html;
-            document.getElementById('playerModal').style.display = 'flex';
-        }
-
-        function closeModal() {
-            document.getElementById('playerModal').style.display = 'none';
-        }
-
-        window.onclick = function(event) {
-            const modal = document.getElementById('playerModal');
-            if (event.target === modal) {
-                closeModal();
+                        <div class="total">${p.total} pts</div>
+                    `;
+                    container.appendChild(card);
+                });
+            } catch (e) {
+                document.getElementById('update-time').innerText = "Erreur de chargement des classements.";
             }
         }
-
-        // Lancer l'affichage au chargement de la page
-        window.onload = renderStandings;
+        loadPool();
     </script>
 </body>
 </html>
