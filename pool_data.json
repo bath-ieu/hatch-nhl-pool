@@ -1,5 +1,5 @@
 {
-    "last_update": "2026-10-06 19:20",
+    "last_update": "2026-10-06 19:32",
     "participants": [
         {
             "name": "Mathieu Huot",
@@ -14,8 +14,8 @@
             "att": 102,
             "def": 11,
             "goaler": 23,
-            "equipe": 9,
-            "total": 145
+            "equipe": 12,
+            "total": 148
         },
         {
             "name": "Nicolas St-Pierre",
@@ -38,8 +38,8 @@
             "att": 87,
             "def": 7,
             "goaler": 0,
-            "equipe": 12,
-            "total": 106
+            "equipe": 15,
+            "total": 109
         },
         {
             "name": "Alain Roy",
@@ -62,16 +62,16 @@
             "att": 20,
             "def": 6,
             "goaler": 0,
-            "equipe": 6,
-            "total": 32
+            "equipe": 9,
+            "total": 35
         },
         {
             "name": "Alexandre Neal",
             "att": 77,
             "def": 1,
             "goaler": 23,
-            "equipe": 10,
-            "total": 111
+            "equipe": 13,
+            "total": 114
         },
         {
             "name": "Antoine Duguay",
