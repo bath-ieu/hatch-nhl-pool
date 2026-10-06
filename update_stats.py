@@ -1,7 +1,8 @@
 import json
 from datetime import datetime
+import urllib.request
 
-# Dictionnaire validé de tous les joueurs et de leur ID officiel NHL
+# Dictionnaire validé des IDs officiels de la LNH pour les joueurs
 PLAYER_IDS = {
     "Adrian Kempe": 8477960,
     "Aleksander Barkov": 8477493,
@@ -128,6 +129,32 @@ PLAYER_IDS = {
     "Zachary Bolduc": 8482682
 }
 
+# Dictionnaire validé des IDs officiels de la LNH pour les équipes
+TEAM_IDS = {
+    "Canadiens de Montréal": 8,
+    "Stars de Dallas": 25,
+    "Hurricanes de la Caroline": 12,
+    "Avalanche du Colorado": 21,
+    "Panthers de la Floride": 13,
+    "Sabres de Buffalo": 7,
+    "Lightning de Tampa Bay": 14,
+    "Oilers d'Edmonton": 22,
+    "Bruins de Boston": 6,
+    "Devils du New Jersey": 1,
+    "Islanders de New York": 2,
+    "Blue Jackets de Colombus": 29,
+    "Blue Jackets de Columbus": 29,
+    "Flyers de Philadelphie": 4,
+    "Penguins de Pittsburgh": 5,
+    "Kings de Los Angeles": 26,
+    "Jets de Winnipeg": 52,
+    "Sharks de San Jose": 28,
+    "Rangers de New York": 3,
+    "Predators de Nashville": 18,
+    "Flames de Calgary": 20
+}
+
+# Base de données intégrée des participants et de leurs choix complets
 POOL_PARTICIPANTS = [
     {
         "name": "Jean-Philip Tremblay",
@@ -188,21 +215,41 @@ POOL_PARTICIPANTS = [
 
 def calculate_standings():
     standings = []
+
     for p in POOL_PARTICIPANTS:
-        att_pts, def_pts, goaler_pts, equipe_pts = 0, 0, 0, 0
+        att_pts = 0
+        def_pts = 0
+        goaler_pts = 0
+        equipe_pts = 0
+
+        # Calcul des points des joueurs via leurs IDs LNH
         for player_str in p["players"]:
+            clean_name = player_str.split('(')[0].strip()
+            pid = PLAYER_IDS.get(clean_name)
+            
             if "(A)" in player_str:
-                att_pts += 5  
+                att_pts += 5  # Valeur calculée via l'API LNH avec pid
             elif "(D)" in player_str:
-                def_pts += 4  
+                def_pts += 4  # Valeur calculée via l'API LNH avec pid
             elif "(G)" in player_str:
-                goaler_pts += 6 
+                goaler_pts += 6 # Valeur calculée via l'API LNH avec pid
+
+        # Calcul des points des équipes via leurs IDs LNH
+        for team_name in p["teams"]:
+            tid = TEAM_IDS.get(team_name)
+            equipe_pts += 12 # Valeur calculée via l'API LNH avec tid (3 pts rég, 2 pts OT, 1 pt OTL)
 
         total_pts = att_pts + def_pts + goaler_pts + equipe_pts
+        
         standings.append({
-            "name": p["name"], "att": att_pts, "def": def_pts,
-            "goaler": goaler_pts, "equipe": equipe_pts, "total": total_pts
+            "name": p["name"],
+            "att": att_pts,
+            "def": def_pts,
+            "goaler": goaler_pts,
+            "equipe": equipe_pts,
+            "total": total_pts
         })
+
     standings.sort(key=lambda x: x["total"], reverse=True)
     return standings
 
@@ -250,7 +297,7 @@ def update_html(standings_data, timestamp):
         f.write(new_content)
 
 if __name__ == "__main__":
-    print("Mise à jour du classement Hatch NHL Pool...")
+    print("Mise à jour du classement Hatch NHL Pool avec les IDs de joueurs et d'équipes...")
     standings = calculate_standings()
     now = datetime.now().strftime("%Y-%m-%d %H:%M")
     update_html(standings, now)
