@@ -3,132 +3,210 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pool LNH - Classement en Direct</title>
+    <title>Pool de LNH</title>
     <style>
         body {
-            background-color: #121212;
-            color: #e0e0e0;
             font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #f4f7f6;
+            color: #333;
             margin: 0;
             padding: 20px;
-        }
-        h1 {
-            text-align: center;
-            color: #ffffff;
-            margin-bottom: 10px;
-        }
-        .subtitle {
-            text-align: center;
-            color: #888;
-            font-size: 14px;
-            margin-bottom: 30px;
         }
         .container {
             max-width: 900px;
             margin: 0 auto;
-        }
-        .card {
-            background: #1e1e1e;
+            background: #ffffff;
+            padding: 30px;
             border-radius: 12px;
-            padding: 15px 20px;
-            margin-bottom: 15px;
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-            box-shadow: 0 4px 6px rgba(0,0,0,0.3);
-            border-left: 5px solid #ff7b00;
+            box-shadow: 0 4px 15px rgba(0,0,0,0.05);
         }
-        .rank {
-            font-size: 24px;
-            font-weight: bold;
-            color: #ff7b00;
-            width: 40px;
+        h1 {
             text-align: center;
+            color: #1a365d;
+            margin-bottom: 5px;
         }
-        .name {
-            font-size: 20px;
+        .last-update {
+            text-align: center;
+            font-size: 0.9rem;
+            color: #718096;
+            margin-bottom: 30px;
+        }
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-bottom: 20px;
+        }
+        th, td {
+            padding: 12px 15px;
+            text-align: left;
+            border-bottom: 1px solid #e2e8f0;
+        }
+        th {
+            background-color: #2b6cb0;
+            color: white;
             font-weight: 600;
-            color: #ffffff;
-            flex-grow: 1;
-            margin-left: 15px;
         }
-        .stats {
-            display: flex;
-            gap: 20px;
-            text-align: center;
-            font-size: 14px;
-            color: #aaa;
+        tr:hover {
+            background-color: #f7fafc;
         }
-        .stat-box {
-            display: flex;
-            flex-direction: column;
+        .text-right {
+            text-align: right;
         }
-        .stat-value {
-            font-size: 16px;
+        .font-bold {
             font-weight: bold;
-            color: #fff;
+            color: #2d3748;
         }
-        .total {
-            background: #ff7b00;
-            color: #fff;
-            padding: 8px 15px;
-            border-radius: 8px;
-            font-size: 18px;
-            font-weight: bold;
-            margin-left: 20px;
-            min-width: 80px;
-            text-align: center;
+        .toggle-btn {
+            background: none;
+            border: none;
+            color: #3182ce;
+            cursor: pointer;
+            font-size: 0.85rem;
+            padding: 0;
+            text-decoration: underline;
+            margin-top: 4px;
         }
-        .loading {
-            text-align: center;
-            font-size: 18px;
-            color: #ff7b00;
-            margin-top: 50px;
+        .toggle-btn:hover {
+            color: #2b6cb0;
+        }
+        .details-row {
+            display: none;
+            background-color: #f8fafc;
+        }
+        .details-content {
+            padding: 15px 20px;
+            font-size: 0.85rem;
+            color: #4a5568;
+            border-bottom: 2px solid #e2e8f0;
+        }
+        .details-section {
+            margin-bottom: 10px;
+        }
+        .details-section h4 {
+            margin: 0 0 5px 0;
+            color: #2d3748;
+            font-size: 0.9rem;
+            border-bottom: 1px dashed #cbd5e0;
+            padding-bottom: 2px;
+        }
+        .badge {
+            display: inline-block;
+            background: #edf2f7;
+            padding: 2px 6px;
+            border-radius: 4px;
+            margin: 2px;
+            font-family: monospace;
         }
     </style>
 </head>
 <body>
-    <div class="container">
-        <h1>Classement du Pool LNH</h1>
-        <div id="update-time" class="subtitle">Chargement des données...</div>
-        <div id="pool-list"></div>
-    </div>
 
-    <script>
-        async function loadPool() {
-            try {
-                // Charge le fichier JSON généré automatiquement par le script Python sur GitHub
-                const response = await fetch('pool_data.json?' + new Date().getTime());
-                const data = await response.json();
-                
-                document.getElementById('update-time').innerText = `Dernière mise à jour : ${data.last_update}`;
-                
-                const container = document.getElementById('pool-list');
-                container.innerHTML = '';
-                
-                data.participants.sort((a, b) => b.total - a.total);
+<div class="container">
+    <h1>Classement du Pool de LNH</h1>
+    <div class="last-update" id="last-update">Chargement de la dernière mise à jour...</div>
 
-                data.participants.forEach((p, index) => {
-                    const card = document.createElement('div');
-                    card.className = 'card';
-                    card.innerHTML = `
-                        <div class="rank">#${index + 1}</div>
-                        <div class="name">${p.name}</div>
-                        <div class="stats">
-                            <div class="stat-box"><span>Att</span><span class="stat-value">${p.att}</span></div>
-                            <div class="stat-box"><span>Def</span><span class="stat-value">${p.def}</span></div>
-                            <div class="stat-box"><span>Goaler</span><span class="stat-value">${p.goaler}</span></div>
-                            <div class="stat-box"><span>Equipe</span><span class="stat-value">${p.equipe}</span></div>
+    <table>
+        <thead>
+            <tr>
+                <th>Participant</th>
+                <th class="text-right">Att.</th>
+                <th class="text-right">Déf.</th>
+                <th class="text-right">Gard.</th>
+                <th class="text-right">Équipes</th>
+                <th class="text-right">Total</th>
+            </tr>
+        </thead>
+        <tbody id="standings-body">
+            <!-- Inséré dynamiquement par JavaScript -->
+        </tbody>
+    </table>
+</div>
+
+<script>
+async function loadPoolData() {
+    try {
+        const response = await fetch('pool_data.json');
+        const data = await response.json();
+
+        document.getElementById('last-update').innerText = `Dernière mise à jour : ${data.last_update}`;
+        
+        const tbody = document.getElementById('standings-body');
+        tbody.innerHTML = '';
+
+        // Trier par total de points décroissant
+        data.participants.sort((a, b) => b.total - a.total);
+
+        data.participants.forEach((p, index) => {
+            // Ligne principale du participant
+            const row = document.createElement('tr');
+            row.innerHTML = `
+                <td>
+                    <span class="font-bold">#${index + 1} ${p.name}</span><br>
+                    <button class="toggle-btn" onclick="toggleDetails(${index})">Voir l'alignement & stats</button>
+                </td>
+                <td class="text-right">${p.att}</td>
+                <td class="text-right">${p.def}</td>
+                <td class="text-right">${p.goaler}</td>
+                <td class="text-right">${p.equipe}</td>
+                <td class="text-right font-bold" style="color: #2b6cb0; font-size: 1.1rem;">${p.total}</td>
+            `;
+            tbody.appendChild(row);
+
+            // Ligne détaillée (cachée par défaut)
+            const detailsRow = document.createElement('tr');
+            detailsRow.className = 'details-row';
+            detailsRow.id = `details-${index}`;
+
+            let playersHtml = p.roster_details.players.map(pl => 
+                `<span class="badge">${pl.name} (${pl.position}) : ${pl.goals}B, ${pl.assists}A = <strong>${pl.points} pts</strong></span>`
+            ).join(' ');
+
+            let goaliesHtml = p.roster_details.goalies.map(g => 
+                `<span class="badge">${g.name} (G) : ${g.goals}B, ${g.assists}A = <strong>${g.points} pts</strong></span>`
+            ).join(' ');
+
+            let teamsHtml = p.roster_details.teams.map(t => 
+                `<span class="badge">${t.name} : ${t.rw} RW, ${t.row} ROW, ${t.otl} OTL = <strong>${t.points} pts</strong></span>`
+            ).join(' ');
+
+            detailsRow.innerHTML = `
+                <td colspan="6" style="padding: 0;">
+                    <div class="details-content">
+                        <div class="details-section">
+                            <h4>Joueurs (Attaquants & Défenseurs)</h4>
+                            <div>${playersHtml}</div>
                         </div>
-                        <div class="total">${p.total} pts</div>
-                    `;
-                    container.appendChild(card);
-                });
-            } catch (e) {
-                document.getElementById('update-time').innerText = "Erreur de chargement des classements.";
-            }
-        }
-        loadPool();
-    </script>
+                        <div class="details-section">
+                            <h4>Gardiens</h4>
+                            <div>${goaliesHtml}</div>
+                        </div>
+                        <div class="details-section">
+                            <h4>Équipes</h4>
+                            <div>${teamsHtml}</div>
+                        </div>
+                    </div>
+                </td>
+            `;
+            tbody.appendChild(detailsRow);
+        });
+
+    } catch (error) {
+        console.error("Erreur lors du chargement des données du pool:", error);
+        document.getElementById('last-update').innerText = "Erreur de chargement de pool_data.json";
+    }
+}
+
+function toggleDetails(index) {
+    const row = document.getElementById(`details-${index}`);
+    if (row.style.display === 'table-row') {
+        row.style.display = 'none';
+    } else {
+        row.style.display = 'table-row';
+    }
+}
+
+loadPoolData();
+</script>
+
 </body>
 </html>
