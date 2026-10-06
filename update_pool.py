@@ -2,7 +2,6 @@ import json
 import urllib.request
 from datetime import datetime
 
-# Équipes avec leurs noms en anglais (conformes à l'API de la LNH) et abréviations officielles
 TEAM_DATA = {
     "Montreal Canadiens": {"id": 8, "abbrev": "MTL"},
     "Dallas Stars": {"id": 25, "abbrev": "DAL"},
@@ -26,7 +25,6 @@ TEAM_DATA = {
     "Calgary Flames": {"id": 20, "abbrev": "CGY"}
 }
 
-# Dictionnaire complet des joueurs (avec Jake Walman ajouté à 8478013)
 PLAYER_DATA = {
     "Adrian Kempe": {"id": 8477960, "position": "A"},
     "Aleksander Barkov": {"id": 8477493, "position": "A"},
@@ -153,7 +151,6 @@ PLAYER_DATA = {
     "Ukko-Pekka Luukkonen": {"id": 8480173, "position": "G"}
 }
 
-# Rosters des participants (avec noms d'équipes en anglais)
 PARTICIPANTS_ROSTERS = [
     {
         "name": "Mathieu Huot",
@@ -229,14 +226,23 @@ def fetch_nhl_standings():
         req = urllib.request.Request(url, headers={'User-Agent': 'Mozilla/5.0'})
         with urllib.request.urlopen(req) as response:
             data = json.loads(response.read().decode())
-            team_points = {}
+            team_records = {}
             for standing in data.get('standings', []):
                 t_abbrev = standing.get('teamAbbrev', {}).get('default', '')
-                points = standing.get('points', 0)
-                team_points[t_abbrev] = points
-            return team_points
+                rw = standing.get('regulationWins', 0)
+                row = standing.get('otWins', 0)
+                otl = standing.get('otLosses', 0)
+                # Règles de pointage des équipes
+                total_pts = (rw * 2) + (row * 2) + (otl * 1)
+                team_records[t_abbrev] = {
+                    "rw": rw,
+                    "row": row,
+                    "otl": otl,
+                    "points": total_pts
+                }
+            return team_records
     except Exception as e:
-        print(f"Erreur de récupération des classements d'équipes: {e}")
+        print(f"Erreur classements: {e}")
         return {}
 
 def fetch_player_stats(player_id):
@@ -247,13 +253,16 @@ def fetch_player_stats(player_id):
             data = json.loads(response.read().decode())
             featured = data.get('featuredStats', {}).get('regularSeason', {}).get('subSeason', {})
             if featured:
-                return featured.get('points', 0)
-            return 0
+                goals = featured.get('goals', 0)
+                assists = featured.get('assists', 0)
+                points = featured.get('points', goals + assists)
+                return {"goals": goals, "assists": assists, "points": points}
+            return {"goals": 0, "assists": 0, "points": 0}
     except Exception as e:
-        return 0
+        return {"goals": 0, "assists": 0, "points": 0}
 
 def main():
-    team_points_map = fetch_nhl_standings()
+    team_records_map = fetch_nhl_standings()
     
     output_data = {
         "last_update": datetime.now().strftime("%Y-%m-%d %H:%M"),
@@ -264,27 +273,52 @@ def main():
         att_pts = 0
         def_pts = 0
         goaler_pts = 0
+        eq_pts = 0
         
+        players_detailed = []
         for player_name in p["players"]:
             info = PLAYER_DATA.get(player_name)
             if info:
-                pts = fetch_player_stats(info["id"])
+                stats = fetch_player_stats(info["id"])
+                players_detailed.append({
+                    "name": player_name,
+                    "position": info["position"],
+                    "goals": stats["goals"],
+                    "assists": stats["assists"],
+                    "points": stats["points"]
+                })
                 if info["position"] == 'A':
-                    att_pts += pts
+                    att_pts += stats["points"]
                 elif info["position"] == 'D':
-                    def_pts += pts
+                    def_pts += stats["points"]
 
+        goalies_detailed = []
         for goalie_name in p["goalies"]:
             info = PLAYER_DATA.get(goalie_name)
             if info:
-                pts = fetch_player_stats(info["id"])
-                goaler_pts += pts
+                stats = fetch_player_stats(info["id"])
+                goalies_detailed.append({
+                    "name": goalie_name,
+                    "goals": stats["goals"],
+                    "assists": stats["assists"],
+                    "points": stats["points"]
+                })
+                goaler_pts += stats["points"]
 
-        eq_pts = 0
+        teams_detailed = []
         for team_name in p["teams"]:
             t_info = TEAM_DATA.get(team_name)
             if t_info:
-                eq_pts += team_points_map.get(t_info["abbrev"], 0)
+                rec = team_records_map.get(t_info["abbrev"], {"rw": 0, "row": 0, "otl": 0, "points": 0})
+                teams_detailed.append({
+                    "name": team_name,
+                    "abbrev": t_info["abbrev"],
+                    "rw": rec["rw"],
+                    "row": rec["row"],
+                    "otl": rec["otl"],
+                    "points": rec["points"]
+                })
+                eq_pts += rec["points"]
 
         total_pts = att_pts + def_pts + goaler_pts + eq_pts
 
@@ -294,7 +328,12 @@ def main():
             "def": def_pts,
             "goaler": goaler_pts,
             "equipe": eq_pts,
-            "total": total_pts
+            "total": total_pts,
+            "roster_details": {
+                "players": players_detailed,
+                "goalies": goalies_detailed,
+                "teams": teams_detailed
+            }
         })
 
     with open('pool_data.json', 'w', encoding='utf-8') as f:
