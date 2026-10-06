@@ -2,51 +2,31 @@ import json
 import urllib.request
 from datetime import datetime
 
-# Dictionnaire complet des équipes (ID et Abréviation officielle)
+# Équipes avec leurs noms en anglais (conformes à l'API de la LNH) et abréviations officielles
 TEAM_DATA = {
     "Montreal Canadiens": {"id": 8, "abbrev": "MTL"},
-    "Canadiens de Montréal": {"id": 8, "abbrev": "MTL"},
     "Dallas Stars": {"id": 25, "abbrev": "DAL"},
-    "Stars de Dallas": {"id": 25, "abbrev": "DAL"},
     "Carolina Hurricanes": {"id": 12, "abbrev": "CAR"},
-    "Hurricanes de la Caroline": {"id": 12, "abbrev": "CAR"},
     "Colorado Avalanche": {"id": 21, "abbrev": "COL"},
-    "Avalanche du Colorado": {"id": 21, "abbrev": "COL"},
     "Florida Panthers": {"id": 13, "abbrev": "FLA"},
-    "Panthers de la Floride": {"id": 13, "abbrev": "FLA"},
     "Buffalo Sabres": {"id": 7, "abbrev": "BUF"},
-    "Sabres de Buffalo": {"id": 7, "abbrev": "BUF"},
     "Tampa Bay Lightning": {"id": 14, "abbrev": "TBL"},
-    "Lightning de Tampa Bay": {"id": 14, "abbrev": "TBL"},
     "Edmonton Oilers": {"id": 22, "abbrev": "EDM"},
-    "Oilers d'Edmonton": {"id": 22, "abbrev": "EDM"},
     "Boston Bruins": {"id": 6, "abbrev": "BOS"},
-    "Bruins de Boston": {"id": 6, "abbrev": "BOS"},
     "New Jersey Devils": {"id": 1, "abbrev": "NJD"},
-    "Devils du New Jersey": {"id": 1, "abbrev": "NJD"},
     "New York Islanders": {"id": 2, "abbrev": "NYI"},
-    "Islanders de New York": {"id": 2, "abbrev": "NYI"},
     "Columbus Blue Jackets": {"id": 29, "abbrev": "CBJ"},
-    "Blue Jackets de Columbus": {"id": 29, "abbrev": "CBJ"},
     "Philadelphia Flyers": {"id": 4, "abbrev": "PHI"},
-    "Flyers de Philadelphie": {"id": 4, "abbrev": "PHI"},
     "Pittsburgh Penguins": {"id": 5, "abbrev": "PIT"},
-    "Penguins de Pittsburgh": {"id": 5, "abbrev": "PIT"},
     "Los Angeles Kings": {"id": 26, "abbrev": "LAK"},
-    "Kings de Los Angeles": {"id": 26, "abbrev": "LAK"},
     "Winnipeg Jets": {"id": 52, "abbrev": "WPG"},
-    "Jets de Winnipeg": {"id": 52, "abbrev": "WPG"},
     "San Jose Sharks": {"id": 28, "abbrev": "SJS"},
-    "Sharks de San Jose": {"id": 28, "abbrev": "SJS"},
     "New York Rangers": {"id": 3, "abbrev": "NYR"},
-    "Rangers de New York": {"id": 3, "abbrev": "NYR"},
     "Nashville Predators": {"id": 18, "abbrev": "NSH"},
-    "Predators de Nashville": {"id": 18, "abbrev": "NSH"},
-    "Calgary Flames": {"id": 20, "abbrev": "CGY"},
-    "Flames de Calgary": {"id": 20, "abbrev": "CGY"}
+    "Calgary Flames": {"id": 20, "abbrev": "CGY"}
 }
 
-# Dictionnaire complet des joueurs (Player ID officiel et Position A/D/G)
+# Dictionnaire complet des joueurs (avec Jake Walman ajouté à 8478013)
 PLAYER_DATA = {
     "Adrian Kempe": {"id": 8477960, "position": "A"},
     "Aleksander Barkov": {"id": 8477493, "position": "A"},
@@ -142,6 +122,7 @@ PLAYER_DATA = {
     "Evan Bouchard": {"id": 8480878, "position": "D"},
     "Jackson LaCombe": {"id": 8481585, "position": "D"},
     "Jakob Chychrun": {"id": 8479342, "position": "D"},
+    "Jake Walman": {"id": 8478013, "position": "D"},
     "John Carlson": {"id": 8474590, "position": "D"},
     "Josh Morrissey": {"id": 8477497, "position": "D"},
     "Lane Hutson": {"id": 8483515, "position": "D"},
@@ -172,7 +153,7 @@ PLAYER_DATA = {
     "Ukko-Pekka Luukkonen": {"id": 8480173, "position": "G"}
 }
 
-# Rosters des participants
+# Rosters des participants (avec noms d'équipes en anglais)
 PARTICIPANTS_ROSTERS = [
     {
         "name": "Mathieu Huot",
@@ -182,13 +163,13 @@ PARTICIPANTS_ROSTERS = [
     },
     {
         "name": "Jean-Philip Tremblay",
-        "players": ["Cale Makar", "Macklin Celebrini", "Rasmus Dahlin", "Nick Suzuki", "Cole Caufield", "Connor Bedard", "Aleksander Barkov", "Mitch Marner", "Sebastian Aho", "Cutter Gauthier", "Leo Carlsson", "Rasmus Andersson", "Juraj Slafkovsky", "Matvei Michkov", "Trevor Zegras", "Brayden Point", "J.T. Miller", "Nico Hischier", "Alex Newhook"],
+        "players": ["Cale Makar", "Macklin Celebrini", "Rasmus Dahlin", "Nick Suzuki", "Cole Caufield", "Connor Bedard", "Aleksander Barkov", "Mitch Marner", "Sebastian Aho", "Cutter Gauthier", "Leo Carlsson", "Rasmus Andersson", "Juraj Slafkovsky", "Matvei Michkov", "Jake Walman", "Trevor Zegras", "Brayden Point", "J.T. Miller", "Nico Hischier", "Alex Newhook"],
         "goalies": ["Andrei Vasilevskiy", "Filip Gustavsson", "Ukko-Pekka Luukkonen"],
-        "teams": ["Montréal Canadiens", "Buffalo Sabres", "New Jersey Devils", "Winnipeg Jets"]
+        "teams": ["Montreal Canadiens", "Buffalo Sabres", "New Jersey Devils", "Winnipeg Jets"]
     },
     {
         "name": "Nicolas St-Pierre",
-        "players": ["Cale Makar", "Quinn Hughes", "David Pastrnak", "Auston Matthews", "William Nylander", "Wyatt Johnston", "Aleksander Barkov", "Mitch Marner", "Adrian Kempe", "Zach Hyman", "Leo Carlsson", "Dylan Larkin", "Juraj Slafkovsky", "Kirill Marchenko", "Thomas Harley", "Matt Duchene", "Zach Benson", "Oliver Kapanen"],
+        "players": ["Cale Makar", "Quinn Hughes", "David Pastrnak", "Auston Matthews", "William Nylander", "Wyatt Johnston", "Aleksander Barkov", "Mitch Marner", "Adrian Kempe", "Zach Hyman", "Leo Carlsson", "Dylan Larkin", "Juraj Slafkovsky", "Kirill Marchenko", "Jake Walman", "Thomas Harley", "Matt Duchene", "Zach Benson", "Oliver Kapanen"],
         "goalies": ["Connor Hellebuyck", "Jeremy Swayman", "Jesper Wallstedt"],
         "teams": ["Dallas Stars", "Tampa Bay Lightning", "New York Islanders", "San Jose Sharks"]
     },
@@ -202,13 +183,13 @@ PARTICIPANTS_ROSTERS = [
         "name": "Aya el Khazen",
         "players": ["Nikita Kucherov", "Lane Hutson", "David Pastrnak", "Nick Suzuki", "Cole Caufield", "Sidney Crosby", "John Carlson", "Seth Jarvis", "Clayton Keller", "Brad Marchand", "Rasmus Andersson", "Andrei Svechnikov", "Steven Stamkos", "Thomas Harley", "Mike Matheson", "Zach Benson", "Alex Newhook"],
         "goalies": ["Sergei Bobrovsky", "Logan Thompson", "Jakub Dobes"],
-        "teams": ["Montréal Canadiens", "Tampa Bay Lightning", "Columbus Blue Jackets", "New York Rangers"]
+        "teams": ["Montreal Canadiens", "Tampa Bay Lightning", "Columbus Blue Jackets", "New York Rangers"]
     },
     {
         "name": "Alain Roy",
         "players": ["Cale Makar", "Lane Hutson", "David Pastrnak", "Nick Suzuki", "Cole Caufield", "Sidney Crosby", "Aleksander Barkov", "Tage Thompson", "Sebastian Aho", "Matthew Tkachuk", "Drake Batherson", "John Tavares", "Juraj Slafkovsky", "Matvei Michkov", "Dougie Hamilton", "Trevor Zegras", "Brayden Point", "Nico Hischier", "Oliver Kapanen"],
         "goalies": ["Andrei Vasilevskiy", "Logan Thompson", "Jakub Dobes"],
-        "teams": ["Colorado Avalanche", "Edmonton Oilers", "Flyers de Philadelphie", "San Jose Sharks"]
+        "teams": ["Colorado Avalanche", "Edmonton Oilers", "Philadelphia Flyers", "San Jose Sharks"]
     },
     {
         "name": "Olivier Jubelin",
@@ -220,13 +201,13 @@ PARTICIPANTS_ROSTERS = [
         "name": "Yanick Tremblay",
         "players": ["Nathan MacKinnon", "Lane Hutson", "David Pastrnak", "Charlie McAvoy", "Cole Caufield", "Miro Heiskanen", "Mikko Rantanen", "Mitch Marner", "Noah Dobson", "Matthew Tkachuk", "Logan Cooley", "Rasmus Andersson", "Juraj Slafkovsky", "Matthew Knies", "Steven Stamkos", "Jared McCann", "Mike Matheson", "Philip Broberg", "Alex Newhook"],
         "goalies": ["Connor Hellebuyck", "Logan Thompson", "Jakub Dobes"],
-        "teams": ["Montréal Canadiens", "Edmonton Oilers", "Los Angeles Kings", "Calgary Flames"]
+        "teams": ["Montreal Canadiens", "Edmonton Oilers", "Los Angeles Kings", "Calgary Flames"]
     },
     {
         "name": "Alexandre Neal",
         "players": ["Connor McDavid", "Lane Hutson", "David Pastrnak", "Nick Suzuki", "William Nylander", "Sidney Crosby", "Mikko Rantanen", "Tage Thompson", "Noah Dobson", "Matthew Tkachuk", "Drake Batherson", "Devon Toews", "Bo Horvat", "Alexander Ovechkin", "Mathew Barzal", "Matt Duchene", "Jake Evans"],
         "goalies": ["Sergei Bobrovsky", "Filip Gustavsson", "Jakub Dobes"],
-        "teams": ["Montréal Canadiens", "Boston Bruins", "Los Angeles Kings", "Winnipeg Jets"]
+        "teams": ["Montreal Canadiens", "Boston Bruins", "Los Angeles Kings", "Winnipeg Jets"]
     },
     {
         "name": "Antoine Duguay",
