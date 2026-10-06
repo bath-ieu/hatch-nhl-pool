@@ -57,6 +57,8 @@
             border-radius: 4px;
             text-transform: uppercase;
         }
+        
+        /* Style des rangs / capsules */
         .standings-list {
             display: flex;
             flex-direction: column;
@@ -70,10 +72,11 @@
             border: 2px solid var(--border-color);
             border-radius: 50px;
             padding: 12px 20px;
-            transition: border-color 0.2s;
+            transition: all 0.2s;
         }
         .pool-row:hover {
             border-color: var(--hatch-orange);
+            background-color: #2a2a2a;
         }
         .rank-badge {
             min-width: 45px;
@@ -97,6 +100,11 @@
             font-weight: bold;
             color: var(--hatch-orange);
             margin-bottom: 4px;
+            cursor: pointer;
+            display: inline-block;
+        }
+        .participant-name:hover {
+            text-decoration: underline;
         }
         .categories-grid {
             display: flex;
@@ -143,6 +151,74 @@
             font-size: 0.8rem;
             color: var(--text-muted);
         }
+
+        /* Fenêtre Modale (Popup des choix) */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0,0,0,0.8);
+            align-items: center;
+            justify-content: center;
+        }
+        .modal-content {
+            background-color: #1e1e1e;
+            border: 2px solid var(--hatch-orange);
+            border-radius: 12px;
+            width: 90%;
+            max-width: 600px;
+            max-height: 80vh;
+            overflow-y: auto;
+            padding: 30px;
+            box-shadow: 0 5px 25px rgba(0,0,0,0.7);
+        }
+        .modal-header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border-bottom: 2px solid var(--border-color);
+            padding-bottom: 15px;
+            margin-bottom: 20px;
+        }
+        .modal-header h2 {
+            margin: 0;
+            color: var(--hatch-orange);
+            font-size: 1.4rem;
+        }
+        .close-btn {
+            background: none;
+            border: none;
+            color: var(--text-muted);
+            font-size: 1.8rem;
+            cursor: pointer;
+        }
+        .close-btn:hover {
+            color: var(--hatch-orange);
+        }
+        .section-title {
+            font-size: 1rem;
+            color: var(--hatch-orange);
+            margin-top: 15px;
+            margin-bottom: 8px;
+            text-transform: uppercase;
+            letter-spacing: 0.5px;
+        }
+        .roster-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+            gap: 8px;
+            font-size: 0.9rem;
+            background: #262626;
+            padding: 12px;
+            border-radius: 8px;
+        }
+        .roster-item {
+            color: var(--text-color);
+        }
     </style>
 </head>
 <body>
@@ -157,187 +233,63 @@
         </div>
 
         <div class="standings-list" id="pool-standings">
-
-            <div class="pool-row">
-                <div class="rank-badge">1</div>
-                <div class="participant-info">
-                    <div class="participant-name">Antoine Duguay</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">100</span></div>
-                        <div class="cat-item">Def <span class="cat-val">8</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">174 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">2</div>
-                <div class="participant-info">
-                    <div class="participant-name">Alondra Rima</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">90</span></div>
-                        <div class="cat-item">Def <span class="cat-val">16</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">172 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">3</div>
-                <div class="participant-info">
-                    <div class="participant-name">Olivier Jubelin</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">90</span></div>
-                        <div class="cat-item">Def <span class="cat-val">16</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">172 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">4</div>
-                <div class="participant-info">
-                    <div class="participant-name">Nicolas St-Pierre</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">85</span></div>
-                        <div class="cat-item">Def <span class="cat-val">20</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">171 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">5</div>
-                <div class="participant-info">
-                    <div class="participant-name">Alain Roy</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">85</span></div>
-                        <div class="cat-item">Def <span class="cat-val">20</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">171 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">6</div>
-                <div class="participant-info">
-                    <div class="participant-name">Jean-Philip Tremblay</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">80</span></div>
-                        <div class="cat-item">Def <span class="cat-val">24</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">170 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">7</div>
-                <div class="participant-info">
-                    <div class="participant-name">Hak Jun Oh</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">80</span></div>
-                        <div class="cat-item">Def <span class="cat-val">24</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">170 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">8</div>
-                <div class="participant-info">
-                    <div class="participant-name">Alexandre Neal</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">75</span></div>
-                        <div class="cat-item">Def <span class="cat-val">28</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">169 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">9</div>
-                <div class="participant-info">
-                    <div class="participant-name">Aya el Khazen</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">70</span></div>
-                        <div class="cat-item">Def <span class="cat-val">32</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">168 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">10</div>
-                <div class="participant-info">
-                    <div class="participant-name">Mathieu Huot</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">70</span></div>
-                        <div class="cat-item">Def <span class="cat-val">32</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">168 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">11</div>
-                <div class="participant-info">
-                    <div class="participant-name">Yanick Tremblay</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">65</span></div>
-                        <div class="cat-item">Def <span class="cat-val">36</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">18</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">48</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">167 pts</span>
-                </div>
-            </div>
+            <!-- Injecté dynamiquement -->
         </div>
 
-        <div class="update-time" id="last-updated">Dernière synchronisation : 2026-10-06 17:48</div>
+        <div class="update-time" id="last-updated">Dernière synchronisation : En attente...</div>
     </div>
 
+    <!-- Modale de détails -->
+    <div id="playerModal" class="modal">
+        <div class="modal-content">
+            <div class="modal-header">
+                <h2 id="modal-participant-name">Nom du participant</h2>
+                <button class="close-btn" onclick="closeModal()">&times;</button>
+            </div>
+            <div id="modal-participant-details">
+                <!-- Contenu injecté dynamiquement -->
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Données injectées automatiquement par le script Python
+        const poolData = /*POOL_DATA_JSON*/;
+
+        function openModal(participantName) {
+            const participant = poolData.find(p => p.name === participantName);
+            if (!participant) return;
+
+            document.getElementById('modal-participant-name').innerText = participant.name;
+            
+            let html = `
+                <div style="margin-bottom: 15px; color: #9ca3af; font-size: 0.95rem;">
+                    <strong>Résumé des points :</strong> Attaquants (${participant.att} pts) | Défenseurs (${participant.def} pts) | Gardiens (${participant.goaler} pts) | Équipes (${participant.equipe} pts) — <strong style="color: #EB8328;">Total : ${participant.total} pts</strong>
+                </div>
+                <div class="section-title">Équipes sélectionnées</div>
+                <div class="roster-grid" style="margin-bottom: 15px;">
+                    ${participant.teams.map(t => `<div class="roster-item">🏒 ${t}</div>`).join('')}
+                </div>
+                <div class="section-title">Alignement des joueurs</div>
+                <div class="roster-grid">
+                    ${participant.players.map(pl => `<div class="roster-item">• ${pl}</div>`).join('')}
+                </div>
+            `;
+
+            document.getElementById('modal-participant-details').innerHTML = html;
+            document.getElementById('playerModal').style.display = 'flex';
+        }
+
+        function closeModal() {
+            document.getElementById('playerModal').style.display = 'none';
+        }
+
+        window.onclick = function(event) {
+            const modal = document.getElementById('playerModal');
+            if (event.target === modal) {
+                closeModal();
+            }
+        }
+    </script>
 </body>
 </html>
