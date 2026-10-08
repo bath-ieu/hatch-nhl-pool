@@ -1,13 +1,13 @@
 {
-    "last_update": "2026-10-07 08:09",
+    "last_update": "2026-10-08 08:09",
     "participants": [
         {
             "name": "Mathieu Huot",
-            "att": 85,
+            "att": 89,
             "def": 3,
             "goaler": 0,
             "equipe": 8,
-            "total": 96,
+            "total": 100,
             "roster_details": {
                 "players": [
                     {
@@ -21,8 +21,8 @@
                         "name": "Leon Draisaitl",
                         "position": "A",
                         "goals": 3,
-                        "assists": 2,
-                        "points": 5
+                        "assists": 6,
+                        "points": 9
                     },
                     {
                         "name": "Rasmus Dahlin",
@@ -188,11 +188,11 @@
         },
         {
             "name": "Jean-Philip Tremblay",
-            "att": 112,
+            "att": 115,
             "def": 11,
             "goaler": 23,
-            "equipe": 10,
-            "total": 156,
+            "equipe": 12,
+            "total": 161,
             "roster_details": {
                 "players": [
                     {
@@ -269,8 +269,8 @@
                         "name": "Leo Carlsson",
                         "position": "A",
                         "goals": 1,
-                        "assists": 4,
-                        "points": 5
+                        "assists": 6,
+                        "points": 7
                     },
                     {
                         "name": "Rasmus Andersson",
@@ -311,8 +311,8 @@
                         "name": "Brayden Point",
                         "position": "A",
                         "goals": 0,
-                        "assists": 2,
-                        "points": 2
+                        "assists": 3,
+                        "points": 3
                     },
                     {
                         "name": "J.T. Miller",
@@ -384,21 +384,21 @@
                     {
                         "name": "Winnipeg Jets",
                         "abbrev": "WPG",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 1,
-                        "points": 5
+                        "points": 7
                     }
                 ]
             }
         },
         {
             "name": "Nicolas St-Pierre",
-            "att": 74,
+            "att": 76,
             "def": 15,
             "goaler": 0,
             "equipe": 8,
-            "total": 97,
+            "total": 99,
             "roster_details": {
                 "players": [
                     {
@@ -475,8 +475,8 @@
                         "name": "Leo Carlsson",
                         "position": "A",
                         "goals": 1,
-                        "assists": 4,
-                        "points": 5
+                        "assists": 6,
+                        "points": 7
                     },
                     {
                         "name": "Dylan Larkin",
@@ -593,19 +593,19 @@
         },
         {
             "name": "Alondra Rima",
-            "att": 38,
+            "att": 41,
             "def": 5,
             "goaler": 23,
-            "equipe": 9,
-            "total": 75,
+            "equipe": 11,
+            "total": 80,
             "roster_details": {
                 "players": [
                     {
                         "name": "Connor McDavid",
                         "position": "A",
-                        "goals": 2,
-                        "assists": 7,
-                        "points": 9
+                        "goals": 3,
+                        "assists": 9,
+                        "points": 12
                     },
                     {
                         "name": "Macklin Celebrini",
@@ -752,10 +752,10 @@
                     {
                         "name": "Edmonton Oilers",
                         "abbrev": "EDM",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 1,
-                        "points": 5
+                        "points": 7
                     },
                     {
                         "name": "New York Islanders",
@@ -963,11 +963,11 @@
         },
         {
             "name": "Alain Roy",
-            "att": 31,
+            "att": 32,
             "def": 67,
             "goaler": 0,
-            "equipe": 11,
-            "total": 109,
+            "equipe": 13,
+            "total": 112,
             "roster_details": {
                 "players": [
                     {
@@ -1086,8 +1086,8 @@
                         "name": "Brayden Point",
                         "position": "A",
                         "goals": 0,
-                        "assists": 2,
-                        "points": 2
+                        "assists": 3,
+                        "points": 3
                     },
                     {
                         "name": "Nico Hischier",
@@ -1136,10 +1136,10 @@
                     {
                         "name": "Edmonton Oilers",
                         "abbrev": "EDM",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 1,
-                        "points": 5
+                        "points": 7
                     },
                     {
                         "name": "Philadelphia Flyers",
@@ -1162,11 +1162,11 @@
         },
         {
             "name": "Olivier Jubelin",
-            "att": 100,
+            "att": 107,
             "def": 14,
             "goaler": 18,
             "equipe": 10,
-            "total": 142,
+            "total": 149,
             "roster_details": {
                 "players": [
                     {
@@ -1180,8 +1180,8 @@
                         "name": "Leon Draisaitl",
                         "position": "A",
                         "goals": 3,
-                        "assists": 2,
-                        "points": 5
+                        "assists": 6,
+                        "points": 9
                     },
                     {
                         "name": "Kirill Kaprizov",
@@ -1200,9 +1200,9 @@
                     {
                         "name": "Kyle Connor",
                         "position": "A",
-                        "goals": 3,
+                        "goals": 5,
                         "assists": 2,
-                        "points": 5
+                        "points": 7
                     },
                     {
                         "name": "Artemi Panarin",
@@ -1292,8 +1292,8 @@
                         "name": "Brayden Point",
                         "position": "A",
                         "goals": 0,
-                        "assists": 2,
-                        "points": 2
+                        "assists": 3,
+                        "points": 3
                     },
                     {
                         "name": "Nico Hischier",
@@ -1371,8 +1371,8 @@
             "att": 25,
             "def": 7,
             "goaler": 0,
-            "equipe": 9,
-            "total": 41,
+            "equipe": 11,
+            "total": 43,
             "roster_details": {
                 "players": [
                     {
@@ -1541,10 +1541,10 @@
                     {
                         "name": "Edmonton Oilers",
                         "abbrev": "EDM",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 1,
-                        "points": 5
+                        "points": 7
                     },
                     {
                         "name": "Los Angeles Kings",
@@ -1567,19 +1567,19 @@
         },
         {
             "name": "Alexandre Neal",
-            "att": 81,
+            "att": 84,
             "def": 3,
             "goaler": 23,
-            "equipe": 11,
-            "total": 118,
+            "equipe": 13,
+            "total": 123,
             "roster_details": {
                 "players": [
                     {
                         "name": "Connor McDavid",
                         "position": "A",
-                        "goals": 2,
-                        "assists": 7,
-                        "points": 9
+                        "goals": 3,
+                        "assists": 9,
+                        "points": 12
                     },
                     {
                         "name": "Lane Hutson",
@@ -1742,29 +1742,29 @@
                     {
                         "name": "Winnipeg Jets",
                         "abbrev": "WPG",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 1,
-                        "points": 5
+                        "points": 7
                     }
                 ]
             }
         },
         {
             "name": "Antoine Duguay",
-            "att": 86,
+            "att": 89,
             "def": 4,
             "goaler": 0,
             "equipe": 7,
-            "total": 97,
+            "total": 100,
             "roster_details": {
                 "players": [
                     {
                         "name": "Connor McDavid",
                         "position": "A",
-                        "goals": 2,
-                        "assists": 7,
-                        "points": 9
+                        "goals": 3,
+                        "assists": 9,
+                        "points": 12
                     },
                     {
                         "name": "Quinn Hughes",
@@ -1958,11 +1958,11 @@
         },
         {
             "name": "Hak Jun Oh",
-            "att": 35,
+            "att": 36,
             "def": 58,
             "goaler": 18,
-            "equipe": 9,
-            "total": 120,
+            "equipe": 11,
+            "total": 123,
             "roster_details": {
                 "players": [
                     {
@@ -2088,8 +2088,8 @@
                         "name": "Brayden Point",
                         "position": "A",
                         "goals": 0,
-                        "assists": 2,
-                        "points": 2
+                        "assists": 3,
+                        "points": 3
                     },
                     {
                         "name": "Zachary Bolduc",
@@ -2131,10 +2131,10 @@
                     {
                         "name": "Edmonton Oilers",
                         "abbrev": "EDM",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 1,
-                        "points": 5
+                        "points": 7
                     },
                     {
                         "name": "New Jersey Devils",
