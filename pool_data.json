@@ -1,21 +1,21 @@
 {
-    "last_update": "2026-10-08 08:09",
+    "last_update": "2026-10-09 08:08",
     "participants": [
         {
             "name": "Mathieu Huot",
-            "att": 89,
-            "def": 3,
+            "att": 91,
+            "def": 7,
             "goaler": 0,
-            "equipe": 8,
-            "total": 100,
+            "equipe": 12,
+            "total": 110,
             "roster_details": {
                 "players": [
                     {
                         "name": "Evan Bouchard",
                         "position": "D",
                         "goals": 0,
-                        "assists": 0,
-                        "points": 0
+                        "assists": 1,
+                        "points": 1
                     },
                     {
                         "name": "Leon Draisaitl",
@@ -28,8 +28,8 @@
                         "name": "Rasmus Dahlin",
                         "position": "D",
                         "goals": 0,
-                        "assists": 0,
-                        "points": 0
+                        "assists": 1,
+                        "points": 1
                     },
                     {
                         "name": "Martin Necas",
@@ -55,9 +55,9 @@
                     {
                         "name": "John Carlson",
                         "position": "D",
-                        "goals": 0,
+                        "goals": 2,
                         "assists": 2,
-                        "points": 2
+                        "points": 4
                     },
                     {
                         "name": "Sam Reinhart",
@@ -77,8 +77,8 @@
                         "name": "Filip Forsberg",
                         "position": "A",
                         "goals": 0,
-                        "assists": 3,
-                        "points": 3
+                        "assists": 4,
+                        "points": 4
                     },
                     {
                         "name": "Dylan Larkin",
@@ -125,9 +125,9 @@
                     {
                         "name": "Alex Newhook",
                         "position": "A",
-                        "goals": 0,
+                        "goals": 1,
                         "assists": 1,
-                        "points": 1
+                        "points": 2
                     }
                 ],
                 "goalies": [
@@ -154,18 +154,18 @@
                     {
                         "name": "Colorado Avalanche",
                         "abbrev": "COL",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 0,
-                        "points": 4
+                        "points": 6
                     },
                     {
                         "name": "Tampa Bay Lightning",
                         "abbrev": "TBL",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 0,
-                        "points": 4
+                        "points": 6
                     },
                     {
                         "name": "New Jersey Devils",
@@ -188,11 +188,11 @@
         },
         {
             "name": "Jean-Philip Tremblay",
-            "att": 115,
-            "def": 11,
+            "att": 119,
+            "def": 14,
             "goaler": 23,
             "equipe": 12,
-            "total": 161,
+            "total": 168,
             "roster_details": {
                 "players": [
                     {
@@ -213,15 +213,15 @@
                         "name": "Rasmus Dahlin",
                         "position": "D",
                         "goals": 0,
-                        "assists": 0,
-                        "points": 0
+                        "assists": 1,
+                        "points": 1
                     },
                     {
                         "name": "Nick Suzuki",
                         "position": "A",
-                        "goals": 2,
+                        "goals": 3,
                         "assists": 4,
-                        "points": 6
+                        "points": 7
                     },
                     {
                         "name": "Cole Caufield",
@@ -248,15 +248,15 @@
                         "name": "Mitch Marner",
                         "position": "A",
                         "goals": 1,
-                        "assists": 1,
-                        "points": 2
+                        "assists": 2,
+                        "points": 3
                     },
                     {
                         "name": "Sebastian Aho",
                         "position": "A",
                         "goals": 4,
-                        "assists": 3,
-                        "points": 7
+                        "assists": 4,
+                        "points": 8
                     },
                     {
                         "name": "Cutter Gauthier",
@@ -275,9 +275,9 @@
                     {
                         "name": "Rasmus Andersson",
                         "position": "D",
-                        "goals": 0,
+                        "goals": 2,
                         "assists": 1,
-                        "points": 1
+                        "points": 3
                     },
                     {
                         "name": "Juraj Slafkovsky",
@@ -331,9 +331,9 @@
                     {
                         "name": "Alex Newhook",
                         "position": "A",
-                        "goals": 0,
+                        "goals": 1,
                         "assists": 1,
-                        "points": 1
+                        "points": 2
                     }
                 ],
                 "goalies": [
@@ -394,11 +394,11 @@
         },
         {
             "name": "Nicolas St-Pierre",
-            "att": 76,
-            "def": 15,
+            "att": 82,
+            "def": 17,
             "goaler": 0,
-            "equipe": 8,
-            "total": 99,
+            "equipe": 14,
+            "total": 113,
             "roster_details": {
                 "players": [
                     {
@@ -411,23 +411,23 @@
                     {
                         "name": "Quinn Hughes",
                         "position": "D",
-                        "goals": 1,
-                        "assists": 3,
-                        "points": 4
+                        "goals": 2,
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "David Pastrnak",
                         "position": "A",
-                        "goals": 0,
-                        "assists": 2,
-                        "points": 2
+                        "goals": 2,
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "Auston Matthews",
                         "position": "A",
                         "goals": 2,
-                        "assists": 3,
-                        "points": 5
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "William Nylander",
@@ -454,8 +454,8 @@
                         "name": "Mitch Marner",
                         "position": "A",
                         "goals": 1,
-                        "assists": 1,
-                        "points": 2
+                        "assists": 2,
+                        "points": 3
                     },
                     {
                         "name": "Adrian Kempe",
@@ -559,26 +559,26 @@
                     {
                         "name": "Dallas Stars",
                         "abbrev": "DAL",
-                        "rw": 1,
-                        "row": 0,
-                        "otl": 0,
-                        "points": 2
-                    },
-                    {
-                        "name": "Tampa Bay Lightning",
-                        "abbrev": "TBL",
                         "rw": 2,
                         "row": 0,
                         "otl": 0,
                         "points": 4
                     },
                     {
-                        "name": "New York Islanders",
-                        "abbrev": "NYI",
-                        "rw": 1,
+                        "name": "Tampa Bay Lightning",
+                        "abbrev": "TBL",
+                        "rw": 3,
                         "row": 0,
                         "otl": 0,
-                        "points": 2
+                        "points": 6
+                    },
+                    {
+                        "name": "New York Islanders",
+                        "abbrev": "NYI",
+                        "rw": 2,
+                        "row": 0,
+                        "otl": 0,
+                        "points": 4
                     },
                     {
                         "name": "San Jose Sharks",
@@ -593,11 +593,11 @@
         },
         {
             "name": "Alondra Rima",
-            "att": 41,
+            "att": 46,
             "def": 5,
             "goaler": 23,
-            "equipe": 11,
-            "total": 80,
+            "equipe": 15,
+            "total": 89,
             "roster_details": {
                 "players": [
                     {
@@ -624,9 +624,9 @@
                     {
                         "name": "Nick Suzuki",
                         "position": "A",
-                        "goals": 2,
+                        "goals": 3,
                         "assists": 4,
-                        "points": 6
+                        "points": 7
                     },
                     {
                         "name": "Matthew Boldy",
@@ -660,8 +660,8 @@
                         "name": "Sebastian Aho",
                         "position": "A",
                         "goals": 4,
-                        "assists": 3,
-                        "points": 7
+                        "assists": 4,
+                        "points": 8
                     },
                     {
                         "name": "Dylan Guenther",
@@ -687,9 +687,9 @@
                     {
                         "name": "Bo Horvat",
                         "position": "A",
-                        "goals": 2,
+                        "goals": 4,
                         "assists": 1,
-                        "points": 3
+                        "points": 5
                     },
                     {
                         "name": "Brock Nelson",
@@ -715,9 +715,9 @@
                     {
                         "name": "Alex Newhook",
                         "position": "A",
-                        "goals": 0,
+                        "goals": 1,
                         "assists": 1,
-                        "points": 1
+                        "points": 2
                     }
                 ],
                 "goalies": [
@@ -744,10 +744,10 @@
                     {
                         "name": "Dallas Stars",
                         "abbrev": "DAL",
-                        "rw": 1,
+                        "rw": 2,
                         "row": 0,
                         "otl": 0,
-                        "points": 2
+                        "points": 4
                     },
                     {
                         "name": "Edmonton Oilers",
@@ -760,10 +760,10 @@
                     {
                         "name": "New York Islanders",
                         "abbrev": "NYI",
-                        "rw": 1,
+                        "rw": 2,
                         "row": 0,
                         "otl": 0,
-                        "points": 2
+                        "points": 4
                     },
                     {
                         "name": "San Jose Sharks",
@@ -778,19 +778,19 @@
         },
         {
             "name": "Aya el Khazen",
-            "att": 95,
-            "def": 8,
+            "att": 107,
+            "def": 12,
             "goaler": 0,
-            "equipe": 17,
-            "total": 120,
+            "equipe": 19,
+            "total": 138,
             "roster_details": {
                 "players": [
                     {
                         "name": "Nikita Kucherov",
                         "position": "A",
                         "goals": 1,
-                        "assists": 3,
-                        "points": 4
+                        "assists": 5,
+                        "points": 6
                     },
                     {
                         "name": "Lane Hutson",
@@ -802,16 +802,16 @@
                     {
                         "name": "David Pastrnak",
                         "position": "A",
-                        "goals": 0,
-                        "assists": 2,
-                        "points": 2
+                        "goals": 2,
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "Nick Suzuki",
                         "position": "A",
-                        "goals": 2,
+                        "goals": 3,
                         "assists": 4,
-                        "points": 6
+                        "points": 7
                     },
                     {
                         "name": "Cole Caufield",
@@ -830,9 +830,9 @@
                     {
                         "name": "John Carlson",
                         "position": "D",
-                        "goals": 0,
+                        "goals": 2,
                         "assists": 2,
-                        "points": 2
+                        "points": 4
                     },
                     {
                         "name": "Seth Jarvis",
@@ -858,23 +858,23 @@
                     {
                         "name": "Rasmus Andersson",
                         "position": "D",
-                        "goals": 0,
+                        "goals": 2,
                         "assists": 1,
-                        "points": 1
+                        "points": 3
                     },
                     {
                         "name": "Andrei Svechnikov",
                         "position": "A",
-                        "goals": 1,
+                        "goals": 3,
                         "assists": 3,
-                        "points": 4
+                        "points": 6
                     },
                     {
                         "name": "Steven Stamkos",
                         "position": "A",
                         "goals": 3,
-                        "assists": 1,
-                        "points": 4
+                        "assists": 3,
+                        "points": 6
                     },
                     {
                         "name": "Thomas Harley",
@@ -900,9 +900,9 @@
                     {
                         "name": "Alex Newhook",
                         "position": "A",
-                        "goals": 0,
+                        "goals": 1,
                         "assists": 1,
-                        "points": 1
+                        "points": 2
                     }
                 ],
                 "goalies": [
@@ -937,10 +937,10 @@
                     {
                         "name": "Tampa Bay Lightning",
                         "abbrev": "TBL",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 0,
-                        "points": 4
+                        "points": 6
                     },
                     {
                         "name": "Columbus Blue Jackets",
@@ -963,11 +963,11 @@
         },
         {
             "name": "Alain Roy",
-            "att": 32,
+            "att": 38,
             "def": 67,
             "goaler": 0,
-            "equipe": 13,
-            "total": 112,
+            "equipe": 15,
+            "total": 120,
             "roster_details": {
                 "players": [
                     {
@@ -987,16 +987,16 @@
                     {
                         "name": "David Pastrnak",
                         "position": "A",
-                        "goals": 0,
-                        "assists": 2,
-                        "points": 2
+                        "goals": 2,
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "Nick Suzuki",
                         "position": "A",
-                        "goals": 2,
+                        "goals": 3,
                         "assists": 4,
-                        "points": 6
+                        "points": 7
                     },
                     {
                         "name": "Cole Caufield",
@@ -1030,8 +1030,8 @@
                         "name": "Sebastian Aho",
                         "position": "A",
                         "goals": 4,
-                        "assists": 3,
-                        "points": 7
+                        "assists": 4,
+                        "points": 8
                     },
                     {
                         "name": "Matthew Tkachuk",
@@ -1128,10 +1128,10 @@
                     {
                         "name": "Colorado Avalanche",
                         "abbrev": "COL",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 0,
-                        "points": 4
+                        "points": 6
                     },
                     {
                         "name": "Edmonton Oilers",
@@ -1162,11 +1162,11 @@
         },
         {
             "name": "Olivier Jubelin",
-            "att": 107,
+            "att": 111,
             "def": 14,
             "goaler": 18,
-            "equipe": 10,
-            "total": 149,
+            "equipe": 14,
+            "total": 157,
             "roster_details": {
                 "players": [
                     {
@@ -1187,8 +1187,8 @@
                         "name": "Kirill Kaprizov",
                         "position": "A",
                         "goals": 3,
-                        "assists": 0,
-                        "points": 3
+                        "assists": 1,
+                        "points": 4
                     },
                     {
                         "name": "Charlie McAvoy",
@@ -1215,8 +1215,8 @@
                         "name": "Jake Guentzel",
                         "position": "A",
                         "goals": 1,
-                        "assists": 1,
-                        "points": 2
+                        "assists": 2,
+                        "points": 3
                     },
                     {
                         "name": "Erik Karlsson",
@@ -1243,8 +1243,8 @@
                         "name": "Filip Forsberg",
                         "position": "A",
                         "goals": 0,
-                        "assists": 3,
-                        "points": 3
+                        "assists": 4,
+                        "points": 4
                     },
                     {
                         "name": "Dylan Larkin",
@@ -1256,9 +1256,9 @@
                     {
                         "name": "Will Smith",
                         "position": "A",
-                        "goals": 1,
+                        "goals": 2,
                         "assists": 2,
-                        "points": 3
+                        "points": 4
                     },
                     {
                         "name": "Nick Schmaltz",
@@ -1334,10 +1334,10 @@
                     {
                         "name": "Carolina Hurricanes",
                         "abbrev": "CAR",
-                        "rw": 1,
+                        "rw": 2,
                         "row": 0,
                         "otl": 1,
-                        "points": 3
+                        "points": 5
                     },
                     {
                         "name": "Buffalo Sabres",
@@ -1358,29 +1358,29 @@
                     {
                         "name": "Nashville Predators",
                         "abbrev": "NSH",
-                        "rw": 1,
+                        "rw": 2,
                         "row": 0,
                         "otl": 1,
-                        "points": 3
+                        "points": 5
                     }
                 ]
             }
         },
         {
             "name": "Yanick Tremblay",
-            "att": 25,
-            "def": 7,
+            "att": 40,
+            "def": 9,
             "goaler": 0,
             "equipe": 11,
-            "total": 43,
+            "total": 60,
             "roster_details": {
                 "players": [
                     {
                         "name": "Nathan MacKinnon",
                         "position": "A",
-                        "goals": 2,
-                        "assists": 3,
-                        "points": 5
+                        "goals": 3,
+                        "assists": 5,
+                        "points": 8
                     },
                     {
                         "name": "Lane Hutson",
@@ -1392,9 +1392,9 @@
                     {
                         "name": "David Pastrnak",
                         "position": "A",
-                        "goals": 0,
-                        "assists": 2,
-                        "points": 2
+                        "goals": 2,
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "Charlie McAvoy",
@@ -1420,16 +1420,16 @@
                     {
                         "name": "Mikko Rantanen",
                         "position": "A",
-                        "goals": 1,
-                        "assists": 1,
-                        "points": 2
+                        "goals": 2,
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "Mitch Marner",
                         "position": "A",
                         "goals": 1,
-                        "assists": 1,
-                        "points": 2
+                        "assists": 2,
+                        "points": 3
                     },
                     {
                         "name": "Noah Dobson",
@@ -1455,9 +1455,9 @@
                     {
                         "name": "Rasmus Andersson",
                         "position": "D",
-                        "goals": 0,
+                        "goals": 2,
                         "assists": 1,
-                        "points": 1
+                        "points": 3
                     },
                     {
                         "name": "Juraj Slafkovsky",
@@ -1477,8 +1477,8 @@
                         "name": "Steven Stamkos",
                         "position": "A",
                         "goals": 3,
-                        "assists": 1,
-                        "points": 4
+                        "assists": 3,
+                        "points": 6
                     },
                     {
                         "name": "Jared McCann",
@@ -1504,9 +1504,9 @@
                     {
                         "name": "Alex Newhook",
                         "position": "A",
-                        "goals": 0,
+                        "goals": 1,
                         "assists": 1,
-                        "points": 1
+                        "points": 2
                     }
                 ],
                 "goalies": [
@@ -1567,11 +1567,11 @@
         },
         {
             "name": "Alexandre Neal",
-            "att": 84,
+            "att": 96,
             "def": 3,
             "goaler": 23,
-            "equipe": 13,
-            "total": 123,
+            "equipe": 15,
+            "total": 137,
             "roster_details": {
                 "players": [
                     {
@@ -1591,16 +1591,16 @@
                     {
                         "name": "David Pastrnak",
                         "position": "A",
-                        "goals": 0,
-                        "assists": 2,
-                        "points": 2
+                        "goals": 2,
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "Nick Suzuki",
                         "position": "A",
-                        "goals": 2,
+                        "goals": 3,
                         "assists": 4,
-                        "points": 6
+                        "points": 7
                     },
                     {
                         "name": "William Nylander",
@@ -1619,9 +1619,9 @@
                     {
                         "name": "Mikko Rantanen",
                         "position": "A",
-                        "goals": 1,
-                        "assists": 1,
-                        "points": 2
+                        "goals": 2,
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "Tage Thompson",
@@ -1661,9 +1661,9 @@
                     {
                         "name": "Bo Horvat",
                         "position": "A",
-                        "goals": 2,
+                        "goals": 4,
                         "assists": 1,
-                        "points": 3
+                        "points": 5
                     },
                     {
                         "name": "Alexander Ovechkin",
@@ -1676,8 +1676,8 @@
                         "name": "Mathew Barzal",
                         "position": "A",
                         "goals": 0,
-                        "assists": 2,
-                        "points": 2
+                        "assists": 3,
+                        "points": 3
                     },
                     {
                         "name": "Matt Duchene",
@@ -1726,10 +1726,10 @@
                     {
                         "name": "Boston Bruins",
                         "abbrev": "BOS",
-                        "rw": 1,
+                        "rw": 2,
                         "row": 0,
                         "otl": 0,
-                        "points": 2
+                        "points": 4
                     },
                     {
                         "name": "Los Angeles Kings",
@@ -1752,11 +1752,11 @@
         },
         {
             "name": "Antoine Duguay",
-            "att": 89,
-            "def": 4,
+            "att": 96,
+            "def": 6,
             "goaler": 0,
-            "equipe": 7,
-            "total": 100,
+            "equipe": 9,
+            "total": 111,
             "roster_details": {
                 "players": [
                     {
@@ -1769,9 +1769,9 @@
                     {
                         "name": "Quinn Hughes",
                         "position": "D",
-                        "goals": 1,
-                        "assists": 3,
-                        "points": 4
+                        "goals": 2,
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "Jason Robertson",
@@ -1783,9 +1783,9 @@
                     {
                         "name": "Nick Suzuki",
                         "position": "A",
-                        "goals": 2,
+                        "goals": 3,
                         "assists": 4,
-                        "points": 6
+                        "points": 7
                     },
                     {
                         "name": "Cole Caufield",
@@ -1804,9 +1804,9 @@
                     {
                         "name": "Jack Eichel",
                         "position": "A",
-                        "goals": 2,
-                        "assists": 8,
-                        "points": 10
+                        "goals": 3,
+                        "assists": 9,
+                        "points": 12
                     },
                     {
                         "name": "Aleksander Barkov",
@@ -1840,8 +1840,8 @@
                         "name": "Filip Forsberg",
                         "position": "A",
                         "goals": 0,
-                        "assists": 3,
-                        "points": 3
+                        "assists": 4,
+                        "points": 4
                     },
                     {
                         "name": "John Tavares",
@@ -1868,8 +1868,8 @@
                         "name": "Steven Stamkos",
                         "position": "A",
                         "goals": 3,
-                        "assists": 1,
-                        "points": 4
+                        "assists": 3,
+                        "points": 6
                     },
                     {
                         "name": "Jared McCann",
@@ -1895,9 +1895,9 @@
                     {
                         "name": "Alex Newhook",
                         "position": "A",
-                        "goals": 0,
+                        "goals": 1,
                         "assists": 1,
-                        "points": 1
+                        "points": 2
                     }
                 ],
                 "goalies": [
@@ -1924,10 +1924,10 @@
                     {
                         "name": "Colorado Avalanche",
                         "abbrev": "COL",
-                        "rw": 2,
+                        "rw": 3,
                         "row": 0,
                         "otl": 0,
-                        "points": 4
+                        "points": 6
                     },
                     {
                         "name": "Buffalo Sabres",
@@ -1958,19 +1958,19 @@
         },
         {
             "name": "Hak Jun Oh",
-            "att": 36,
-            "def": 58,
+            "att": 47,
+            "def": 61,
             "goaler": 18,
             "equipe": 11,
-            "total": 123,
+            "total": 137,
             "roster_details": {
                 "players": [
                     {
                         "name": "Nathan MacKinnon",
                         "position": "A",
-                        "goals": 2,
-                        "assists": 3,
-                        "points": 5
+                        "goals": 3,
+                        "assists": 5,
+                        "points": 8
                     },
                     {
                         "name": "Macklin Celebrini",
@@ -1983,8 +1983,8 @@
                         "name": "Rasmus Dahlin",
                         "position": "D",
                         "goals": 0,
-                        "assists": 0,
-                        "points": 0
+                        "assists": 1,
+                        "points": 1
                     },
                     {
                         "name": "Jack Hughes",
@@ -2010,16 +2010,16 @@
                     {
                         "name": "Mikko Rantanen",
                         "position": "A",
-                        "goals": 1,
-                        "assists": 1,
-                        "points": 2
+                        "goals": 2,
+                        "assists": 4,
+                        "points": 6
                     },
                     {
                         "name": "Jake Guentzel",
                         "position": "A",
                         "goals": 1,
-                        "assists": 1,
-                        "points": 2
+                        "assists": 2,
+                        "points": 3
                     },
                     {
                         "name": "Brady Tkachuk",
@@ -2046,22 +2046,22 @@
                         "name": "Filip Forsberg",
                         "position": "A",
                         "goals": 0,
-                        "assists": 3,
-                        "points": 3
+                        "assists": 4,
+                        "points": 4
                     },
                     {
                         "name": "Rasmus Andersson",
                         "position": "D",
-                        "goals": 0,
+                        "goals": 2,
                         "assists": 1,
-                        "points": 1
+                        "points": 3
                     },
                     {
                         "name": "Andrei Svechnikov",
                         "position": "A",
-                        "goals": 1,
+                        "goals": 3,
                         "assists": 3,
-                        "points": 4
+                        "points": 6
                     },
                     {
                         "name": "Kirill Marchenko",
