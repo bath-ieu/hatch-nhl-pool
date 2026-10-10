@@ -1,13 +1,13 @@
 {
-    "last_update": "2026-10-09 08:08",
+    "last_update": "2026-10-10 08:06",
     "participants": [
         {
             "name": "Mathieu Huot",
-            "att": 91,
+            "att": 92,
             "def": 7,
             "goaler": 0,
             "equipe": 12,
-            "total": 110,
+            "total": 111,
             "roster_details": {
                 "players": [
                     {
@@ -90,9 +90,9 @@
                     {
                         "name": "Lucas Raymond",
                         "position": "A",
-                        "goals": 3,
+                        "goals": 4,
                         "assists": 2,
-                        "points": 5
+                        "points": 6
                     },
                     {
                         "name": "Pavel Dorofeyev",
@@ -188,11 +188,11 @@
         },
         {
             "name": "Jean-Philip Tremblay",
-            "att": 119,
+            "att": 120,
             "def": 14,
             "goaler": 23,
             "equipe": 12,
-            "total": 168,
+            "total": 169,
             "roster_details": {
                 "players": [
                     {
@@ -311,8 +311,8 @@
                         "name": "Brayden Point",
                         "position": "A",
                         "goals": 0,
-                        "assists": 3,
-                        "points": 3
+                        "assists": 4,
+                        "points": 4
                     },
                     {
                         "name": "J.T. Miller",
@@ -395,10 +395,10 @@
         {
             "name": "Nicolas St-Pierre",
             "att": 82,
-            "def": 17,
+            "def": 18,
             "goaler": 0,
             "equipe": 14,
-            "total": 113,
+            "total": 114,
             "roster_details": {
                 "players": [
                     {
@@ -510,8 +510,8 @@
                         "name": "Thomas Harley",
                         "position": "D",
                         "goals": 0,
-                        "assists": 1,
-                        "points": 1
+                        "assists": 2,
+                        "points": 2
                     },
                     {
                         "name": "Matt Duchene",
@@ -594,10 +594,10 @@
         {
             "name": "Alondra Rima",
             "att": 46,
-            "def": 5,
+            "def": 7,
             "goaler": 23,
             "equipe": 15,
-            "total": 89,
+            "total": 91,
             "roster_details": {
                 "players": [
                     {
@@ -653,8 +653,8 @@
                         "name": "Erik Karlsson",
                         "position": "D",
                         "goals": 0,
-                        "assists": 4,
-                        "points": 4
+                        "assists": 5,
+                        "points": 5
                     },
                     {
                         "name": "Sebastian Aho",
@@ -702,8 +702,8 @@
                         "name": "Thomas Harley",
                         "position": "D",
                         "goals": 0,
-                        "assists": 1,
-                        "points": 1
+                        "assists": 2,
+                        "points": 2
                     },
                     {
                         "name": "Logan Stankoven",
@@ -779,10 +779,10 @@
         {
             "name": "Aya el Khazen",
             "att": 107,
-            "def": 12,
+            "def": 13,
             "goaler": 0,
             "equipe": 19,
-            "total": 138,
+            "total": 139,
             "roster_details": {
                 "players": [
                     {
@@ -880,8 +880,8 @@
                         "name": "Thomas Harley",
                         "position": "D",
                         "goals": 0,
-                        "assists": 1,
-                        "points": 1
+                        "assists": 2,
+                        "points": 2
                     },
                     {
                         "name": "Mike Matheson",
@@ -963,11 +963,11 @@
         },
         {
             "name": "Alain Roy",
-            "att": 38,
+            "att": 39,
             "def": 67,
             "goaler": 0,
             "equipe": 15,
-            "total": 120,
+            "total": 121,
             "roster_details": {
                 "players": [
                     {
@@ -1086,8 +1086,8 @@
                         "name": "Brayden Point",
                         "position": "A",
                         "goals": 0,
-                        "assists": 3,
-                        "points": 3
+                        "assists": 4,
+                        "points": 4
                     },
                     {
                         "name": "Nico Hischier",
@@ -1162,11 +1162,11 @@
         },
         {
             "name": "Olivier Jubelin",
-            "att": 111,
-            "def": 14,
+            "att": 113,
+            "def": 15,
             "goaler": 18,
-            "equipe": 14,
-            "total": 157,
+            "equipe": 15,
+            "total": 161,
             "roster_details": {
                 "players": [
                     {
@@ -1200,9 +1200,9 @@
                     {
                         "name": "Kyle Connor",
                         "position": "A",
-                        "goals": 5,
+                        "goals": 6,
                         "assists": 2,
-                        "points": 7
+                        "points": 8
                     },
                     {
                         "name": "Artemi Panarin",
@@ -1222,8 +1222,8 @@
                         "name": "Erik Karlsson",
                         "position": "D",
                         "goals": 0,
-                        "assists": 4,
-                        "points": 4
+                        "assists": 5,
+                        "points": 5
                     },
                     {
                         "name": "Sam Reinhart",
@@ -1292,8 +1292,8 @@
                         "name": "Brayden Point",
                         "position": "A",
                         "goals": 0,
-                        "assists": 3,
-                        "points": 3
+                        "assists": 4,
+                        "points": 4
                     },
                     {
                         "name": "Nico Hischier",
@@ -1352,8 +1352,8 @@
                         "abbrev": "PIT",
                         "rw": 1,
                         "row": 0,
-                        "otl": 0,
-                        "points": 2
+                        "otl": 1,
+                        "points": 3
                     },
                     {
                         "name": "Nashville Predators",
@@ -1958,11 +1958,11 @@
         },
         {
             "name": "Hak Jun Oh",
-            "att": 47,
-            "def": 61,
+            "att": 48,
+            "def": 62,
             "goaler": 18,
             "equipe": 11,
-            "total": 137,
+            "total": 139,
             "roster_details": {
                 "players": [
                     {
@@ -2081,15 +2081,15 @@
                         "name": "Thomas Harley",
                         "position": "D",
                         "goals": 0,
-                        "assists": 1,
-                        "points": 1
+                        "assists": 2,
+                        "points": 2
                     },
                     {
                         "name": "Brayden Point",
                         "position": "A",
                         "goals": 0,
-                        "assists": 3,
-                        "points": 3
+                        "assists": 4,
+                        "points": 4
                     },
                     {
                         "name": "Zachary Bolduc",
