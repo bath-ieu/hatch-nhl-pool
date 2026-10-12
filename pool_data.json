@@ -1,13 +1,13 @@
 {
-    "last_update": "2026-10-11 08:07",
+    "last_update": "2026-10-12 08:10",
     "participants": [
         {
             "name": "Mathieu Huot",
-            "att": 98,
+            "att": 100,
             "def": 9,
             "goaler": 0,
             "equipe": 16,
-            "total": 123,
+            "total": 125,
             "roster_details": {
                 "players": [
                     {
@@ -90,9 +90,9 @@
                     {
                         "name": "Lucas Raymond",
                         "position": "A",
-                        "goals": 4,
-                        "assists": 2,
-                        "points": 6
+                        "goals": 5,
+                        "assists": 3,
+                        "points": 8
                     },
                     {
                         "name": "Pavel Dorofeyev",
@@ -188,11 +188,11 @@
         },
         {
             "name": "Jean-Philip Tremblay",
-            "att": 124,
-            "def": 16,
+            "att": 128,
+            "def": 17,
             "goaler": 2,
             "equipe": 14,
-            "total": 156,
+            "total": 161,
             "roster_details": {
                 "players": [
                     {
@@ -254,9 +254,9 @@
                     {
                         "name": "Sebastian Aho",
                         "position": "A",
-                        "goals": 5,
-                        "assists": 4,
-                        "points": 9
+                        "goals": 6,
+                        "assists": 5,
+                        "points": 11
                     },
                     {
                         "name": "Cutter Gauthier",
@@ -275,9 +275,9 @@
                     {
                         "name": "Rasmus Andersson",
                         "position": "D",
-                        "goals": 2,
+                        "goals": 3,
                         "assists": 2,
-                        "points": 4
+                        "points": 5
                     },
                     {
                         "name": "Juraj Slafkovsky",
@@ -318,8 +318,8 @@
                         "name": "J.T. Miller",
                         "position": "A",
                         "goals": 1,
-                        "assists": 4,
-                        "points": 5
+                        "assists": 6,
+                        "points": 7
                     },
                     {
                         "name": "Nico Hischier",
@@ -593,11 +593,11 @@
         },
         {
             "name": "Alondra Rima",
-            "att": 51,
+            "att": 53,
             "def": 7,
             "goaler": 2,
             "equipe": 18,
-            "total": 78,
+            "total": 80,
             "roster_details": {
                 "players": [
                     {
@@ -659,9 +659,9 @@
                     {
                         "name": "Sebastian Aho",
                         "position": "A",
-                        "goals": 5,
-                        "assists": 4,
-                        "points": 9
+                        "goals": 6,
+                        "assists": 5,
+                        "points": 11
                     },
                     {
                         "name": "Dylan Guenther",
@@ -778,11 +778,11 @@
         },
         {
             "name": "Aya el Khazen",
-            "att": 113,
-            "def": 14,
+            "att": 115,
+            "def": 15,
             "goaler": 0,
-            "equipe": 21,
-            "total": 148,
+            "equipe": 23,
+            "total": 153,
             "roster_details": {
                 "players": [
                     {
@@ -858,16 +858,16 @@
                     {
                         "name": "Rasmus Andersson",
                         "position": "D",
-                        "goals": 2,
+                        "goals": 3,
                         "assists": 2,
-                        "points": 4
+                        "points": 5
                     },
                     {
                         "name": "Andrei Svechnikov",
                         "position": "A",
-                        "goals": 3,
-                        "assists": 3,
-                        "points": 6
+                        "goals": 4,
+                        "assists": 4,
+                        "points": 8
                     },
                     {
                         "name": "Steven Stamkos",
@@ -953,21 +953,21 @@
                     {
                         "name": "New York Rangers",
                         "abbrev": "NYR",
-                        "rw": 4,
+                        "rw": 5,
                         "row": 0,
                         "otl": 0,
-                        "points": 8
+                        "points": 10
                     }
                 ]
             }
         },
         {
             "name": "Alain Roy",
-            "att": 42,
+            "att": 44,
             "def": 67,
             "goaler": 0,
             "equipe": 17,
-            "total": 126,
+            "total": 128,
             "roster_details": {
                 "players": [
                     {
@@ -1029,9 +1029,9 @@
                     {
                         "name": "Sebastian Aho",
                         "position": "A",
-                        "goals": 5,
-                        "assists": 4,
-                        "points": 9
+                        "goals": 6,
+                        "assists": 5,
+                        "points": 11
                     },
                     {
                         "name": "Matthew Tkachuk",
@@ -1165,8 +1165,8 @@
             "att": 128,
             "def": 15,
             "goaler": 18,
-            "equipe": 18,
-            "total": 179,
+            "equipe": 20,
+            "total": 181,
             "roster_details": {
                 "players": [
                     {
@@ -1334,10 +1334,10 @@
                     {
                         "name": "Carolina Hurricanes",
                         "abbrev": "CAR",
-                        "rw": 3,
+                        "rw": 4,
                         "row": 0,
                         "otl": 1,
-                        "points": 7
+                        "points": 9
                     },
                     {
                         "name": "Buffalo Sabres",
@@ -1369,10 +1369,10 @@
         {
             "name": "Yanick Tremblay",
             "att": 48,
-            "def": 11,
+            "def": 12,
             "goaler": 0,
             "equipe": 14,
-            "total": 73,
+            "total": 74,
             "roster_details": {
                 "players": [
                     {
@@ -1455,9 +1455,9 @@
                     {
                         "name": "Rasmus Andersson",
                         "position": "D",
-                        "goals": 2,
+                        "goals": 3,
                         "assists": 2,
-                        "points": 4
+                        "points": 5
                     },
                     {
                         "name": "Juraj Slafkovsky",
@@ -1567,11 +1567,11 @@
         },
         {
             "name": "Alexandre Neal",
-            "att": 100,
+            "att": 101,
             "def": 5,
             "goaler": 2,
             "equipe": 18,
-            "total": 125,
+            "total": 126,
             "roster_details": {
                 "players": [
                     {
@@ -1668,9 +1668,9 @@
                     {
                         "name": "Alexander Ovechkin",
                         "position": "A",
-                        "goals": 0,
+                        "goals": 1,
                         "assists": 1,
-                        "points": 1
+                        "points": 2
                     },
                     {
                         "name": "Mathew Barzal",
@@ -1958,11 +1958,11 @@
         },
         {
             "name": "Hak Jun Oh",
-            "att": 55,
-            "def": 64,
+            "att": 57,
+            "def": 65,
             "goaler": 18,
             "equipe": 15,
-            "total": 152,
+            "total": 155,
             "roster_details": {
                 "players": [
                     {
@@ -2052,16 +2052,16 @@
                     {
                         "name": "Rasmus Andersson",
                         "position": "D",
-                        "goals": 2,
+                        "goals": 3,
                         "assists": 2,
-                        "points": 4
+                        "points": 5
                     },
                     {
                         "name": "Andrei Svechnikov",
                         "position": "A",
-                        "goals": 3,
-                        "assists": 3,
-                        "points": 6
+                        "goals": 4,
+                        "assists": 4,
+                        "points": 8
                     },
                     {
                         "name": "Kirill Marchenko",
