@@ -1,18 +1,19 @@
-name: Mettre à jour le Pool NHL
+name: Mise a jour Hatch NHL Super Pool
 
 on:
   schedule:
-    - cron: '0 3 * * *'
+    - cron: '0 7 * * *'
   workflow_dispatch:
 
+# Ajouter ces deux lignes pour autoriser le commit/push :
 permissions:
   contents: write
 
 jobs:
-  update-pool:
+  update-data:
     runs-on: ubuntu-latest
     steps:
-      - name: Code source checkout
+      - name: Récupérer le code
         uses: actions/checkout@v4
 
       - name: Configuration de Python
@@ -20,16 +21,13 @@ jobs:
         with:
           python-version: '3.10'
 
-      - name: Exécuter le script de mise à jour des statistiques
-        run: |
-          python update_stats.py
+      - name: Exécuter le script de mise à jour
+        run: python scripts/update_data.py
 
-      - name: Publier les modifications sur GitHub Pages
-        env:
-          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+      - name: Publier les modifications dans le dépôt
         run: |
-          git config --global user.name "github-actions[bot]"
-          git config --global user.email "41898282+github-actions[bot]@users.noreply.github.com"
-          git add index.html
-          git commit -m "Mise à jour automatique du classement Hatch NHL Pool $(date +'%Y-%m-%d')" || exit 0
+          git config --global user.name 'github-actions[bot]'
+          git config --global user.email 'github-actions[bot]@users.noreply.github.com'
+          git add data.json
+          git commit -m "Mise à jour automatique des points de la LNH" || exit 0
           git push
