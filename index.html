@@ -1,184 +1,785 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-    <me
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>NHL Super Pool</title>
+<style>
+:root {
+  --border-color: #34495e;
+  --accent-red: #e0564c;
+  --text-dark: #2c3e50;
+  --bg-details: #f8fafc;
+  --green-arrow: #22c55e;
+  --red-arrow: #ef4444;
+}
 
-            <div class="pool-row">
-                <div class="rank-badge">1</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Olivier Jubelin')">Olivier Jubelin 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">85</span></div>
-                        <div class="cat-item">Def <span class="cat-val">171</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">26</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">43</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">325 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">2</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Yanick Tremblay')">Yanick Tremblay 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">51</span></div>
-                        <div class="cat-item">Def <span class="cat-val">188</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">5</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">22</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">266 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">3</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Jean-Philip Tremblay')">Jean-Philip Tremblay 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">177</span></div>
-                        <div class="cat-item">Def <span class="cat-val">36</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">20</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">32</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">265 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">4</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Alondra Rima')">Alondra Rima 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">197</span></div>
-                        <div class="cat-item">Def <span class="cat-val">14</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">19</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">35</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">265 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">5</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Alain Roy')">Alain Roy 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">70</span></div>
-                        <div class="cat-item">Def <span class="cat-val">101</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">12</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">33</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">216 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">6</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Hak Jun Oh')">Hak Jun Oh 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">86</span></div>
-                        <div class="cat-item">Def <span class="cat-val">60</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">26</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">36</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">208 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">7</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Nicolas St-Pierre')">Nicolas St-Pierre 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">74</span></div>
-                        <div class="cat-item">Def <span class="cat-val">40</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">26</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">34</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">174 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">8</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Aya el Khazen')">Aya el Khazen 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">83</span></div>
-                        <div class="cat-item">Def <span class="cat-val">34</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">5</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">40</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">162 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">9</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Alexandre Neal')">Alexandre Neal 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">88</span></div>
-                        <div class="cat-item">Def <span class="cat-val">32</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">5</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">31</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">156 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">10</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Mathieu Huot')">Mathieu Huot 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">66</span></div>
-                        <div class="cat-item">Def <span class="cat-val">29</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">12</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">36</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">143 pts</span>
-                </div>
-            </div>
-            <div class="pool-row">
-                <div class="rank-badge">11</div>
-                <div class="participant-info">
-                    <div class="participant-name" onclick="openModal('Antoine Duguay')">Antoine Duguay 🔍</div>
-                    <div class="categories-grid">
-                        <div class="cat-item">Att <span class="cat-val">74</span></div>
-                        <div class="cat-item">Def <span class="cat-val">4</span></div>
-                        <div class="cat-item">Goaler <span class="cat-val">17</span></div>
-                        <div class="cat-item">Equipe <span class="cat-val">29</span></div>
-                    </div>
-                </div>
-                <div class="total-badge">
-                    <span class="total-label">Total</span>
-                    <span class="total-val">124 pts</span>
-                </div>
-            </div>
-        </div>
+body { 
+  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif; 
+  background: linear-gradient(180deg, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
+  background-attachment: fixed;
+  color: var(--text-dark); 
+  margin: 0; 
+  padding: 0;
+  min-height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
 
-        
+.bg-shapes {
+  position: fixed;
+  inset: 0;
+  z-index: 0;
+  pointer-events: none;
+  overflow: hidden;
+}
+
+.bg-shape {
+  position: absolute;
+  opacity: 0.07;
+  background-image: url('./images/shape.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  background-position: center;
+  width: clamp(140px, 18vw, 300px);
+  height: clamp(125px, 16vw, 270px);
+}
+
+.s1  { top: 3%;   left: 2%;   transform: rotate(-12deg); }
+.s2  { top: 5%;   right: 3%;  transform: rotate(15deg);  opacity: 0.06; }
+.s3  { top: 28%;  left: 4%;   transform: rotate(8deg);   opacity: 0.055; }
+.s4  { top: 30%;  right: 5%;  transform: rotate(-18deg); opacity: 0.065; }
+.s5  { top: 52%;  left: 3%;   transform: rotate(20deg);  opacity: 0.05; }
+.s6  { top: 55%;  right: 4%;  transform: rotate(-10deg); opacity: 0.07; }
+.s7  { top: 78%;  left: 6%;   transform: rotate(-15deg); opacity: 0.06; }
+.s8  { top: 80%;  right: 6%;  transform: rotate(12deg);  opacity: 0.055; }
+
+.container { 
+  width: 100%; 
+  max-width: 1100px; 
+  margin: 0 auto; 
+  box-sizing: border-box;
+  padding: 0 15px 20px 15px;
+  position: relative;
+  z-index: 1;
+}
+
+.sticky-top {
+  position: sticky;
+  top: 0;
+  z-index: 100;
+  background: linear-gradient(180deg, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
+  background-attachment: fixed;
+  padding: 8px 15px 8px 15px;
+  margin: 0 -15px;
+  box-shadow: 0 1px 8px rgba(0,0,0,0.04);
+}
+
+.header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 4px;
+  width: 100%;
+}
+
+.brand-block {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 55%;
+  max-width: 320px;
+  margin: 0 auto;
+}
+
+.hatch-logo {
+  width: 100%;
+  height: auto;
+  object-fit: contain;
+  display: block;
+}
+
+h1 { 
+  text-align: center; 
+  color: var(--text-dark); 
+  font-size: clamp(0.95rem, 2.6vw, 1.45rem);
+  margin: -22px auto 0 auto;
+  font-weight: 800;
+  width: 100%;
+  white-space: nowrap;
+  position: relative;
+  z-index: 2;
+}
+
+.last-update {
+  text-align: center;
+  font-size: 0.68rem;
+  color: #9ca3af;
+  margin: 2px 0 6px 0;
+  font-weight: 500;
+  min-height: 1em;
+}
+
+.search-bar {
+  width: 100%;
+  max-width: 380px;
+  margin: 0 auto 4px auto;
+  position: relative;
+}
+
+.search-bar input {
+  width: 100%;
+  padding: 9px 16px 9px 40px;
+  border: 2.5px solid var(--border-color);
+  border-radius: 50px;
+  font-size: 0.95rem;
+  font-family: inherit;
+  color: var(--text-dark);
+  background: #ffffff;
+  box-sizing: border-box;
+  outline: none;
+}
+
+.search-bar input:focus {
+  border-color: var(--accent-red);
+  box-shadow: 0 0 0 3px rgba(224, 86, 76, 0.15);
+}
+
+.search-bar input::placeholder {
+  color: #94a3b8;
+}
+
+.search-icon {
+  position: absolute;
+  left: 14px;
+  top: 50%;
+  transform: translateY(-50%);
+  font-size: 1rem;
+  pointer-events: none;
+  opacity: 0.55;
+}
+
+.search-hint {
+  text-align: center;
+  font-size: 0.72rem;
+  color: #9ca3af;
+  margin: 0 0 2px 0;
+  font-weight: 500;
+}
+
+.no-results {
+  text-align: center;
+  color: #64748b;
+  font-size: 1.05rem;
+  padding: 30px 10px;
+}
+
+.participant-card {
+  margin-bottom: 14px;
+  width: 100%;
+}
+
+.main-pill {
+  width: 100%;
+  background-color: #ffffff;
+  border: 3.5px solid var(--border-color);
+  border-radius: 50px;
+  padding: 7px clamp(12px, 3vw, 28px);
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  box-sizing: border-box;
+  min-height: 68px;
+  cursor: pointer;
+  gap: clamp(8px, 2vw, 20px);
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.03);
+}
+
+.rank-section {
+  display: flex;
+  align-items: center;
+  justify-content: flex-start;
+  gap: 5px;
+  flex-shrink: 0;
+  width: clamp(68px, 10vw, 95px);
+  position: relative;
+}
+
+.rank-number {
+  font-size: clamp(1.4rem, 3.5vw, 2.3rem);
+  font-weight: 900;
+  color: var(--border-color);
+  line-height: 1;
+  position: relative;
+}
+
+.crown {
+  position: absolute;
+  top: -0.72em;
+  left: 50%;
+  transform: translateX(-50%);
+  font-size: 0.42em;
+  line-height: 1;
+  pointer-events: none;
+  filter: drop-shadow(0 1px 1px rgba(0,0,0,0.15));
+}
+
+.trend-arrow {
+  font-size: clamp(0.85rem, 1.8vw, 1.25rem);
+  font-weight: 900;
+  line-height: 1;
+  width: 16px;
+  text-align: center;
+}
+
+.trend-arrow.up { color: var(--green-arrow); }
+.trend-arrow.down { color: var(--red-arrow); }
+.trend-arrow.same { visibility: hidden; }
+
+.participant-info {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  flex-grow: 1;
+  min-width: 0;
+}
+
+.participant-info.wide {
+  flex-direction: row;
+  align-items: center;
+  gap: clamp(16px, 2.8vw, 32px);
+}
+
+.participant-info.wide .name-block {
+  flex-shrink: 0;
+}
+
+.participant-info.wide .points-breakdown {
+  flex-grow: 1;
+  justify-content: flex-start;
+}
+
+.name-block {
+  min-width: 0;
+}
+
+.team-name-main {
+  font-size: clamp(1.05rem, 2.7vw, 1.65rem);
+  font-weight: 700;
+  color: var(--accent-red);
+  margin-bottom: 1px;
+  line-height: 1.15;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.participant-name-sub {
+  font-size: clamp(0.78rem, 1.55vw, 0.98rem);
+  font-weight: 500;
+  color: var(--border-color);
+  line-height: 1.25;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  opacity: 0.9;
+}
+
+.points-breakdown {
+  display: flex;
+  justify-content: flex-start;
+  gap: clamp(10px, 3.5vw, 36px);
+  width: 100%;
+}
+
+.breakdown-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  min-width: 32px;
+}
+
+.breakdown-label {
+  font-size: clamp(0.68rem, 1.4vw, 0.92rem);
+  color: var(--border-color);
+  font-weight: 600;
+}
+
+.breakdown-value {
+  font-size: clamp(0.75rem, 1.5vw, 1.05rem);
+  color: var(--accent-red);
+  font-weight: 800;
+}
+
+.total-circle {
+  width: clamp(64px, 9.5vw, 86px);
+  height: clamp(64px, 9.5vw, 86px);
+  min-width: clamp(64px, 9.5vw, 86px);
+  border-radius: 50%;
+  border: 2.5px solid var(--border-color);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #ffffff;
+  box-sizing: border-box;
+  flex-shrink: 0;
+}
+
+.total-label {
+  font-size: clamp(0.55rem, 1.1vw, 0.72rem);
+  color: var(--text-dark);
+  font-weight: 700;
+  letter-spacing: 0.4px;
+}
+
+.total-points {
+  font-size: clamp(0.95rem, 2vw, 1.3rem);
+  font-weight: 800;
+  color: var(--accent-red);
+  line-height: 1.1;
+}
+
+.details {
+  display: none;
+  background: var(--bg-details);
+  border-radius: 16px;
+  padding: 18px;
+  margin-top: 10px;
+  border: 2px solid #cbd5e1;
+  box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
+}
+
+table { width: 100%; border-collapse: collapse; margin-top: 6px; margin-bottom: 14px; font-size: 0.9rem; }
+th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #cbd5e1; }
+th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.05em; }
+.section-title { font-weight: 800; color: #0284c7; margin-top: 12px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em; }
+.badge { display: inline-block; padding: 2px 5px; border-radius: 4px; font-size: 0.72rem; font-weight: bold; background: #e2e8f0; color: #334155; }
+
+@media (max-width: 520px) {
+  .main-pill { padding: 6px 10px; min-height: 62px; }
+  .points-breakdown { gap: 8px; }
+  h1 { margin-top: -16px; }
+  .brand-block { width: 65%; }
+  .sticky-top { padding: 6px 12px 6px 12px; }
+  .bg-shape { opacity: 0.04; }
+}
+</style>
+</head>
+<body>
+
+<div class="bg-shapes">
+  <div class="bg-shape s1"></div>
+  <div class="bg-shape s2"></div>
+  <div class="bg-shape s3"></div>
+  <div class="bg-shape s4"></div>
+  <div class="bg-shape s5"></div>
+  <div class="bg-shape s6"></div>
+  <div class="bg-shape s7"></div>
+  <div class="bg-shape s8"></div>
+</div>
+
+<div class="container">
+
+  <div class="sticky-top">
+    <header class="header">
+      <div class="brand-block">
+        <img src="./images/hatch-logo.png" alt="Hatch Logo" class="hatch-logo" onerror="this.style.display='none'">
+        <h1>🏒 NHL Super Pool 🥅</h1>
+      </div>
+    </header>
+
+    <p class="last-update" id="lastUpdate">Mise à jour: —</p>
+
+    <div class="search-bar">
+      <span class="search-icon">🔍</span>
+      <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
+    </div>
+    <p class="search-hint">Cliquer sur le nom pour plus de détails</p>
+  </div>
+
+  <div id="leaderboard">Chargement du classement...</div>
+</div>
+
+<script>
+const TEAM_NAMES = {
+  "Cédrick Charest": "F* Kreider - Charest",
+  "Hak Jun Oh": "Junnie B Johns",
+  "Alexandru Rogai": "Les Rapides de Ville Marie",
+  "Thomas Gueville": "PositiveChange",
+  "Michael Lee": "GOGO HYDRO",
+  "Robert Dellazizzo": "Canadiens de Montréal",
+  "Isabelle Lemay": "ISA",
+  "Regina Nair": "Habsapalooza",
+  "François Lacerte": "Les chars d'assault",
+  "Pamela Pachal": "Freddy26",
+  "Léonore Jean-François": "Je ne connais rien au Hockey",
+  "Francois Létourneau": "Starling",
+  "Mathieu Mei": "Les Chèvres",
+  "Jean-Philip Tremblay": "GO RAPTORS",
+  "Mathieu Labranche": "The underdogs",
+  "Olivier Tom": "Les pesants",
+  "Gabrielle Lamirande-Gauvin": "Le Power Play",
+  "Charles-Antoine Dubeau": "Sauce Brune Mafia",
+  "Quentin Tuphile": "Tempêtes de Laval",
+  "Nousk Ghailane": "Les Canhatchiens",
+  "Leandro Pereira": "Lord of the Rinks",
+  "Louis-Philippe Dufresne Viau": "AST (Analyse Statistique Toute-croche)",
+  "Alexis Lemire": "50Tablette",
+  "Marc-Antoine Dery": "Hatch Orangutans",
+  "Sabrina Ficara": "Ice Ice Baby",
+  "Logan Bélanger": "J'aime trop Josh Anderson",
+  "Normand Yelle": "Team Yelle",
+  "Arnaud Fournier": "Lamar Jackson",
+  "Ariel Beauregard Breton": "Heureux hasards",
+  "Nicolas Besner": "The Risk Was Everyone Else",
+  "Jean-Sebastien Bisaillon": "Gagnante",
+  "Alexandre Bergeron": "Bergy",
+  "Pierre-Luc Pigeon": "Ramenez_Scott_Gomez",
+  "Serge Masse": "Mass2236",
+  "Charles Gauthier": "Demidov Dynasty 😄",
+  "Samia Merazga": "Les Amateurs",
+  "Lucas Parkinson": "The fast Lane",
+  "Jessica Forest": "Run Forest Run!",
+  "Marc Cousineau": "Les Puckés",
+  "Michael Bino": "Mother Puckers",
+  "Nicolas St-Pierre": "Lane train",
+  "Alexy Fafard": "Bastions de Blainville",
+  "Marie-Laurence Boutin": "Team Boutin",
+  "Martin Brunet": "Les Clandestins",
+  "Rebecca Owen": "Habs",
+  "Gabriel De Muy Larose": "Infra",
+  "Josianne Lafontaine": "PDSG RAIL",
+  "Soulaiman Benaamer": "SB89",
+  "Xavier Rousseau-Laliberte": "Xavouine la fouine",
+  "Andreanne Blais": "Pvm",
+  "Alexandre Neal": "Neal Knows Nothing",
+  "Matthew Totarella": "Le Canadiens Express",
+  "Dina Lagonskaya": "Tailings Titans",
+  "Martin Bélanger": "Boom Boom 99",
+  "Julie Arseneault": "Arseneault",
+  "Eduardo": "Trio of four",
+  "Rami El Mays": "The dream team",
+  "Nick Totarella": "GymJunkieNick",
+  "Marlyn Tchoukuegno": "Holy Team",
+  "Lenna Gatouillat": "PinkStiletto💅",
+  "Simon-Pierre Lefebvre": "Les Roams de PVM",
+  "Mélanie Ouellette": "Puck Fiction",
+  "Alondra Rima": "Normand Marineau!",
+  "Laurence Gamache": "Les Timbits",
+  "Cristina Murillo": "Les belugas",
+  "Julie Harvey": "Les Dynamos Défenseurs",
+  "Vincent Joyal": "Team Joyal Power",
+  "Benjamin Arcand": "L'équipe en forme",
+  "Bruno Cournoyer": "Babcock downfall",
+  "Mathieu St-Pierre": "Sags",
+  "Francis Emond": "Crème Boston",
+  "Maxime Beaudry-Lemay": "The Rectified Team",
+  "Marc-Antoine Laforest": "Canadiens1",
+  "Carine Adam": "Hatch Trick1",
+  "Samantha Levac": "Les Québécois de Montréal",
+  "Xavier Lafortune": "Thermique",
+  "Jean-Sebastien Langlois": "Team JS",
+  "Chloe Sallé": "Maple Syrup",
+  "Sophie Couture": "Queens de Montreal",
+  "Richard Verbanac": "Contrôle, Automatisation & Mise en Échec",
+  "Steeve Simard": "L'œil du tigre",
+  "Vincent Coulombe": "Vincent's team",
+  "Elisabeth Danis": "Nostradanis",
+  "Pier-Olivier Hotte-Rene": "Les Doys",
+  "Karl St-André": "Team KSA",
+  "Benoit Gaudet": "Goal Caufield",
+  "Colin Barbeau": "Les Colinours",
+  "Jean-Marc Gauthier": "The Team 2026-27",
+  "Charles Simard": "Charley Bettman's League",
+  "Daniel Marcoux": "Lac St-Jean Power play",
+  "Nathalie Bourgeois": "Queen",
+  "Daniel Reichelson": "Kirill or be Killed",
+  "Yanick Tremblay": "The team",
+  "Aya el Khazen": "B1",
+  "Gerald Tugas": "Puck Around and Find Out",
+  "Eva Marre": "Montreal's Team",
+  "Serge Arguin": "Go-Habs-Go",
+  "Veronique Therrien": "Go! Hatch Go!",
+  "Jacob Bissonnette": "Les Benchwarmers",
+  "Kalvin Southern": "Team Copilot",
+  "Ashley Nguyen": "Connor McChanical-Engineer",
+  "Yves Couture": "Les démons",
+  "Axelle Monnot": "Gigote",
+  "Andrew Middleton": "Bigmountains",
+  "Alain Roy": "Alain Roy",
+  "Olivier Lemoine": "Hatch Trick2",
+  "Michel Bolduc": "Le statisticien avancé",
+  "Martin Beaulieu": "Up the Irons!",
+  "Caroline Bergeron": "Random chaos",
+  "Florence Gagnon": "Panthers de la Floride",
+  "Alexia Fiorilli": "Tkachuk Yourself",
+  "John Greene": "WOW",
+  "Jules Saint-Jean": "UdeS fan club",
+  "Jean Lamoureux": "Trump Derangement Syndrome",
+  "Bakar Amara": "Galacticos",
+  "Steven Parent": "Stevie Wonder's Team",
+  "Jean-Benoit Boucher": "Vendée Team",
+  "Mathieu Huot": "The Pool North",
+  "Jean Gohin": "Étoile Noire de Strasbourg",
+  "Philippe Khalil": "Les Chanadiens",
+  "Xavier Leblanc": "Xavouine la pas fine",
+  "Emmanuelle Lajoie": "Les licornes",
+  "Antoine Duguay": "Les boulettes",
+  "Anne-Laurence Trudeau": "Les baleines",
+  "Xavier Monette": "Bestguess",
+  "Dominic Neveu": "Canadiens2",
+  "Serge Danis": "Mollets de Béton",
+  "Mounir Tamimi": "Makar au Chocolat",
+  "Florence Riopel": "Rio",
+  "Guillaume Leblanc": "Les Étoiles",
+  "Shayne Renaud": "Sauce Boss",
+  "Jordan Moman": "The Mighty Potash",
+  "Samuel Rouleau": "Sam's last minute team",
+  "Ludovic Morissette": "Puckin' Out of Office Legends",
+  "Lyès Hacini": "Mouloudia",
+  "Etienne Paquin-Foisy": "Happy Kraken",
+  "Ahmad Bou Aram": "The Red Ducks",
+  "Michael Brie": "Habs4Hatch",
+  "Lauriane Marchand": "Les Hatchers de TR",
+  "Olivier Jubelin": "Jubelin",
+  "Jean Francois Boulet": "Goldorak",
+  "Janet Long": "Hatched Rivalry",
+  "Louis-Philippe Corriveau": "LP",
+  "Philippe Denis-Ducharme": "Le pool de Phil",
+  "Line Poirier": "Non, rien de rien, non je n'y connais rien de rien!",
+  "Olivier Guimond": "Facilities",
+  "Allen Chan": "Demigod93",
+  "Fabrice Danger": "Arsenal HC",
+  "Joel Labadie": "Flamingos",
+  "Frederic Langevin": "K Pop Star",
+  "Jeanne Lemonde-Trudeau": "Les Chatnadiens de Miaouréal",
+  "Dany Lafontaine": "DanyHockey",
+  "Charles-Olivier Boudrias": "L'arbitre en chef",
+  "Amelie Mercier Arsenault": "Centurion",
+  "Marine Quemeneur": "Quanadiens",
+  "Tristan Juette": "French Wombats",
+  "Catherine Gaudio": "Hatching chicks",
+  "Marie-Claude Tremblay": "MALCAN stars",
+  "Anthony Lamer": "AntoLamer",
+  "Marc-Antoine Lebel": "Dernier au Classement, Premier au buffet",
+  "Vincent Cassabon": "Cassabon",
+  "Robert Austen": "Top Fromage",
+  "Philippe Martin": "BDP",
+  "Kevin Gadbois": "Les gars de Sorel",
+  "Hubert Perreault": "Les chèvres du 14e 🐐",
+  "Noémie Pinsonnault-Duchemin": "Puck it Off",
+  "Vinh Truong": "Montreal - Vinh",
+  "George Forlini": "The Blade Runners",
+  "Samuel Leblanc": "Sam's team",
+  "Aymeric Bellefeuille": "Aym Team",
+  "Justine Fournier": "Team Fournier",
+  "Patrick Bisson": "Santa Monica 36ers",
+  "Danny Bouchard": "Lord Stanley Stars",
+  "Naomie Curis-Friedman": "Naordiques de Québec",
+  "Guildo Gagnon": "Nordique",
+  "Mohamad Bouaram": "Mo B Snipin'",
+  "Patrick Barbieri": "Tkachucky Fried Chicken"
+};
+
+let allParticipants = [];
+
+async function loadPoolData() {
+  try {
+    const res = await fetch('data.json?t=' + new Date().getTime());
+    const data = await res.json();
+    
+    displayLastUpdate(data.updated_at || data.last_update || null);
+
+    allParticipants = compute1224Ranking(data.leaderboard || []);
+    renderLeaderboard(allParticipants);
+    
+    document.getElementById('searchInput').addEventListener('input', (e) => {
+      const query = e.target.value.trim().toLowerCase();
+      if (!query) {
+        renderLeaderboard(allParticipants);
+        return;
+      }
+      const filtered = allParticipants.filter(p => {
+        const nameMatch = p.name.toLowerCase().includes(query);
+        const teamMatch = (TEAM_NAMES[p.name] || '').toLowerCase().includes(query);
+        return nameMatch || teamMatch;
+      });
+      renderLeaderboard(filtered);
+    });
+    
+  } catch (e) {
+    console.error(e);
+    document.getElementById('lastUpdate').textContent = 'Mise à jour: —';
+    document.getElementById('leaderboard').innerHTML = 
+      "<p style='text-align:center; color:#ef4444;'>Erreur lors du chargement des données.</p>";
+  }
+}
+
+function displayLastUpdate(isoString) {
+  const el = document.getElementById('lastUpdate');
+  if (!el) return;
+
+  if (!isoString) {
+    el.textContent = 'Mise à jour: —';
+    return;
+  }
+
+  try {
+    const date = new Date(isoString);
+    if (isNaN(date.getTime())) {
+      el.textContent = 'Mise à jour: —';
+      return;
+    }
+
+    const options = { day: 'numeric', month: 'long' };
+    const dateStr = date.toLocaleDateString('fr-CA', options);
+    const hours = String(date.getHours()).padStart(2, '0');
+    const minutes = String(date.getMinutes()).padStart(2, '0');
+    
+    el.textContent = 'Mise à jour: ' + dateStr + ' ' + hours + 'h' + minutes;
+  } catch (e) {
+    console.error('Erreur date:', e);
+    el.textContent = 'Mise à jour: —';
+  }
+}
+
+function compute1224Ranking(leaderboard) {
+  let result = [];
+  let currentRank = 1;
+  for (let i = 0; i < leaderboard.length; i++) {
+    if (i > 0 && leaderboard[i].total_points < leaderboard[i - 1].total_points) {
+      currentRank = i + 1;
+    }
+    result.push({ ...leaderboard[i], rank: currentRank });
+  }
+  return result;
+}
+
+function renderLeaderboard(list) {
+  const container = document.getElementById('leaderboard');
+  container.innerHTML = '';
+
+  if (list.length === 0) {
+    container.innerHTML = '<p class="no-results">Aucun participant trouvé.</p>';
+    return;
+  }
+
+  list.forEach((p, index) => {
+    const card = document.createElement('div');
+    card.className = 'participant-card';
+
+    let skatersHtml = p.skaters.map(s => {
+      const displayPos = (s.position === 'D') ? 'D' : 'A';
+      return '<tr>' +
+        '<td><b>' + (s.name || '') + '</b> <span class="badge">' + displayPos + '</span></td>' +
+        '<td>' + (s.goals || 0) + ' B, ' + (s.assists || 0) + ' P</td>' +
+        '<td><b>' + (s.points || 0) + ' pts</b></td>' +
+        '</tr>';
+    }).join('');
+
+    let goaliesHtml = p.goalies.map(g => {
+      return '<tr>' +
+        '<td><b>' + (g.name || '') + '</b> <span class="badge">G</span></td>' +
+        '<td>' + (g.wins || 0) + ' V, ' + (g.shutouts || 0) + ' BL, ' + (g.otLosses || 0) + ' DP</td>' +
+        '<td><b>' + (g.points || 0) + ' pts</b></td>' +
+        '</tr>';
+    }).join('');
+
+    let teamsHtml = p.teams.map(t => {
+      return '<tr>' +
+        '<td><b>' + (t.name || '') + '</b> (' + (t.abbrev || '') + ')</td>' +
+        '<td>' + (t.reg_wins || 0) + ' VR, ' + (t.ot_wins || 0) + ' VP, ' + (t.ot_losses || 0) + ' DP</td>' +
+        '<td><b>' + (t.points || 0) + ' pts</b></td>' +
+        '</tr>';
+    }).join('');
+
+    let trendHtml = '<span class="trend-arrow same"></span>';
+    if (p.trend === 'up') {
+      trendHtml = '<span class="trend-arrow up" title="En hausse">▲</span>';
+    } else if (p.trend === 'down') {
+      trendHtml = '<span class="trend-arrow down" title="En baisse">▼</span>';
+    }
+
+    const detailId = index;
+    const crownHtml = p.rank === 1 ? '<span class="crown">👑</span>' : '';
+    const teamName = TEAM_NAMES[p.name] || p.name;
+
+    card.innerHTML = 
+      '<div class="main-pill" onclick="toggleDetails(' + detailId + ')">' +
+        '<div class="rank-section">' +
+          '<span class="rank-number">' + crownHtml + '#' + p.rank + '</span>' +
+          trendHtml +
+        '</div>' +
+        '<div class="participant-info" id="info-' + detailId + '">' +
+          '<div class="name-block">' +
+            '<div class="team-name-main">' + teamName + '</div>' +
+            '<div class="participant-name-sub">' + p.name + '</div>' +
+          '</div>' +
+          '<div class="points-breakdown">' +
+            '<div class="breakdown-item"><span class="breakdown-label">Att</span><span class="breakdown-value">' + (p.att_pts || 0) + '</span></div>' +
+            '<div class="breakdown-item"><span class="breakdown-label">Def</span><span class="breakdown-value">' + (p.def_pts || 0) + '</span></div>' +
+            '<div class="breakdown-item"><span class="breakdown-label">Goaler</span><span class="breakdown-value">' + (p.goalie_pts || 0) + '</span></div>' +
+            '<div class="breakdown-item"><span class="breakdown-label">Equipe</span><span class="breakdown-value">' + (p.team_pts || 0) + '</span></div>' +
+          '</div>' +
+        '</div>' +
+        '<div class="total-circle">' +
+          '<span class="total-label">TOTAL</span>' +
+          '<span class="total-points">' + (p.total_points || 0) + ' pts</span>' +
+        '</div>' +
+      '</div>' +
+      '<div class="details" id="details-' + detailId + '">' +
+        '<div class="section-title">Attaquants & Défenseurs</div>' +
+        '<table><thead><tr><th>Joueur</th><th>Statistiques</th><th>Points</th></tr></thead><tbody>' + skatersHtml + '</tbody></table>' +
+        '<div class="section-title">Gardiens</div>' +
+        '<table><thead><tr><th>Gardien</th><th>Statistiques</th><th>Points</th></tr></thead><tbody>' + goaliesHtml + '</tbody></table>' +
+        '<div class="section-title">Équipes</div>' +
+        '<table><thead><tr><th>Équipe</th><th>Statistiques</th><th>Points</th></tr></thead><tbody>' + teamsHtml + '</tbody></table>' +
+      '</div>';
+
+    container.appendChild(card);
+  });
+
+  requestAnimationFrame(() => {
+    requestAnimationFrame(() => {
+      applyResponsiveLayout();
+    });
+  });
+}
+
+function applyResponsiveLayout() {
+  document.querySelectorAll('.participant-info').forEach(info => {
+    info.classList.remove('wide');
+
+    const nameBlock = info.querySelector('.name-block');
+    const breakdownEl = info.querySelector('.points-breakdown');
+    if (!nameBlock || !breakdownEl) return;
+
+    const available = info.clientWidth;
+    const nameW = nameBlock.scrollWidth;
+    const breakW = breakdownEl.scrollWidth;
+
+    if (nameW + breakW + 18 < available) {
+      info.classList.add('wide');
+    }
+  });
+}
+
+let resizeTimer;
+window.addEventListener('resize', () => {
+  clearTimeout(resizeTimer);
+  resizeTimer = setTimeout(applyResponsiveLayout, 60);
+});
+
+function toggleDetails(index) {
+  const el = document.getElementById('details-' + index);
+  if (el) {
+    el.style.display = (el.style.display === 'block') ? 'none' : 'block';
+  }
+}
+
+loadPoolData();
+</script>
+</body>
+</html>
