@@ -351,13 +351,20 @@ h1 {
   box-shadow: 0 4px 6px -1px rgba(0, 0, 0, 0.05);
 }
 
+.hier-total {
+  text-align: center;
+  color: var(--green-arrow);
+  font-weight: 700;
+  font-size: 0.95rem;
+  margin: 4px 0 12px 0;
+}
+
 table { width: 100%; border-collapse: collapse; margin-top: 6px; margin-bottom: 14px; font-size: 0.9rem; }
 th, td { text-align: left; padding: 8px 6px; border-bottom: 1px solid #cbd5e1; }
 th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.72rem; letter-spacing: 0.05em; }
 .section-title { font-weight: 800; color: #0284c7; margin-top: 12px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em; }
 .badge { display: inline-block; padding: 2px 5px; border-radius: 4px; font-size: 0.72rem; font-weight: bold; background: #e2e8f0; color: #334155; }
 
-/* Points de la dernière mise à jour */
 .pts-last {
   color: var(--green-arrow);
   font-weight: 700;
@@ -682,6 +689,15 @@ function renderLeaderboard(list) {
     const card = document.createElement('div');
     card.className = 'participant-card';
 
+    const hierTotal =
+      (p.skaters || []).reduce((sum, x) => sum + (x.pts_last || 0), 0) +
+      (p.goalies || []).reduce((sum, x) => sum + (x.pts_last || 0), 0) +
+      (p.teams || []).reduce((sum, x) => sum + (x.pts_last || 0), 0);
+
+    const hierTotalHtml = hierTotal > 0
+      ? '<div class="hier-total">+' + hierTotal + ' pts hier</div>'
+      : '';
+
     let skatersHtml = p.skaters.map(s => {
       const displayPos = (s.position === 'D') ? 'D' : 'A';
       return '<tr>' +
@@ -706,6 +722,7 @@ function renderLeaderboard(list) {
         '<td><b>' + (t.name || '') + '</b> (' + (t.abbrev || '') + ')</td>' +
         '<td>' + (t.reg_wins || 0) + ' VR, ' + (t.ot_wins || 0) + ' VP, ' + (t.ot_losses || 0) + ' DP</td>' +
         '<td><b>' + (t.points || 0) + ' pts</b></td>' +
+        '<td>' + formatPtsLast(t.pts_last) + '</td>' +
         '</tr>';
     }).join('');
 
@@ -744,12 +761,13 @@ function renderLeaderboard(list) {
         '</div>' +
       '</div>' +
       '<div class="details" id="details-' + detailId + '">' +
+        hierTotalHtml +
         '<div class="section-title">Attaquants & Défenseurs</div>' +
         '<table><thead><tr><th>Joueur</th><th>Statistiques</th><th>Points</th><th>Hier</th></tr></thead><tbody>' + skatersHtml + '</tbody></table>' +
         '<div class="section-title">Gardiens</div>' +
         '<table><thead><tr><th>Gardien</th><th>Statistiques</th><th>Points</th><th>Hier</th></tr></thead><tbody>' + goaliesHtml + '</tbody></table>' +
         '<div class="section-title">Équipes</div>' +
-        '<table><thead><tr><th>Équipe</th><th>Statistiques</th><th>Points</th></tr></thead><tbody>' + teamsHtml + '</tbody></table>' +
+        '<table><thead><tr><th>Équipe</th><th>Statistiques</th><th>Points</th><th>Hier</th></tr></thead><tbody>' + teamsHtml + '</tbody></table>' +
       '</div>';
 
     container.appendChild(card);
