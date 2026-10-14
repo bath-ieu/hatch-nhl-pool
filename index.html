@@ -357,6 +357,13 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 .section-title { font-weight: 800; color: #0284c7; margin-top: 12px; font-size: 0.95rem; text-transform: uppercase; letter-spacing: 0.03em; }
 .badge { display: inline-block; padding: 2px 5px; border-radius: 4px; font-size: 0.72rem; font-weight: bold; background: #e2e8f0; color: #334155; }
 
+/* Points de la dernière mise à jour */
+.pts-last {
+  color: var(--green-arrow);
+  font-weight: 700;
+  white-space: nowrap;
+}
+
 @media (max-width: 520px) {
   .main-pill { padding: 6px 10px; min-height: 62px; }
   .points-breakdown { gap: 8px; }
@@ -405,7 +412,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 <script>
 const TEAM_NAMES = {
   "Cédrick Charest": "F* Kreider - Charest",
-  "Hak Jun Oh": "Junnie B Johns",
+  "Hakjun Oh": "Junnie B Johns",
   "Alexandru Rogai": "Les Rapides de Ville Marie",
   "Thomas Gueville": "PositiveChange",
   "Michael Lee": "GOGO HYDRO",
@@ -657,6 +664,11 @@ function compute1224Ranking(leaderboard) {
   return result;
 }
 
+function formatPtsLast(pts) {
+  if (!pts || pts <= 0) return '';
+  return '<span class="pts-last">+' + pts + ' pts</span>';
+}
+
 function renderLeaderboard(list) {
   const container = document.getElementById('leaderboard');
   container.innerHTML = '';
@@ -676,6 +688,7 @@ function renderLeaderboard(list) {
         '<td><b>' + (s.name || '') + '</b> <span class="badge">' + displayPos + '</span></td>' +
         '<td>' + (s.goals || 0) + ' B, ' + (s.assists || 0) + ' P</td>' +
         '<td><b>' + (s.points || 0) + ' pts</b></td>' +
+        '<td>' + formatPtsLast(s.pts_last) + '</td>' +
         '</tr>';
     }).join('');
 
@@ -684,6 +697,7 @@ function renderLeaderboard(list) {
         '<td><b>' + (g.name || '') + '</b> <span class="badge">G</span></td>' +
         '<td>' + (g.wins || 0) + ' V, ' + (g.shutouts || 0) + ' BL, ' + (g.otLosses || 0) + ' DP</td>' +
         '<td><b>' + (g.points || 0) + ' pts</b></td>' +
+        '<td>' + formatPtsLast(g.pts_last) + '</td>' +
         '</tr>';
     }).join('');
 
@@ -731,9 +745,9 @@ function renderLeaderboard(list) {
       '</div>' +
       '<div class="details" id="details-' + detailId + '">' +
         '<div class="section-title">Attaquants & Défenseurs</div>' +
-        '<table><thead><tr><th>Joueur</th><th>Statistiques</th><th>Points</th></tr></thead><tbody>' + skatersHtml + '</tbody></table>' +
+        '<table><thead><tr><th>Joueur</th><th>Statistiques</th><th>Points</th><th>Hier</th></tr></thead><tbody>' + skatersHtml + '</tbody></table>' +
         '<div class="section-title">Gardiens</div>' +
-        '<table><thead><tr><th>Gardien</th><th>Statistiques</th><th>Points</th></tr></thead><tbody>' + goaliesHtml + '</tbody></table>' +
+        '<table><thead><tr><th>Gardien</th><th>Statistiques</th><th>Points</th><th>Hier</th></tr></thead><tbody>' + goaliesHtml + '</tbody></table>' +
         '<div class="section-title">Équipes</div>' +
         '<table><thead><tr><th>Équipe</th><th>Statistiques</th><th>Points</th></tr></thead><tbody>' + teamsHtml + '</tbody></table>' +
       '</div>';
