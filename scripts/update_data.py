@@ -1116,6 +1116,7 @@ def fetch_json(url):
 def main():
     previous_ranks = {}
     previous_player_pts = {}
+    previous_team_pts = {}
 
     if os.path.exists("data.json"):
         try:
@@ -1130,10 +1131,13 @@ def main():
                 for g in item.get("goalies", []):
                     if g.get("name"):
                         previous_player_pts[g["name"]] = g.get("points", 0)
+                for t in item.get("teams", []):
+                    key = t.get("abbrev") or t.get("name")
+                    if key:
+                        previous_team_pts[key] = t.get("points", 0)
         except Exception as e:
             print(f"Impossible de lire data.json existant: {e}")
 
-    # 1. Classement Équipes
     standings_data = fetch_json("https://api-web.nhle.com/v1/standings/now")
     teams_stats = {}
     for tid, info in TEAM_INFO.items():
@@ -1166,7 +1170,6 @@ def main():
             teams_stats[tid]['ot_losses'] = ot_losses
             teams_stats[tid]['points'] = total_pts
 
-    # 2. Stats Joueurs
     all_player_ids = set()
     for p in PARTICIPANTS:
         all_player_ids.update(p['skaters'])
@@ -1224,7 +1227,16 @@ def main():
             entry["pts_last"] = 0
         return entry
 
-    # 3. Cumul par participant
+    def with_team_pts_last(st):
+        entry = dict(st)
+        key = entry.get("abbrev") or entry.get("name", "")
+        current = entry.get("points", 0)
+        if key in previous_team_pts:
+            entry["pts_last"] = max(0, current - previous_team_pts[key])
+        else:
+            entry["pts_last"] = 0
+        return entry
+
     leaderboard = []
     for p in PARTICIPANTS:
         att_pts, def_pts, goalie_pts, team_pts = 0, 0, 0, 0
@@ -1247,8 +1259,9 @@ def main():
 
         for tid in p['teams']:
             st = teams_stats.get(tid, {"name": f"Équipe {tid}", "points": 0, "reg_wins": 0, "ot_wins": 0, "ot_losses": 0})
-            team_pts += st.get('points', 0)
-            team_details.append(st)
+            entry = with_team_pts_last(st)
+            team_pts += entry.get('points', 0)
+            team_details.append(entry)
 
         total_points = att_pts + def_pts + goalie_pts + team_pts
 
