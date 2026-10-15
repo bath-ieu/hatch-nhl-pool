@@ -85,7 +85,7 @@ body {
   position: relative;
 }
 
-/* Boutons aux coins bas de l'en-tête */
+/* Boutons : le plus bas possible dans l'en-tête, sans l'agrandir */
 .view-btn {
   font-family: inherit;
   font-size: 0.65rem;
@@ -435,7 +435,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   font-size: 0.95rem;
   font-weight: 800;
   color: var(--text-dark);
-  margin: 0 0 12px 4px;
+  margin: 0 0 12px 2px;
   letter-spacing: 0.02em;
 }
 
@@ -443,11 +443,10 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: flex-start;
+  justify-content: space-between;
   align-items: flex-start;
-  gap: 12px;
-  overflow-x: auto;
-  -webkit-overflow-scrolling: touch;
+  gap: 6px;
+  width: 100%;
 }
 
 .adv-player {
@@ -455,8 +454,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   flex-direction: column;
   align-items: center;
   text-align: center;
-  flex: 0 0 auto;
-  width: auto;
+  flex: 1 1 0;
   min-width: 0;
   padding: 0;
   background: transparent;
@@ -476,12 +474,12 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   justify-content: center;
   gap: 4px;
   margin-bottom: 6px;
-  width: max-content;
-  max-width: none;
+  width: 100%;
+  flex-wrap: nowrap;
 }
 
 .adv-name {
-  font-size: 0.75rem;
+  font-size: clamp(0.65rem, 1.4vw, 0.8rem);
   font-weight: 600;
   color: var(--text-dark);
   line-height: 1.2;
@@ -501,8 +499,10 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 
 /* Photo sans fond ni cadre */
 .adv-photo {
-  width: 96px;
-  height: 120px;
+  width: 100%;
+  max-width: 110px;
+  height: auto;
+  aspect-ratio: 4 / 5;
   object-fit: cover;
   object-position: top center;
   background: transparent;
@@ -529,61 +529,38 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 
 @media (max-width: 640px) {
   .header {
-    padding-bottom: 0;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-end;
+    justify-content: space-between;
+    row-gap: 2px;
+  }
+
+  .brand-block {
+    width: 100%;
+    order: 1;
+    max-width: 280px;
   }
 
   #btnGeneral,
   #btnAdvanced {
     position: static;
+    order: 2;
   }
 
-  .header .view-nav-mobile {
-    display: flex;
-    width: 100%;
-    justify-content: space-between;
-    margin-bottom: 4px;
-  }
-
-  /* Sur mobile : boutons en bas de l'en-tête via flex, sans position absolute */
-  .header {
-    display: grid;
-    grid-template-columns: auto 1fr auto;
-    grid-template-rows: auto auto;
-    align-items: end;
-  }
-
-  .brand-block {
-    grid-column: 1 / -1;
-    grid-row: 1;
-    width: 70%;
-    justify-self: center;
-  }
-
-  #btnGeneral {
-    grid-column: 1;
-    grid-row: 2;
-    position: static;
-    justify-self: start;
-  }
-
-  #btnAdvanced {
-    grid-column: 3;
-    grid-row: 2;
-    position: static;
-    justify-self: end;
-  }
+  #btnGeneral { order: 2; }
+  #btnAdvanced { order: 3; margin-left: auto; }
 
   .search-hint {
     text-align: center;
     width: 100%;
-    order: 3;
   }
 
   .main-pill { padding: 6px 10px; min-height: 62px; }
   .points-breakdown { gap: 8px; }
   h1 { margin-top: -16px; }
   .bg-shape { opacity: 0.04; }
-  .adv-photo { width: 72px; height: 90px; }
+  .adv-photo { max-width: 80px; }
   .details th:nth-child(1), .details td:nth-child(1) { width: 48%; }
   .details th:nth-child(2), .details td:nth-child(2) { width: 20%; }
   .details th:nth-child(3), .details td:nth-child(3) { width: 14%; }
