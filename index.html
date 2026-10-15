@@ -85,20 +85,7 @@ body {
   position: relative;
 }
 
-/* Boutons en bas à gauche de l'en-tête, sans agrandir l'en-tête */
-.view-nav {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-  display: flex;
-  flex-direction: row;
-  flex-wrap: wrap;
-  align-items: center;
-  gap: 5px;
-  z-index: 5;
-  max-width: 42%;
-}
-
+/* Boutons aux coins bas de l'en-tête */
 .view-btn {
   font-family: inherit;
   font-size: 0.65rem;
@@ -112,6 +99,7 @@ body {
   transition: background 0.15s, color 0.15s, border-color 0.15s;
   white-space: nowrap;
   line-height: 1.25;
+  z-index: 5;
 }
 
 .view-btn:hover {
@@ -129,6 +117,18 @@ body {
   background: #dde4eb;
   border-color: #64748b;
   color: var(--text-dark);
+}
+
+#btnGeneral {
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+#btnAdvanced {
+  position: absolute;
+  right: 0;
+  bottom: 0;
 }
 
 .brand-block {
@@ -443,9 +443,9 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
-  justify-content: space-around;
+  justify-content: flex-start;
   align-items: flex-start;
-  gap: 8px;
+  gap: 12px;
   overflow-x: auto;
   -webkit-overflow-scrolling: touch;
 }
@@ -455,9 +455,9 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   flex-direction: column;
   align-items: center;
   text-align: center;
-  flex: 1 1 0;
-  min-width: 100px;
-  max-width: 160px;
+  flex: 0 0 auto;
+  width: auto;
+  min-width: 0;
   padding: 0;
   background: transparent;
 }
@@ -469,26 +469,26 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   margin-bottom: 2px;
 }
 
-/* Nom + logo AU-DESSUS de la photo, nom toujours complet sur UNE ligne */
+/* Nom + logo AU-DESSUS de la photo, nom toujours complet */
 .adv-name-row {
   display: flex;
   align-items: center;
   justify-content: center;
   gap: 4px;
   margin-bottom: 6px;
-  max-width: 100%;
-  width: 100%;
+  width: max-content;
+  max-width: none;
 }
 
 .adv-name {
-  font-size: 0.72rem;
+  font-size: 0.75rem;
   font-weight: 600;
   color: var(--text-dark);
   line-height: 1.2;
   white-space: nowrap;
-  overflow: hidden;
-  text-overflow: ellipsis;
-  max-width: calc(100% - 22px);
+  overflow: visible;
+  text-overflow: clip;
+  max-width: none;
 }
 
 .adv-team-logo {
@@ -529,35 +529,61 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 
 @media (max-width: 640px) {
   .header {
-    align-items: flex-start;
+    padding-bottom: 0;
   }
 
-  .view-nav {
+  #btnGeneral,
+  #btnAdvanced {
     position: static;
-    max-width: 100%;
+  }
+
+  .header .view-nav-mobile {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
     margin-bottom: 4px;
-    order: -1;
+  }
+
+  /* Sur mobile : boutons en bas de l'en-tête via flex, sans position absolute */
+  .header {
+    display: grid;
+    grid-template-columns: auto 1fr auto;
+    grid-template-rows: auto auto;
+    align-items: end;
   }
 
   .brand-block {
+    grid-column: 1 / -1;
+    grid-row: 1;
     width: 70%;
-    margin-left: auto;
-    margin-right: auto;
+    justify-self: center;
+  }
+
+  #btnGeneral {
+    grid-column: 1;
+    grid-row: 2;
+    position: static;
+    justify-self: start;
+  }
+
+  #btnAdvanced {
+    grid-column: 3;
+    grid-row: 2;
+    position: static;
+    justify-self: end;
   }
 
   .search-hint {
     text-align: center;
     width: 100%;
+    order: 3;
   }
 
   .main-pill { padding: 6px 10px; min-height: 62px; }
   .points-breakdown { gap: 8px; }
   h1 { margin-top: -16px; }
-  .sticky-top { padding: 6px 12px 4px 12px; }
   .bg-shape { opacity: 0.04; }
-  .view-btn { padding: 3px 8px; font-size: 0.62rem; }
   .adv-photo { width: 72px; height: 90px; }
-  .adv-player { min-width: 80px; }
   .details th:nth-child(1), .details td:nth-child(1) { width: 48%; }
   .details th:nth-child(2), .details td:nth-child(2) { width: 20%; }
   .details th:nth-child(3), .details td:nth-child(3) { width: 14%; }
@@ -582,14 +608,12 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 
   <div class="sticky-top">
     <header class="header">
-      <div class="view-nav">
-        <button type="button" class="view-btn active" id="btnGeneral" onclick="showView('general')">Classement Général</button>
-        <button type="button" class="view-btn" id="btnAdvanced" onclick="showView('advanced')">Top 5 des joueurs</button>
-      </div>
+      <button type="button" class="view-btn active" id="btnGeneral" onclick="showView('general')">Classement Général</button>
       <div class="brand-block">
         <img src="./images/hatch-logo.png" alt="Hatch Logo" class="hatch-logo" onerror="this.style.display='none'">
         <h1>🏒 NHL Super Pool 🥅</h1>
       </div>
+      <button type="button" class="view-btn" id="btnAdvanced" onclick="showView('advanced')">Top 5 des joueurs</button>
     </header>
 
     <p class="last-update" id="lastUpdate">Mise à jour: —</p>
