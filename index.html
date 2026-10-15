@@ -83,10 +83,9 @@ body {
   margin-bottom: 4px;
   width: 100%;
   position: relative;
-  padding-bottom: 2px;
 }
 
-/* Boutons : positionnés tout en bas de l'en-tête */
+/* Style des boutons */
 .view-btn {
   font-family: inherit;
   font-size: 0.65rem;
@@ -118,18 +117,6 @@ body {
   background: #dde4eb;
   border-color: #64748b;
   color: var(--text-dark);
-}
-
-#btnGeneral {
-  position: absolute;
-  left: 0;
-  bottom: 0;
-}
-
-#btnAdvanced {
-  position: absolute;
-  right: 0;
-  bottom: 0;
 }
 
 .brand-block {
@@ -208,12 +195,33 @@ h1 {
   opacity: 0.55;
 }
 
+/* Zone d'action sous la barre de recherche : Alignement à la même hauteur */
+.bottom-controls-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  min-height: 24px;
+  margin: 2px 0;
+}
+
 .search-hint {
   text-align: center;
   font-size: 0.72rem;
   color: #9ca3af;
-  margin: 0 0 2px 0;
+  margin: 0;
   font-weight: 500;
+}
+
+.bottom-controls-row #btnGeneral {
+  position: absolute;
+  left: 0;
+}
+
+.bottom-controls-row #btnAdvanced {
+  position: absolute;
+  right: 0;
 }
 
 .no-results {
@@ -440,7 +448,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   letter-spacing: 0.02em;
 }
 
-/* Support du défilement horizontal lorsque la largeur est restreinte */
 .adv-row {
   display: flex;
   flex-direction: row;
@@ -481,7 +488,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   margin-bottom: 2px;
 }
 
-/* Nom toujours complet */
 .adv-name-row {
   display: flex;
   align-items: center;
@@ -508,7 +514,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   display: block;
 }
 
-/* Photo sans fond ni cadre */
 .adv-photo {
   width: 100%;
   max-width: 100px;
@@ -538,34 +543,22 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   width: 100%;
 }
 
-@media (max-width: 640px) {
-  .header {
-    display: flex;
+/* Écrans de taille réduite : Bascule des boutons sous le texte d'aide */
+@media (max-width: 680px) {
+  .bottom-controls-row {
     flex-direction: column;
-    align-items: center;
-    position: relative;
-    padding-bottom: 24px;
+    gap: 6px;
   }
 
-  .brand-block {
-    width: 100%;
-    max-width: 280px;
+  .bottom-controls-row #btnGeneral,
+  .bottom-controls-row #btnAdvanced {
+    position: static;
   }
 
-  #btnGeneral {
-    position: absolute;
-    left: 0;
-    bottom: 0;
-  }
-
-  #btnAdvanced {
-    position: absolute;
-    right: 0;
-    bottom: 0;
-  }
-
-  .search-hint {
-    text-align: center;
+  .btn-wrapper {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
     width: 100%;
   }
 
@@ -597,12 +590,10 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 
   <div class="sticky-top">
     <header class="header">
-      <button type="button" class="view-btn active" id="btnGeneral" onclick="showView('general')">Classement Général</button>
       <div class="brand-block">
         <img src="./images/hatch-logo.png" alt="Hatch Logo" class="hatch-logo" onerror="this.style.display='none'">
         <h1>🏒 NHL Super Pool 🥅</h1>
       </div>
-      <button type="button" class="view-btn" id="btnAdvanced" onclick="showView('advanced')">Top 5 des joueurs</button>
     </header>
 
     <p class="last-update" id="lastUpdate">Mise à jour: —</p>
@@ -612,7 +603,13 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
       <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
     </div>
 
-    <p class="search-hint" id="searchHint">Cliquer sur le nom pour plus de détails</p>
+    <div class="bottom-controls-row">
+      <p class="search-hint" id="searchHint">Cliquer sur le nom pour plus de détails</p>
+      <div class="btn-wrapper">
+        <button type="button" class="view-btn active" id="btnGeneral" onclick="showView('general')">Classement Général</button>
+        <button type="button" class="view-btn" id="btnAdvanced" onclick="showView('advanced')">Top 5 des joueurs</button>
+      </div>
+    </div>
   </div>
 
   <div id="generalView">
