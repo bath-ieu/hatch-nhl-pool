@@ -83,9 +83,10 @@ body {
   margin-bottom: 4px;
   width: 100%;
   position: relative;
+  padding-bottom: 2px;
 }
 
-/* Boutons : le plus bas possible dans l'en-tête, sans l'agrandir */
+/* Boutons : positionnés tout en bas de l'en-tête */
 .view-btn {
   font-family: inherit;
   font-size: 0.65rem;
@@ -439,14 +440,27 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   letter-spacing: 0.02em;
 }
 
+/* Support du défilement horizontal lorsque la largeur est restreinte */
 .adv-row {
   display: flex;
   flex-direction: row;
   flex-wrap: nowrap;
   justify-content: space-between;
   align-items: flex-start;
-  gap: 6px;
+  gap: 12px;
   width: 100%;
+  overflow-x: auto;
+  padding-bottom: 6px;
+  -webkit-overflow-scrolling: touch;
+}
+
+.adv-row::-webkit-scrollbar {
+  height: 6px;
+}
+
+.adv-row::-webkit-scrollbar-thumb {
+  background: #cbd5e1;
+  border-radius: 10px;
 }
 
 .adv-player {
@@ -454,8 +468,8 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   flex-direction: column;
   align-items: center;
   text-align: center;
-  flex: 1 1 0;
-  min-width: 0;
+  flex: 1 0 110px;
+  min-width: 110px;
   padding: 0;
   background: transparent;
 }
@@ -467,7 +481,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   margin-bottom: 2px;
 }
 
-/* Nom + logo AU-DESSUS de la photo, nom toujours complet */
+/* Nom toujours complet */
 .adv-name-row {
   display: flex;
   align-items: center;
@@ -479,14 +493,11 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 }
 
 .adv-name {
-  font-size: clamp(0.65rem, 1.4vw, 0.8rem);
+  font-size: clamp(0.7rem, 1.4vw, 0.82rem);
   font-weight: 600;
   color: var(--text-dark);
   line-height: 1.2;
   white-space: nowrap;
-  overflow: visible;
-  text-overflow: clip;
-  max-width: none;
 }
 
 .adv-team-logo {
@@ -500,7 +511,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 /* Photo sans fond ni cadre */
 .adv-photo {
   width: 100%;
-  max-width: 110px;
+  max-width: 100px;
   height: auto;
   aspect-ratio: 4 / 5;
   object-fit: cover;
@@ -530,26 +541,28 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 @media (max-width: 640px) {
   .header {
     display: flex;
-    flex-wrap: wrap;
-    align-items: flex-end;
-    justify-content: space-between;
-    row-gap: 2px;
+    flex-direction: column;
+    align-items: center;
+    position: relative;
+    padding-bottom: 24px;
   }
 
   .brand-block {
     width: 100%;
-    order: 1;
     max-width: 280px;
   }
 
-  #btnGeneral,
-  #btnAdvanced {
-    position: static;
-    order: 2;
+  #btnGeneral {
+    position: absolute;
+    left: 0;
+    bottom: 0;
   }
 
-  #btnGeneral { order: 2; }
-  #btnAdvanced { order: 3; margin-left: auto; }
+  #btnAdvanced {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+  }
 
   .search-hint {
     text-align: center;
@@ -560,7 +573,6 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   .points-breakdown { gap: 8px; }
   h1 { margin-top: -16px; }
   .bg-shape { opacity: 0.04; }
-  .adv-photo { max-width: 80px; }
   .details th:nth-child(1), .details td:nth-child(1) { width: 48%; }
   .details th:nth-child(2), .details td:nth-child(2) { width: 20%; }
   .details th:nth-child(3), .details td:nth-child(3) { width: 14%; }
