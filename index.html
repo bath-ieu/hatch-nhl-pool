@@ -70,7 +70,7 @@ body {
   z-index: 100;
   background: linear-gradient(180deg, #ffffff 0%, #d1d5db 50%, #9ca3af 100%);
   background-attachment: fixed;
-  padding: 8px 15px 10px 15px;
+  padding: 8px 15px 6px 15px;
   margin: 0 -15px;
   box-shadow: 0 1px 8px rgba(0,0,0,0.04);
 }
@@ -160,39 +160,50 @@ h1 {
   opacity: 0.55;
 }
 
-.search-hint {
-  text-align: center;
-  font-size: 0.72rem;
-  color: #9ca3af;
-  margin: 0 0 8px 0;
-  font-weight: 500;
-}
-
-/* ===== Boutons de vue ===== */
-.view-nav {
+/* Ligne : hint + boutons sur le même niveau */
+.hint-nav-row {
   display: flex;
-  justify-content: space-between;
   align-items: center;
-  gap: 10px;
+  justify-content: space-between;
+  gap: 8px;
   width: 100%;
   max-width: 1100px;
-  margin: 0 auto;
-  padding: 0 2px;
+  margin: 0 auto 2px auto;
+  min-height: 28px;
   box-sizing: border-box;
+}
+
+.search-hint {
+  text-align: left;
+  font-size: 0.72rem;
+  color: #9ca3af;
+  margin: 0;
+  font-weight: 500;
+  flex: 1 1 auto;
+  min-width: 0;
+}
+
+.view-nav {
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+  gap: 6px;
+  flex-shrink: 0;
 }
 
 .view-btn {
   font-family: inherit;
-  font-size: clamp(0.72rem, 1.6vw, 0.88rem);
-  font-weight: 700;
-  padding: 8px 14px;
+  font-size: 0.68rem;
+  font-weight: 600;
+  padding: 4px 10px;
   border-radius: 999px;
-  border: 2.5px solid var(--border-color);
-  background: #ffffff;
-  color: var(--text-dark);
+  border: 1.5px solid #94a3b8;
+  background: transparent;
+  color: #64748b;
   cursor: pointer;
   transition: background 0.15s, color 0.15s, border-color 0.15s;
   white-space: nowrap;
+  line-height: 1.3;
 }
 
 .view-btn:hover {
@@ -201,15 +212,15 @@ h1 {
 }
 
 .view-btn.active {
-  background: var(--border-color);
-  color: #ffffff;
-  border-color: var(--border-color);
+  background: #e8edf2;
+  color: var(--text-dark);
+  border-color: #94a3b8;
 }
 
 .view-btn.active:hover {
-  background: var(--accent-red);
-  border-color: var(--accent-red);
-  color: #fff;
+  background: #dde4eb;
+  border-color: #64748b;
+  color: var(--text-dark);
 }
 
 .no-results {
@@ -295,18 +306,10 @@ h1 {
   gap: clamp(16px, 2.8vw, 32px);
 }
 
-.participant-info.wide .name-block {
-  flex-shrink: 0;
-}
+.participant-info.wide .name-block { flex-shrink: 0; }
+.participant-info.wide .points-breakdown { flex-grow: 1; justify-content: flex-start; }
 
-.participant-info.wide .points-breakdown {
-  flex-grow: 1;
-  justify-content: flex-start;
-}
-
-.name-block {
-  min-width: 0;
-}
+.name-block { min-width: 0; }
 
 .team-name-main {
   font-size: clamp(1.05rem, 2.7vw, 1.65rem);
@@ -415,71 +418,44 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   white-space: nowrap;
 }
 
-.details table {
-  table-layout: fixed;
+.details table { table-layout: fixed; width: 100%; }
+.details th:nth-child(1), .details td:nth-child(1) { width: 60%; text-align: left; }
+.details th:nth-child(2), .details td:nth-child(2) { width: 18%; text-align: right; }
+.details th:nth-child(3), .details td:nth-child(3) { width: 10%; text-align: right; }
+.details th:nth-child(4), .details td:nth-child(4) { width: 12%; text-align: center; }
+
+/* ===== Top 5 : sections empilées, joueurs en rangée ===== */
+#advancedView { display: none; padding-top: 8px; }
+
+.adv-section {
   width: 100%;
-}
-
-.details th:nth-child(1),
-.details td:nth-child(1) {
-  width: 60%;
-  text-align: left;
-}
-
-.details th:nth-child(2),
-.details td:nth-child(2) {
-  width: 18%;
-  text-align: right;
-}
-
-.details th:nth-child(3),
-.details td:nth-child(3) {
-  width: 10%;
-  text-align: right;
-}
-
-.details th:nth-child(4),
-.details td:nth-child(4) {
-  width: 12%;
-  text-align: center;
-}
-
-/* ===== Classements statistiques avancées ===== */
-#advancedView {
-  display: none;
-}
-
-.adv-scroll {
-  display: flex;
-  flex-direction: row;
-  flex-wrap: nowrap;
-  gap: 22px;
-  overflow-x: auto;
-  padding: 8px 4px 20px 4px;
-  -webkit-overflow-scrolling: touch;
-  scroll-snap-type: x proximity;
-}
-
-.adv-board {
-  flex: 0 0 auto;
-  width: min(280px, 82vw);
   background: #ffffff;
-  border: 3px solid var(--border-color);
-  border-radius: 18px;
+  border: 2.5px solid var(--border-color);
+  border-radius: 16px;
   padding: 14px 12px 16px 12px;
-  box-shadow: 0 4px 14px rgba(0,0,0,0.06);
-  scroll-snap-align: start;
+  margin-bottom: 16px;
   box-sizing: border-box;
+  box-shadow: 0 3px 10px rgba(0,0,0,0.04);
 }
 
-.adv-board-title {
+.adv-section-title {
   text-align: center;
-  font-size: 0.92rem;
+  font-size: 0.95rem;
   font-weight: 800;
   color: var(--text-dark);
   margin: 0 0 12px 0;
   letter-spacing: 0.02em;
-  line-height: 1.25;
+}
+
+.adv-row {
+  display: flex;
+  flex-direction: row;
+  flex-wrap: nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  gap: 8px;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
 }
 
 .adv-player {
@@ -487,62 +463,62 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   flex-direction: column;
   align-items: center;
   text-align: center;
-  padding: 10px 6px;
-  border-top: 1px solid #e2e8f0;
-}
-
-.adv-player:first-of-type {
-  border-top: none;
-  padding-top: 4px;
+  flex: 1 1 0;
+  min-width: 90px;
+  max-width: 140px;
+  padding: 4px 2px;
 }
 
 .adv-rank {
-  font-size: 0.7rem;
+  font-size: 0.68rem;
   font-weight: 800;
   color: #94a3b8;
   margin-bottom: 4px;
 }
 
+/* Silhouette rectangulaire (pas de bulle) */
 .adv-photo {
   width: 72px;
-  height: 72px;
-  border-radius: 50%;
+  height: 90px;
   object-fit: cover;
   object-position: top center;
-  background: #e2e8f0;
-  border: 2px solid #cbd5e1;
+  background: #e8eef3;
+  border: none;
+  border-radius: 4px;
+  display: block;
 }
 
 .adv-name-row {
   display: flex;
   align-items: center;
   justify-content: center;
-  gap: 6px;
+  gap: 4px;
   margin-top: 6px;
   max-width: 100%;
 }
 
 .adv-name {
-  font-size: 0.82rem;
+  font-size: 0.72rem;
   font-weight: 600;
   color: var(--text-dark);
   line-height: 1.2;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
-  max-width: 170px;
+  max-width: 100px;
 }
 
 .adv-team-logo {
-  width: 22px;
-  height: 22px;
+  width: 18px;
+  height: 18px;
   object-fit: contain;
   flex-shrink: 0;
+  display: block;
 }
 
 .adv-stat {
-  margin-top: 4px;
-  font-size: 1.05rem;
+  margin-top: 3px;
+  font-size: 0.95rem;
   font-weight: 800;
   color: var(--accent-red);
   line-height: 1.2;
@@ -552,7 +528,8 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   text-align: center;
   color: #94a3b8;
   font-size: 0.85rem;
-  padding: 16px 8px;
+  padding: 12px 8px;
+  width: 100%;
 }
 
 @media (max-width: 520px) {
@@ -560,18 +537,16 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   .points-breakdown { gap: 8px; }
   h1 { margin-top: -16px; }
   .brand-block { width: 65%; }
-  .sticky-top { padding: 6px 12px 8px 12px; }
+  .sticky-top { padding: 6px 12px 4px 12px; }
   .bg-shape { opacity: 0.04; }
-  .view-btn { padding: 7px 10px; font-size: 0.7rem; }
-
-  .details th:nth-child(1),
-  .details td:nth-child(1) { width: 48%; }
-  .details th:nth-child(2),
-  .details td:nth-child(2) { width: 20%; }
-  .details th:nth-child(3),
-  .details td:nth-child(3) { width: 14%; }
-  .details th:nth-child(4),
-  .details td:nth-child(4) { width: 18%; }
+  .view-btn { padding: 3px 8px; font-size: 0.62rem; }
+  .search-hint { font-size: 0.65rem; }
+  .adv-photo { width: 56px; height: 70px; }
+  .adv-player { min-width: 72px; }
+  .details th:nth-child(1), .details td:nth-child(1) { width: 48%; }
+  .details th:nth-child(2), .details td:nth-child(2) { width: 20%; }
+  .details th:nth-child(3), .details td:nth-child(3) { width: 14%; }
+  .details th:nth-child(4), .details td:nth-child(4) { width: 18%; }
 }
 </style>
 </head>
@@ -604,11 +579,13 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
       <span class="search-icon">🔍</span>
       <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
     </div>
-    <p class="search-hint" id="searchHint">Cliquer sur le nom pour plus de détails</p>
 
-    <div class="view-nav">
-      <button type="button" class="view-btn active" id="btnGeneral" onclick="showView('general')">Classement Général</button>
-      <button type="button" class="view-btn" id="btnAdvanced" onclick="showView('advanced')">Classement Statistiques Avancées</button>
+    <div class="hint-nav-row">
+      <p class="search-hint" id="searchHint">Cliquer sur le nom pour plus de détails</p>
+      <div class="view-nav">
+        <button type="button" class="view-btn active" id="btnGeneral" onclick="showView('general')">Classement Général</button>
+        <button type="button" class="view-btn" id="btnAdvanced" onclick="showView('advanced')">Top 5 des joueurs</button>
+      </div>
     </div>
   </div>
 
@@ -617,7 +594,7 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
   </div>
 
   <div id="advancedView">
-    <div class="adv-scroll" id="advScroll"></div>
+    <div id="advStack"></div>
   </div>
 </div>
 
@@ -819,7 +796,7 @@ function showView(which) {
     btnG.classList.remove('active');
     btnA.classList.add('active');
     if (searchWrap) searchWrap.style.display = 'none';
-    if (searchHint) searchHint.style.display = 'none';
+    if (searchHint) searchHint.style.visibility = 'hidden';
     renderAdvancedStats();
   } else {
     general.style.display = 'block';
@@ -827,18 +804,40 @@ function showView(which) {
     btnG.classList.add('active');
     btnA.classList.remove('active');
     if (searchWrap) searchWrap.style.display = 'block';
-    if (searchHint) searchHint.style.display = 'block';
+    if (searchHint) searchHint.style.visibility = 'visible';
   }
 }
 
 function headshotUrl(id) {
+  if (!id) return '';
+  // Source principale NHL (mugshot)
+  return 'https://assets.nhle.com/mugs/nhl/latest/' + id + '.png';
+}
+
+function headshotFallback(id) {
   if (!id) return '';
   return 'https://cms.nhl.bamgrid.com/images/headshots/current/168x168/' + id + '.jpg';
 }
 
 function teamLogoUrl(abbrev) {
   if (!abbrev) return '';
-  return 'https://assets.nhle.com/logos/nhl/svg/' + String(abbrev).toUpperCase() + '_light.svg';
+  const a = String(abbrev).toUpperCase();
+  // UTA parfois listé autrement
+  const map = { UTA: 'UTA', UTAH: 'UTA' };
+  const code = map[a] || a;
+  return 'https://assets.nhle.com/logos/nhl/svg/' + code + '_light.svg';
+}
+
+function onPhotoError(img, id) {
+  if (!img.dataset.fallbackTried) {
+    img.dataset.fallbackTried = '1';
+    const fb = headshotFallback(id);
+    if (fb) {
+      img.src = fb;
+      return;
+    }
+  }
+  img.style.visibility = 'hidden';
 }
 
 async function loadPoolData() {
@@ -874,12 +873,10 @@ async function loadPoolData() {
   }
 }
 
-/** Construit la liste unique des joueurs (sélectionnés) à partir de data.json */
 function buildPlayerPool(data) {
   if (Array.isArray(data.players) && data.players.length) {
     return data.players;
   }
-  // Fallback : extraire depuis le leaderboard
   const seen = {};
   (data.leaderboard || []).forEach(p => {
     (p.skaters || []).forEach(s => {
@@ -897,27 +894,22 @@ function buildPlayerPool(data) {
 function displayLastUpdate(isoString) {
   const el = document.getElementById('lastUpdate');
   if (!el) return;
-
   if (!isoString) {
     el.textContent = 'Mise à jour: —';
     return;
   }
-
   try {
     const date = new Date(isoString);
     if (isNaN(date.getTime())) {
       el.textContent = 'Mise à jour: —';
       return;
     }
-
     const options = { day: 'numeric', month: 'long' };
     const dateStr = date.toLocaleDateString('fr-CA', options);
     const hours = String(date.getHours()).padStart(2, '0');
     const minutes = String(date.getMinutes()).padStart(2, '0');
-    
     el.textContent = 'Mise à jour: ' + dateStr + ' ' + hours + 'h' + minutes;
   } catch (e) {
-    console.error('Erreur date:', e);
     el.textContent = 'Mise à jour: —';
   }
 }
@@ -950,13 +942,14 @@ function isAttacker(p) {
   const pos = (p.position || '').toUpperCase();
   return pos !== 'D' && pos !== 'G';
 }
-
 function isDefender(p) {
   return (p.position || '').toUpperCase() === 'D';
 }
-
 function isGoalie(p) {
   return (p.position || '').toUpperCase() === 'G';
+}
+function isCanadien(p) {
+  return String(p.abbrev || p.team || '').toUpperCase() === 'MTL';
 }
 
 function renderPlayerCard(player, rank, statLabel) {
@@ -966,12 +959,13 @@ function renderPlayerCard(player, rank, statLabel) {
   const photo = headshotUrl(id);
   const logo = teamLogoUrl(abbrev);
 
-  const photoHtml = photo
-    ? '<img class="adv-photo" src="' + photo + '" alt="' + name + '" loading="lazy" onerror="this.style.display=\'none\'">'
+  const photoHtml = id
+    ? '<img class="adv-photo" src="' + photo + '" alt="' + name + '" loading="lazy" ' +
+      'onerror="onPhotoError(this, ' + JSON.stringify(String(id)) + ')">'
     : '<div class="adv-photo"></div>';
 
   const logoHtml = logo
-    ? '<img class="adv-team-logo" src="' + logo + '" alt="' + abbrev + '" onerror="this.style.display=\'none\'">'
+    ? '<img class="adv-team-logo" src="' + logo + '" alt="' + abbrev + '" loading="lazy" onerror="this.style.display=\'none\'">'
     : '';
 
   return (
@@ -987,73 +981,75 @@ function renderPlayerCard(player, rank, statLabel) {
   );
 }
 
-function renderBoard(title, rowsHtml, hideIfEmpty) {
-  if (hideIfEmpty && !rowsHtml) return '';
-  const body = rowsHtml || '<div class="adv-empty">Aucune donnée</div>';
+function renderSection(title, cardsHtml, hideIfEmpty) {
+  if (hideIfEmpty && !cardsHtml) return '';
+  const body = cardsHtml
+    ? '<div class="adv-row">' + cardsHtml + '</div>'
+    : '<div class="adv-empty">Aucune donnée</div>';
   return (
-    '<div class="adv-board">' +
-      '<h3 class="adv-board-title">' + title + '</h3>' +
+    '<section class="adv-section">' +
+      '<h3 class="adv-section-title">' + title + '</h3>' +
       body +
-    '</div>'
+    '</section>'
   );
 }
 
 function renderAdvancedStats() {
-  const container = document.getElementById('advScroll');
+  const container = document.getElementById('advStack');
   if (!container) return;
 
   const players = allPlayers || [];
 
-  // 1) Points dernière soirée (pts_last) — caché si 0 partout
   const lastNight = topN(players, 5, p => p.pts_last || 0);
   const lastNightHtml = lastNight.map((p, i) =>
     renderPlayerCard(p, i + 1, '+' + (p.pts_last || 0) + ' pts')
   ).join('');
 
-  // 2) Points pool saison
   const totalPts = topN(players, 5, p => p.points || 0);
   const totalPtsHtml = totalPts.map((p, i) =>
     renderPlayerCard(p, i + 1, (p.points || 0) + ' Pts')
   ).join('');
 
-  // 3) Buteurs (buts NHL)
   const scorers = topN(players.filter(p => !isGoalie(p)), 5, p => p.goals || 0);
   const scorersHtml = scorers.map((p, i) =>
     renderPlayerCard(p, i + 1, (p.goals || 0) + ' Buts')
   ).join('');
 
-  // 4) Passeurs
   const assist = topN(players.filter(p => !isGoalie(p)), 5, p => p.assists || 0);
   const assistHtml = assist.map((p, i) =>
     renderPlayerCard(p, i + 1, (p.assists || 0) + ' Passes')
   ).join('');
 
-  // 5) Attaquants (points pool)
   const attackers = topN(players.filter(isAttacker), 5, p => p.points || 0);
   const attackersHtml = attackers.map((p, i) =>
     renderPlayerCard(p, i + 1, (p.points || 0) + ' Pts')
   ).join('');
 
-  // 6) Défenseurs
   const defenders = topN(players.filter(isDefender), 5, p => p.points || 0);
   const defendersHtml = defenders.map((p, i) =>
     renderPlayerCard(p, i + 1, (p.points || 0) + ' Pts')
   ).join('');
 
-  // 7) Gardiens
   const goalies = topN(players.filter(isGoalie), 5, p => p.points || 0);
   const goaliesHtml = goalies.map((p, i) =>
     renderPlayerCard(p, i + 1, (p.points || 0) + ' Pts')
   ).join('');
 
+  // Top 5 Canadiens (MTL) — points pool, joueurs présents dans les sélections
+  const canadiens = topN(players.filter(isCanadien), 5, p => p.points || 0);
+  const canadiensHtml = canadiens.map((p, i) =>
+    renderPlayerCard(p, i + 1, (p.points || 0) + ' Pts')
+  ).join('');
+
   container.innerHTML =
-    renderBoard('Points de la dernière soirée', lastNightHtml, true) +
-    renderBoard('Points Totals', totalPtsHtml, false) +
-    renderBoard('Meilleurs buteurs', scorersHtml, false) +
-    renderBoard('Meilleurs passeurs', assistHtml, false) +
-    renderBoard('Meilleurs Attaquants', attackersHtml, false) +
-    renderBoard('Meilleurs Défenseurs', defendersHtml, false) +
-    renderBoard('Meilleurs Gardiens', goaliesHtml, false);
+    renderSection('Points de la dernière soirée', lastNightHtml, true) +
+    renderSection('Points Totals', totalPtsHtml, false) +
+    renderSection('Meilleurs buteurs', scorersHtml, false) +
+    renderSection('Meilleurs passeurs', assistHtml, false) +
+    renderSection('Meilleurs Attaquants', attackersHtml, false) +
+    renderSection('Meilleurs Défenseurs', defendersHtml, false) +
+    renderSection('Meilleurs Gardiens', goaliesHtml, false) +
+    renderSection('Top 5 Canadiens', canadiensHtml, false);
 }
 
 function renderLeaderboard(list) {
@@ -1154,25 +1150,17 @@ function renderLeaderboard(list) {
   });
 
   requestAnimationFrame(() => {
-    requestAnimationFrame(() => {
-      applyResponsiveLayout();
-    });
+    requestAnimationFrame(() => applyResponsiveLayout());
   });
 }
 
 function applyResponsiveLayout() {
   document.querySelectorAll('.participant-info').forEach(info => {
     info.classList.remove('wide');
-
     const nameBlock = info.querySelector('.name-block');
     const breakdownEl = info.querySelector('.points-breakdown');
     if (!nameBlock || !breakdownEl) return;
-
-    const available = info.clientWidth;
-    const nameW = nameBlock.scrollWidth;
-    const breakW = breakdownEl.scrollWidth;
-
-    if (nameW + breakW + 18 < available) {
+    if (nameBlock.scrollWidth + breakdownEl.scrollWidth + 18 < info.clientWidth) {
       info.classList.add('wide');
     }
   });
@@ -1186,9 +1174,7 @@ window.addEventListener('resize', () => {
 
 function toggleDetails(index) {
   const el = document.getElementById('details-' + index);
-  if (el) {
-    el.style.display = (el.style.display === 'block') ? 'none' : 'block';
-  }
+  if (el) el.style.display = (el.style.display === 'block') ? 'none' : 'block';
 }
 
 loadPoolData();
