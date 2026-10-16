@@ -1,6 +1,6 @@
 {
   "season": "20262027",
-  "updated_at": "2026-10-16T00:11:39.980444+00:00",
+  "updated_at": "2026-10-16T00:23:56.370739+00:00",
   "leaderboard": [
     {
       "name": "Etienne Paquin-Foisy",
@@ -346,7 +346,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Utah Mammoth",
@@ -355,7 +355,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 15
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -364,7 +364,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -373,10 +373,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Noémie Pinsonnault-Duchemin",
@@ -722,7 +722,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -731,7 +731,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -740,7 +740,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -749,10 +749,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Philippe Martin",
@@ -1098,7 +1098,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -1107,7 +1107,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -1116,7 +1116,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -1125,7 +1125,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
       "trend": "same"
@@ -1474,7 +1474,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -1483,7 +1483,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -1492,7 +1492,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -1501,10 +1501,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Patrick Barbieri",
@@ -1850,7 +1850,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Anaheim Ducks",
@@ -1859,7 +1859,7 @@
           "reg_wins": 3,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 11
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -1868,7 +1868,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -1877,7 +1877,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
       "trend": "same"
@@ -2226,7 +2226,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Utah Mammoth",
@@ -2235,7 +2235,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 15
+          "pts_last": 0
         },
         {
           "name": "Detroit Red Wings",
@@ -2244,7 +2244,7 @@
           "reg_wins": 1,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 5
+          "pts_last": 0
         },
         {
           "name": "Nashville Predators",
@@ -2253,7 +2253,7 @@
           "reg_wins": 2,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 8
+          "pts_last": 0
         }
       ],
       "trend": "same"
@@ -2602,7 +2602,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -2611,7 +2611,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -2620,7 +2620,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -2629,10 +2629,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Philippe Khalil",
@@ -2978,7 +2978,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -2987,7 +2987,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -2996,7 +2996,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -3005,10 +3005,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Alexandre Bergeron",
@@ -3354,7 +3354,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -3363,7 +3363,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -3372,7 +3372,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -3381,10 +3381,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Benjamin Arcand",
@@ -3730,7 +3730,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -3739,7 +3739,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -3748,7 +3748,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -3757,10 +3757,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Patrick Bisson",
@@ -4106,7 +4106,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -4115,7 +4115,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -4124,7 +4124,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -4133,10 +4133,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Anthony Lamer",
@@ -4482,7 +4482,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -4491,7 +4491,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "St. Louis Blues",
@@ -4500,7 +4500,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -4509,10 +4509,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Serge Masse",
@@ -4858,7 +4858,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -4867,7 +4867,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -4876,7 +4876,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -4885,10 +4885,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jeanne Lemonde-Trudeau",
@@ -5234,7 +5234,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Anaheim Ducks",
@@ -5243,7 +5243,7 @@
           "reg_wins": 3,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 11
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -5252,7 +5252,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -5261,10 +5261,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jean Lamoureux",
@@ -5610,7 +5610,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -5619,7 +5619,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Detroit Red Wings",
@@ -5628,7 +5628,7 @@
           "reg_wins": 1,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 5
+          "pts_last": 0
         },
         {
           "name": "Seattle Kraken",
@@ -5637,10 +5637,10 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Charles-Olivier Boudrias",
@@ -5986,7 +5986,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -5995,7 +5995,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Columbus Blue Jackets",
@@ -6004,7 +6004,7 @@
           "reg_wins": 1,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 5
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -6013,10 +6013,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Amelie Mercier Arsenault",
@@ -6362,7 +6362,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -6371,7 +6371,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -6380,7 +6380,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -6389,10 +6389,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Hubert Perreault",
@@ -6738,7 +6738,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -6747,7 +6747,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -6756,7 +6756,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -6765,10 +6765,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "François Lacerte",
@@ -7114,7 +7114,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -7123,7 +7123,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -7132,7 +7132,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -7141,10 +7141,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Ariel Beauregard Breton",
@@ -7490,7 +7490,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -7499,7 +7499,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -7508,7 +7508,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -7517,10 +7517,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Emmanuelle Lajoie",
@@ -7866,7 +7866,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -7875,7 +7875,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "St. Louis Blues",
@@ -7884,7 +7884,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -7893,10 +7893,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Vincent Cassabon",
@@ -8242,7 +8242,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -8251,7 +8251,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "St. Louis Blues",
@@ -8260,7 +8260,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -8269,10 +8269,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Mohamad Bouaram",
@@ -8618,7 +8618,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -8627,7 +8627,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -8636,7 +8636,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -8645,10 +8645,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Normand Yelle",
@@ -8994,7 +8994,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -9003,7 +9003,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -9012,7 +9012,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -9021,10 +9021,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Mathieu Mei",
@@ -9370,7 +9370,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -9379,7 +9379,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -9388,7 +9388,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -9397,7 +9397,7 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
       "trend": "same"
@@ -9746,7 +9746,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -9755,7 +9755,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -9764,7 +9764,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -9773,10 +9773,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Nathalie Bourgeois",
@@ -10122,7 +10122,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -10131,7 +10131,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -10140,7 +10140,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Nashville Predators",
@@ -10149,10 +10149,10 @@
           "reg_wins": 2,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 8
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Tristan Juette",
@@ -10498,7 +10498,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -10507,7 +10507,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -10516,7 +10516,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -10525,7 +10525,7 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
       "trend": "same"
@@ -10874,7 +10874,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -10883,7 +10883,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -10892,7 +10892,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -10901,7 +10901,7 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
       "trend": "same"
@@ -11250,7 +11250,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -11259,7 +11259,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -11268,7 +11268,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -11277,10 +11277,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Marc-Antoine Lebel",
@@ -11626,7 +11626,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -11635,7 +11635,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -11644,7 +11644,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -11653,10 +11653,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jean-Sebastien Langlois",
@@ -12002,7 +12002,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -12011,7 +12011,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -12020,7 +12020,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -12029,10 +12029,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Benoit Gaudet",
@@ -12378,7 +12378,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -12387,7 +12387,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -12396,7 +12396,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -12405,10 +12405,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Daniel Reichelson",
@@ -12754,7 +12754,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Utah Mammoth",
@@ -12763,7 +12763,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 15
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -12772,7 +12772,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -12781,10 +12781,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Steven Parent",
@@ -13130,7 +13130,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -13139,7 +13139,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -13148,7 +13148,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -13157,10 +13157,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Justine Fournier",
@@ -13506,7 +13506,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -13515,7 +13515,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -13524,7 +13524,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -13533,10 +13533,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Matthew Totarella",
@@ -13882,7 +13882,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -13891,7 +13891,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -13900,7 +13900,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -13909,10 +13909,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Bruno Cournoyer",
@@ -14258,7 +14258,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -14267,7 +14267,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -14276,7 +14276,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -14285,10 +14285,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Michel Bolduc",
@@ -14634,7 +14634,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -14643,7 +14643,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -14652,7 +14652,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -14661,10 +14661,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Kevin Gadbois",
@@ -15010,7 +15010,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -15019,7 +15019,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -15028,7 +15028,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -15037,10 +15037,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Naomie Curis-Friedman",
@@ -15386,7 +15386,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -15395,7 +15395,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -15404,7 +15404,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -15413,10 +15413,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Olivier Jubelin",
@@ -15762,7 +15762,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -15771,7 +15771,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -15780,7 +15780,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Nashville Predators",
@@ -15789,10 +15789,10 @@
           "reg_wins": 2,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 8
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Samuel Leblanc",
@@ -16138,7 +16138,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -16147,7 +16147,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "St. Louis Blues",
@@ -16156,7 +16156,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Seattle Kraken",
@@ -16165,10 +16165,10 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Andreanne Blais",
@@ -16514,7 +16514,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -16523,7 +16523,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -16532,7 +16532,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Vancouver Canucks",
@@ -16541,10 +16541,10 @@
           "reg_wins": 1,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 5
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Olivier Lemoine",
@@ -16890,7 +16890,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -16899,7 +16899,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -16908,7 +16908,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -16917,10 +16917,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Joel Labadie",
@@ -17266,7 +17266,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -17275,7 +17275,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -17284,7 +17284,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -17293,10 +17293,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jean-Benoit Boucher",
@@ -17642,7 +17642,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Utah Mammoth",
@@ -17651,7 +17651,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 15
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -17660,7 +17660,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -17669,10 +17669,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Ludovic Morissette",
@@ -18018,7 +18018,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -18027,7 +18027,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -18036,7 +18036,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -18045,10 +18045,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Michael Lee",
@@ -18394,7 +18394,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -18403,7 +18403,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -18412,7 +18412,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -18421,10 +18421,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Josianne Lafontaine",
@@ -18770,7 +18770,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -18779,7 +18779,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -18788,7 +18788,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -18797,10 +18797,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Vincent Joyal",
@@ -19146,7 +19146,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -19155,7 +19155,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -19164,7 +19164,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -19173,10 +19173,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Bakar Amara",
@@ -19522,7 +19522,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -19531,7 +19531,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -19540,7 +19540,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -19549,10 +19549,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Xavier Monette",
@@ -19898,7 +19898,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -19907,7 +19907,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -19916,7 +19916,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -19925,10 +19925,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Robert Dellazizzo",
@@ -20274,7 +20274,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -20283,7 +20283,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -20292,7 +20292,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -20301,10 +20301,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Mathieu Labranche",
@@ -20650,7 +20650,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -20659,7 +20659,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -20668,7 +20668,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -20677,10 +20677,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Mélanie Ouellette",
@@ -21026,7 +21026,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -21035,7 +21035,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -21044,7 +21044,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -21053,10 +21053,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Louis-Philippe Dufresne Viau",
@@ -21402,7 +21402,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -21411,7 +21411,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -21420,7 +21420,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Seattle Kraken",
@@ -21429,10 +21429,10 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Dina Lagonskaya",
@@ -21778,7 +21778,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -21787,7 +21787,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -21796,7 +21796,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -21805,10 +21805,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Carine Adam",
@@ -22154,7 +22154,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -22163,7 +22163,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -22172,7 +22172,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -22181,10 +22181,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Sophie Couture",
@@ -22530,7 +22530,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -22539,7 +22539,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -22548,7 +22548,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -22557,10 +22557,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Martin Beaulieu",
@@ -22906,7 +22906,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -22915,7 +22915,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -22924,7 +22924,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -22933,10 +22933,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Thomas Gueville",
@@ -23282,7 +23282,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -23291,7 +23291,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -23300,7 +23300,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -23309,10 +23309,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Samia Merazga",
@@ -23658,7 +23658,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -23667,7 +23667,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -23676,7 +23676,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -23685,10 +23685,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Xavier Rousseau-Laliberte",
@@ -24034,7 +24034,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Utah Mammoth",
@@ -24043,7 +24043,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 15
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -24052,7 +24052,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -24061,10 +24061,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Ashley Nguyen",
@@ -24410,7 +24410,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -24419,7 +24419,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -24428,7 +24428,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -24437,10 +24437,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Aymeric Bellefeuille",
@@ -24786,7 +24786,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -24795,7 +24795,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -24804,7 +24804,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -24813,10 +24813,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Léonore Jean-François",
@@ -25162,7 +25162,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Anaheim Ducks",
@@ -25171,7 +25171,7 @@
           "reg_wins": 3,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 11
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -25180,7 +25180,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -25189,10 +25189,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Nick Totarella",
@@ -25538,7 +25538,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -25547,7 +25547,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -25556,7 +25556,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Seattle Kraken",
@@ -25565,10 +25565,10 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Axelle Monnot",
@@ -25914,7 +25914,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -25923,7 +25923,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -25932,7 +25932,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -25941,10 +25941,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Louis-Philippe Corriveau",
@@ -26290,7 +26290,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -26299,7 +26299,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -26308,7 +26308,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -26317,10 +26317,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Robert Austen",
@@ -26666,7 +26666,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -26675,7 +26675,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -26684,7 +26684,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -26693,10 +26693,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "George Forlini",
@@ -27042,7 +27042,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -27051,7 +27051,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -27060,7 +27060,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -27069,10 +27069,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Gabrielle Lamirande-Gauvin",
@@ -27418,7 +27418,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -27427,7 +27427,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -27436,7 +27436,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -27445,10 +27445,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Nousk Ghailane",
@@ -27794,7 +27794,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -27803,7 +27803,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -27812,7 +27812,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -27821,10 +27821,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Colin Barbeau",
@@ -28170,7 +28170,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -28179,7 +28179,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -28188,7 +28188,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -28197,10 +28197,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Florence Riopel",
@@ -28546,7 +28546,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -28555,7 +28555,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -28564,7 +28564,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -28573,10 +28573,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Danny Bouchard",
@@ -28922,7 +28922,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Anaheim Ducks",
@@ -28931,7 +28931,7 @@
           "reg_wins": 3,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 11
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -28940,7 +28940,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -28949,10 +28949,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Alexis Lemire",
@@ -29298,7 +29298,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -29307,7 +29307,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -29316,7 +29316,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -29325,10 +29325,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Arnaud Fournier",
@@ -29674,7 +29674,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -29683,7 +29683,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -29692,7 +29692,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -29701,10 +29701,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jean-Sebastien Bisaillon",
@@ -30050,7 +30050,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -30059,7 +30059,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -30068,7 +30068,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -30077,10 +30077,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Rebecca Owen",
@@ -30426,7 +30426,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -30435,7 +30435,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -30444,7 +30444,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -30453,10 +30453,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Eduardo",
@@ -30802,7 +30802,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -30811,7 +30811,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -30820,7 +30820,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -30829,10 +30829,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Daniel Marcoux",
@@ -31178,7 +31178,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Boston Bruins",
@@ -31187,7 +31187,7 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -31196,7 +31196,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -31205,10 +31205,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Olivier Tom",
@@ -31554,7 +31554,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -31563,7 +31563,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -31572,7 +31572,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -31581,10 +31581,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Julie Harvey",
@@ -31930,7 +31930,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -31939,7 +31939,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -31948,7 +31948,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -31957,10 +31957,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Kalvin Southern",
@@ -32306,7 +32306,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -32315,7 +32315,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -32324,7 +32324,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -32333,10 +32333,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Ahmad Bou Aram",
@@ -32682,7 +32682,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -32691,7 +32691,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -32700,7 +32700,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "Seattle Kraken",
@@ -32709,10 +32709,10 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jean Francois Boulet",
@@ -33058,7 +33058,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -33067,7 +33067,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -33076,7 +33076,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -33085,10 +33085,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Isabelle Lemay",
@@ -33434,7 +33434,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -33443,7 +33443,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -33452,7 +33452,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -33461,10 +33461,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Pamela Pachal",
@@ -33810,7 +33810,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -33819,7 +33819,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -33828,7 +33828,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -33837,10 +33837,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Nicolas Besner",
@@ -34186,7 +34186,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -34195,7 +34195,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -34204,7 +34204,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -34213,10 +34213,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Eva Marre",
@@ -34562,7 +34562,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -34571,7 +34571,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -34580,7 +34580,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -34589,10 +34589,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Frederic Langevin",
@@ -34938,7 +34938,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -34947,7 +34947,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -34956,7 +34956,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -34965,10 +34965,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Allen Chan",
@@ -35314,7 +35314,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -35323,7 +35323,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -35332,7 +35332,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -35341,10 +35341,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "John Greene",
@@ -35690,7 +35690,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -35699,7 +35699,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -35708,7 +35708,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -35717,10 +35717,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Marc Cousineau",
@@ -36066,7 +36066,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -36075,7 +36075,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -36084,7 +36084,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -36093,10 +36093,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Francis Emond",
@@ -36442,7 +36442,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -36451,7 +36451,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "St. Louis Blues",
@@ -36460,7 +36460,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -36469,10 +36469,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Charles Simard",
@@ -36818,7 +36818,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -36827,7 +36827,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -36836,7 +36836,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -36845,10 +36845,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Florence Gagnon",
@@ -37194,7 +37194,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -37203,7 +37203,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -37212,7 +37212,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -37221,10 +37221,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Mounir Tamimi",
@@ -37570,7 +37570,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -37579,7 +37579,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -37588,7 +37588,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -37597,10 +37597,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Cristina Murillo",
@@ -37946,7 +37946,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Utah Mammoth",
@@ -37955,7 +37955,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 15
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -37964,7 +37964,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -37973,10 +37973,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Michael Bino",
@@ -38322,7 +38322,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -38331,7 +38331,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -38340,7 +38340,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -38349,10 +38349,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Soulaiman Benaamer",
@@ -38698,7 +38698,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -38707,7 +38707,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -38716,7 +38716,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -38725,10 +38725,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Xavier Lafortune",
@@ -39074,7 +39074,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Ottawa Senators",
@@ -39083,7 +39083,7 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -39092,7 +39092,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -39101,10 +39101,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Chloe Sallé",
@@ -39450,7 +39450,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Utah Mammoth",
@@ -39459,7 +39459,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 15
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -39468,7 +39468,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Seattle Kraken",
@@ -39477,10 +39477,10 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Pier-Olivier Hotte-Rene",
@@ -39826,7 +39826,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -39835,7 +39835,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "St. Louis Blues",
@@ -39844,7 +39844,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -39853,10 +39853,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Shayne Renaud",
@@ -40202,7 +40202,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -40211,7 +40211,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -40220,7 +40220,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -40229,10 +40229,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Dany Lafontaine",
@@ -40578,7 +40578,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -40587,7 +40587,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -40596,7 +40596,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -40605,10 +40605,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Hakjun Oh",
@@ -40954,7 +40954,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -40963,7 +40963,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -40972,7 +40972,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -40981,10 +40981,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Marc-Antoine Dery",
@@ -41330,7 +41330,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -41339,7 +41339,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -41348,7 +41348,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -41357,10 +41357,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Line Poirier",
@@ -41706,7 +41706,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Boston Bruins",
@@ -41715,7 +41715,7 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -41724,7 +41724,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -41733,10 +41733,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Vinh Truong",
@@ -42082,7 +42082,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -42091,7 +42091,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -42100,7 +42100,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -42109,10 +42109,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jessica Forest",
@@ -42458,7 +42458,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -42467,7 +42467,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -42476,7 +42476,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -42485,10 +42485,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Martin Bélanger",
@@ -42834,7 +42834,7 @@
           "reg_wins": 4,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -42843,7 +42843,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -42852,7 +42852,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -42861,10 +42861,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jacob Bissonnette",
@@ -43210,7 +43210,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -43219,7 +43219,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -43228,7 +43228,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -43237,10 +43237,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Alexy Fafard",
@@ -43586,7 +43586,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -43595,7 +43595,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -43604,7 +43604,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -43613,10 +43613,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Lenna Gatouillat",
@@ -43962,7 +43962,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -43971,7 +43971,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -43980,7 +43980,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -43989,10 +43989,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Simon-Pierre Lefebvre",
@@ -44338,7 +44338,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -44347,7 +44347,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -44356,7 +44356,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -44365,10 +44365,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Alexia Fiorilli",
@@ -44714,7 +44714,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -44723,7 +44723,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -44732,7 +44732,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -44741,10 +44741,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Martin Brunet",
@@ -45090,7 +45090,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -45099,7 +45099,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -45108,7 +45108,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -45117,10 +45117,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Regina Nair",
@@ -45466,7 +45466,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -45475,7 +45475,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -45484,7 +45484,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -45493,10 +45493,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Fabrice Danger",
@@ -45842,7 +45842,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -45851,7 +45851,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -45860,7 +45860,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -45869,10 +45869,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Marie-Claude Tremblay",
@@ -46218,7 +46218,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -46227,7 +46227,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -46236,7 +46236,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -46245,10 +46245,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Cédrick Charest",
@@ -46594,7 +46594,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -46603,7 +46603,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -46612,7 +46612,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -46621,10 +46621,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jules Saint-Jean",
@@ -46970,7 +46970,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -46979,7 +46979,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -46988,7 +46988,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -46997,10 +46997,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Alondra Rima",
@@ -47346,7 +47346,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -47355,7 +47355,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -47364,7 +47364,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -47373,10 +47373,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Maxime Beaudry-Lemay",
@@ -47722,7 +47722,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -47731,7 +47731,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -47740,7 +47740,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -47749,10 +47749,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jean-Marc Gauthier",
@@ -48098,7 +48098,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -48107,7 +48107,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -48116,7 +48116,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Nashville Predators",
@@ -48125,10 +48125,10 @@
           "reg_wins": 2,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 8
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Andrew Middleton",
@@ -48474,7 +48474,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -48483,7 +48483,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -48492,7 +48492,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -48501,10 +48501,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Sabrina Ficara",
@@ -48850,7 +48850,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -48859,7 +48859,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -48868,7 +48868,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -48877,10 +48877,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Lucas Parkinson",
@@ -49226,7 +49226,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -49235,7 +49235,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -49244,7 +49244,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -49253,10 +49253,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Philippe Denis-Ducharme",
@@ -49602,7 +49602,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -49611,7 +49611,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -49620,7 +49620,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -49629,10 +49629,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Logan Bélanger",
@@ -49978,7 +49978,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -49987,7 +49987,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -49996,7 +49996,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -50005,10 +50005,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Michael Brie",
@@ -50354,7 +50354,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -50363,7 +50363,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -50372,7 +50372,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -50381,10 +50381,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Leandro Pereira",
@@ -50730,7 +50730,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -50739,7 +50739,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Columbus Blue Jackets",
@@ -50748,7 +50748,7 @@
           "reg_wins": 1,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 5
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -50757,10 +50757,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Marie-Laurence Boutin",
@@ -51106,7 +51106,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -51115,7 +51115,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -51124,7 +51124,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -51133,10 +51133,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Gerald Tugas",
@@ -51482,7 +51482,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -51491,7 +51491,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -51500,7 +51500,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -51509,10 +51509,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Quentin Tuphile",
@@ -51858,7 +51858,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -51867,7 +51867,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -51876,7 +51876,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -51885,10 +51885,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jordan Moman",
@@ -52234,7 +52234,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Utah Mammoth",
@@ -52243,7 +52243,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 15
+          "pts_last": 0
         },
         {
           "name": "St. Louis Blues",
@@ -52252,7 +52252,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -52261,7 +52261,7 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
       "trend": "same"
@@ -52610,7 +52610,7 @@
           "reg_wins": 4,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Boston Bruins",
@@ -52619,7 +52619,7 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -52628,7 +52628,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "Nashville Predators",
@@ -52637,10 +52637,10 @@
           "reg_wins": 2,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 8
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Laurence Gamache",
@@ -52986,7 +52986,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -52995,7 +52995,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -53004,7 +53004,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -53013,10 +53013,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Jean Gohin",
@@ -53362,7 +53362,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -53371,7 +53371,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -53380,7 +53380,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -53389,10 +53389,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Alain Roy",
@@ -53738,7 +53738,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -53747,7 +53747,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -53756,7 +53756,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -53765,10 +53765,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Charles-Antoine Dubeau",
@@ -54114,7 +54114,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -54123,7 +54123,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -54132,7 +54132,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -54141,10 +54141,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Gabriel De Muy Larose",
@@ -54490,7 +54490,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -54499,7 +54499,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -54508,7 +54508,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -54517,10 +54517,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Samantha Levac",
@@ -54866,7 +54866,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -54875,7 +54875,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Columbus Blue Jackets",
@@ -54884,7 +54884,7 @@
           "reg_wins": 1,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 5
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -54893,10 +54893,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Elisabeth Danis",
@@ -55242,7 +55242,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -55251,7 +55251,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -55260,7 +55260,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -55269,10 +55269,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Serge Danis",
@@ -55618,7 +55618,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -55627,7 +55627,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Detroit Red Wings",
@@ -55636,7 +55636,7 @@
           "reg_wins": 1,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 5
+          "pts_last": 0
         },
         {
           "name": "Seattle Kraken",
@@ -55645,10 +55645,10 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Dominic Neveu",
@@ -55994,7 +55994,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Utah Mammoth",
@@ -56003,7 +56003,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 15
+          "pts_last": 0
         },
         {
           "name": "St. Louis Blues",
@@ -56012,7 +56012,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -56021,10 +56021,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Alexandre Neal",
@@ -56370,7 +56370,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Boston Bruins",
@@ -56379,7 +56379,7 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -56388,7 +56388,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -56397,10 +56397,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Pierre-Luc Pigeon",
@@ -56746,7 +56746,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -56755,7 +56755,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -56764,7 +56764,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -56773,10 +56773,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Marc-Antoine Laforest",
@@ -57122,7 +57122,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -57131,7 +57131,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -57140,7 +57140,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -57149,10 +57149,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Guildo Gagnon",
@@ -57498,7 +57498,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Utah Mammoth",
@@ -57507,7 +57507,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 15
+          "pts_last": 0
         },
         {
           "name": "St. Louis Blues",
@@ -57516,7 +57516,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Seattle Kraken",
@@ -57525,10 +57525,10 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Karl St-André",
@@ -57874,7 +57874,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -57883,7 +57883,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -57892,7 +57892,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Chicago Blackhawks",
@@ -57901,10 +57901,10 @@
           "reg_wins": 2,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Samuel Rouleau",
@@ -58250,7 +58250,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -58259,7 +58259,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -58268,7 +58268,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -58277,10 +58277,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Marine Quemeneur",
@@ -58626,7 +58626,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -58635,7 +58635,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -58644,7 +58644,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -58653,10 +58653,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Mathieu St-Pierre",
@@ -59002,7 +59002,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -59011,7 +59011,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -59020,7 +59020,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -59029,10 +59029,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Yanick Tremblay",
@@ -59378,7 +59378,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -59387,7 +59387,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -59396,7 +59396,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "Calgary Flames",
@@ -59405,10 +59405,10 @@
           "reg_wins": 1,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 3
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Antoine Duguay",
@@ -59754,7 +59754,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -59763,7 +59763,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -59772,7 +59772,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -59781,10 +59781,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Caroline Bergeron",
@@ -60130,7 +60130,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -60139,7 +60139,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -60148,7 +60148,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Calgary Flames",
@@ -60157,10 +60157,10 @@
           "reg_wins": 1,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 3
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Aya el Khazen",
@@ -60506,7 +60506,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -60515,7 +60515,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Columbus Blue Jackets",
@@ -60524,7 +60524,7 @@
           "reg_wins": 1,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 5
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -60533,10 +60533,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Guillaume Leblanc",
@@ -60882,7 +60882,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -60891,7 +60891,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -60900,7 +60900,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -60909,10 +60909,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Lyès Hacini",
@@ -61258,7 +61258,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -61267,7 +61267,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -61276,7 +61276,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -61285,10 +61285,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Nicolas St-Pierre",
@@ -61634,7 +61634,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -61643,7 +61643,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -61652,7 +61652,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -61661,7 +61661,7 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
       "trend": "same"
@@ -62010,7 +62010,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Tampa Bay Lightning",
@@ -62019,7 +62019,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -62028,7 +62028,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -62037,10 +62037,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Anne-Laurence Trudeau",
@@ -62386,7 +62386,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -62395,7 +62395,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -62404,7 +62404,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -62413,10 +62413,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Yves Couture",
@@ -62762,7 +62762,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 2,
-          "pts_last": 10
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -62771,7 +62771,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -62780,7 +62780,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -62789,10 +62789,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Julie Arseneault",
@@ -63138,7 +63138,7 @@
           "reg_wins": 5,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 18
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -63147,7 +63147,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New York Islanders",
@@ -63156,7 +63156,7 @@
           "reg_wins": 3,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -63165,10 +63165,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Steeve Simard",
@@ -63514,7 +63514,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -63523,7 +63523,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -63532,7 +63532,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -63541,10 +63541,10 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Veronique Therrien",
@@ -63890,7 +63890,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -63899,7 +63899,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -63908,7 +63908,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -63917,10 +63917,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Vincent Coulombe",
@@ -64266,7 +64266,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Washington Capitals",
@@ -64275,7 +64275,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 12
+          "pts_last": 0
         },
         {
           "name": "Philadelphia Flyers",
@@ -64284,7 +64284,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 3,
-          "pts_last": 3
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -64293,10 +64293,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Lauriane Marchand",
@@ -64642,7 +64642,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -64651,7 +64651,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Detroit Red Wings",
@@ -64660,7 +64660,7 @@
           "reg_wins": 1,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 5
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -64669,10 +64669,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Rami El Mays",
@@ -65018,7 +65018,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -65027,7 +65027,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Columbus Blue Jackets",
@@ -65036,7 +65036,7 @@
           "reg_wins": 1,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 5
+          "pts_last": 0
         },
         {
           "name": "New York Rangers",
@@ -65045,10 +65045,10 @@
           "reg_wins": 6,
           "ot_wins": 0,
           "ot_losses": 0,
-          "pts_last": 18
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Jean-Philip Tremblay",
@@ -65394,7 +65394,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -65403,7 +65403,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "New Jersey Devils",
@@ -65412,7 +65412,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 0,
-          "pts_last": 7
+          "pts_last": 0
         },
         {
           "name": "Winnipeg Jets",
@@ -65421,7 +65421,7 @@
           "reg_wins": 4,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 13
+          "pts_last": 0
         }
       ],
       "trend": "same"
@@ -65770,7 +65770,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Edmonton Oilers",
@@ -65779,7 +65779,7 @@
           "reg_wins": 5,
           "ot_wins": 0,
           "ot_losses": 1,
-          "pts_last": 16
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -65788,7 +65788,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Seattle Kraken",
@@ -65797,10 +65797,10 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         }
       ],
-      "trend": "up"
+      "trend": "same"
     },
     {
       "name": "Francois Létourneau",
@@ -66146,7 +66146,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Buffalo Sabres",
@@ -66155,7 +66155,7 @@
           "reg_wins": 2,
           "ot_wins": 1,
           "ot_losses": 1,
-          "pts_last": 9
+          "pts_last": 0
         },
         {
           "name": "Los Angeles Kings",
@@ -66164,7 +66164,7 @@
           "reg_wins": 0,
           "ot_wins": 0,
           "ot_losses": 2,
-          "pts_last": 2
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -66173,10 +66173,10 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
-      "trend": "down"
+      "trend": "same"
     },
     {
       "name": "Janet Long",
@@ -66522,7 +66522,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "Boston Bruins",
@@ -66531,7 +66531,7 @@
           "reg_wins": 4,
           "ot_wins": 1,
           "ot_losses": 0,
-          "pts_last": 14
+          "pts_last": 0
         },
         {
           "name": "Pittsburgh Penguins",
@@ -66540,7 +66540,7 @@
           "reg_wins": 1,
           "ot_wins": 2,
           "ot_losses": 1,
-          "pts_last": 8
+          "pts_last": 0
         },
         {
           "name": "San Jose Sharks",
@@ -66549,7 +66549,7 @@
           "reg_wins": 0,
           "ot_wins": 3,
           "ot_losses": 0,
-          "pts_last": 6
+          "pts_last": 0
         }
       ],
       "trend": "same"
