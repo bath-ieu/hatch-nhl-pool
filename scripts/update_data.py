@@ -1292,7 +1292,8 @@ def main():
                 "otLosses": 0,
             }
 
-    teams_stats = {}
+    # Index standings by team abbreviation (API no longer returns teamId reliably)
+    teams_by_abbrev = {}
     try:
         standings = fetch_json("https://api-web.nhle.com/v1/standings/now")
         for t in standings.get("standings", []):
@@ -1300,17 +1301,13 @@ def main():
             if isinstance(abbrev, dict):
                 abbrev = abbrev.get("default", "")
             abbrev = str(abbrev or "").upper()
-
-            raw_id = t.get("teamId") or t.get("team", {}).get("id")
-            try:
-                tid = int(raw_id) if raw_id is not None else None
-            except (TypeError, ValueError):
-                tid = None
+            if not abbrev:
+                continue
 
             team_name = t.get("teamName", {})
             if isinstance(team_name, dict):
                 team_name = team_name.get("default", abbrev)
-            team_name = team_name or TEAM_INFO.get(tid, {}).get("name", f"Équipe {tid}")
+            team_name = team_name or abbrev
 
             reg_wins = int(t.get("regulationWins") or 0)
             wins = int(t.get("wins") or 0)
@@ -1318,7 +1315,7 @@ def main():
             ot_losses = int(t.get("otLosses") or 0)
             points = reg_wins * 3 + ot_wins * 2 + ot_losses * 1
 
-            entry = {
+            teams_by_abbrev[abbrev] = {
                 "name": team_name,
                 "abbrev": abbrev,
                 "points": points,
@@ -1326,25 +1323,28 @@ def main():
                 "ot_wins": ot_wins,
                 "ot_losses": ot_losses,
             }
-
-            if tid is not None:
-                teams_stats[tid] = entry
-            if abbrev:
-                teams_stats[abbrev] = entry
+        print(f"Standings chargés: {len(teams_by_abbrev)} équipes")
     except Exception as e:
         print(f"Erreur standings: {e}")
 
+    # Map numeric team IDs used in PARTICIPANTS → stats via TEAM_INFO abbrev
+    teams_stats = {}
     for tid in all_team_ids:
-        if tid not in teams_stats:
-            info = TEAM_INFO.get(tid, {"name": f"Équipe {tid}", "abbrev": ""})
+        info = TEAM_INFO.get(tid, {"name": f"Équipe {tid}", "abbrev": ""})
+        abbrev = (info.get("abbrev") or "").upper()
+        if abbrev and abbrev in teams_by_abbrev:
+            teams_stats[tid] = dict(teams_by_abbrev[abbrev])
+        else:
             teams_stats[tid] = {
                 "name": info["name"],
-                "abbrev": info.get("abbrev", ""),
+                "abbrev": abbrev,
                 "points": 0,
                 "reg_wins": 0,
                 "ot_wins": 0,
                 "ot_losses": 0,
             }
+            if abbrev:
+                print(f"Attention: pas de standings pour {abbrev} (id {tid})")
 
     leaderboard = []
 
