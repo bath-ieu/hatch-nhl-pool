@@ -1175,6 +1175,7 @@ def with_team_pts_last(st, previous_team_pts):
 
 
 def parse_player(pid, data):
+    """Extrait les stats de la saison courante (saison régulière NHL uniquement)."""
     first = ""
     last = ""
     if isinstance(data.get("firstName"), dict):
@@ -1190,61 +1191,75 @@ def parse_player(pid, data):
     pos_code = data.get("position") or data.get("positionCode") or "F"
     if isinstance(pos_code, dict):
         pos_code = pos_code.get("code") or pos_code.get("default") or "F"
-    pos_code = str(pos_code).upper()
+    pos_code = str(pos_code).upper().strip()
 
-    if pos_code in ("G",):
+    if pos_code == "G":
         position = "G"
-    elif pos_code in ("D",):
+    elif pos_code == "D":
         position = "D"
     else:
+        # C, L, R, W, F, etc. → attaquant
         position = "A"
 
-    abbrev = (
+    abbrev = str(
         data.get("currentTeamAbbrev")
         or data.get("teamAbbrev")
         or ""
-    )
-    if not abbrev and isinstance(data.get("featuredStats"), dict):
-        abbrev = data["featuredStats"].get("teamAbbrev") or ""
+    ).upper()
 
     goals = assists = points = 0
     wins = shutouts = ot_losses = 0
-
-    season_totals = data.get("seasonTotals") or []
     found = False
-    for st in season_totals:
-        if str(st.get("season")) == SEASON_ID and st.get("gameTypeId") in (2, "2", None):
-            if position == "G":
-                wins = int(st.get("wins") or 0)
-                shutouts = int(st.get("shutouts") or 0)
-                ot_losses = int(st.get("otLosses") or st.get("overtimeLosses") or 0)
-                points = wins * 4 + shutouts * 5 + ot_losses * 1
-            else:
-                goals = int(st.get("goals") or 0)
-                assists = int(st.get("assists") or 0)
-                if position == "D":
-                    points = goals * 3 + assists * 2
-                else:
-                    points = goals * 2 + assists * 1
-            found = True
-            break
 
+    # 1) seasonTotals : saison courante + NHL + saison régulière (gameTypeId 2)
+    for st in data.get("seasonTotals") or []:
+        if str(st.get("season")) != SEASON_ID:
+            continue
+        if st.get("gameTypeId") not in (2, "2"):
+            continue
+        league = str(st.get("leagueAbbrev") or "NHL").upper()
+        if league not in ("NHL",):
+            continue
+
+        if position == "G":
+            wins = int(st.get("wins") or 0)
+            shutouts = int(st.get("shutouts") or 0)
+            ot_losses = int(st.get("otLosses") or st.get("overtimeLosses") or 0)
+            points = wins * 4 + shutouts * 5 + ot_losses * 1
+        else:
+            goals = int(st.get("goals") or 0)
+            assists = int(st.get("assists") or 0)
+            if position == "D":
+                points = goals * 3 + assists * 2
+            else:
+                points = goals * 2 + assists * 1
+        found = True
+        break
+
+    # 2) Fallback featuredStats (uniquement si la saison affichée correspond)
     if not found:
         featured = data.get("featuredStats") or {}
-        sub = featured.get("regularSeason") or featured.get("subSeason") or {}
-        if isinstance(sub, dict) and sub:
-            if position == "G":
-                wins = int(sub.get("wins") or 0)
-                shutouts = int(sub.get("shutouts") or 0)
-                ot_losses = int(sub.get("otLosses") or sub.get("overtimeLosses") or 0)
-                points = wins * 4 + shutouts * 5 + ot_losses * 1
-            else:
-                goals = int(sub.get("goals") or 0)
-                assists = int(sub.get("assists") or 0)
-                if position == "D":
-                    points = goals * 3 + assists * 2
+        feat_season = str(featured.get("season") or "")
+        if feat_season == SEASON_ID:
+            # Structure réelle: featuredStats.regularSeason.subSeason
+            reg = featured.get("regularSeason") or {}
+            sub = reg.get("subSeason") if isinstance(reg, dict) else None
+            if not isinstance(sub, dict) or not sub:
+                sub = featured.get("subSeason") if isinstance(featured.get("subSeason"), dict) else {}
+            if isinstance(sub, dict) and sub:
+                if position == "G":
+                    wins = int(sub.get("wins") or 0)
+                    shutouts = int(sub.get("shutouts") or 0)
+                    ot_losses = int(sub.get("otLosses") or sub.get("overtimeLosses") or 0)
+                    points = wins * 4 + shutouts * 5 + ot_losses * 1
                 else:
-                    points = goals * 2 + assists * 1
+                    goals = int(sub.get("goals") or 0)
+                    assists = int(sub.get("assists") or 0)
+                    if position == "D":
+                        points = goals * 3 + assists * 2
+                    else:
+                        points = goals * 2 + assists * 1
+                found = True
 
     return {
         "id": pid,
