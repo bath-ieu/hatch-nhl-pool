@@ -100,7 +100,6 @@ body {
   white-space: nowrap;
   line-height: 1.25;
   z-index: 5;
-  margin-bottom: 2px; /* Remontée légère des boutons */
 }
 
 .view-btn:hover {
@@ -157,10 +156,19 @@ h1 {
   min-height: 1em;
 }
 
+/* Zone alignant la barre de recherche et les boutons à la même hauteur */
+.search-and-buttons-row {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+  margin-bottom: 4px;
+}
+
 .search-bar {
   width: 100%;
   max-width: 380px;
-  margin: 0 auto 4px auto;
   position: relative;
 }
 
@@ -196,33 +204,22 @@ h1 {
   opacity: 0.55;
 }
 
-/* Zone d'action sous la barre de recherche */
-.bottom-controls-row {
-  position: relative;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  width: 100%;
-  min-height: 24px;
-  margin: 2px 0;
+.search-and-buttons-row #btnGeneral {
+  position: absolute;
+  left: 0;
+}
+
+.search-and-buttons-row #btnAdvanced {
+  position: absolute;
+  right: 0;
 }
 
 .search-hint {
   text-align: center;
   font-size: 0.72rem;
   color: #9ca3af;
-  margin: 0;
+  margin: 0 0 2px 0;
   font-weight: 500;
-}
-
-.bottom-controls-row #btnGeneral {
-  position: absolute;
-  left: 0;
-}
-
-.bottom-controls-row #btnAdvanced {
-  position: absolute;
-  right: 0;
 }
 
 .no-results {
@@ -545,13 +542,13 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
 }
 
 @media (max-width: 680px) {
-  .bottom-controls-row {
+  .search-and-buttons-row {
     flex-direction: column;
-    gap: 6px;
+    gap: 8px;
   }
 
-  .bottom-controls-row #btnGeneral,
-  .bottom-controls-row #btnAdvanced {
+  .search-and-buttons-row #btnGeneral,
+  .search-and-buttons-row #btnAdvanced {
     position: static;
   }
 
@@ -592,24 +589,24 @@ th { color: #64748b; font-weight: 700; text-transform: uppercase; font-size: 0.7
     <header class="header">
       <div class="brand-block">
         <img src="./images/hatch-logo.png" alt="Hatch Logo" class="hatch-logo" onerror="this.style.display='none'">
-        <h1>🏒 NHL Super Pool 🥅</h1>
+        <h1>🏒 NHL Super Pool drop-down 🥅</h1>
       </div>
     </header>
 
     <p class="last-update" id="lastUpdate">Mise à jour: —</p>
 
-    <div class="search-bar" id="searchBarWrap">
-      <span class="search-icon">🔍</span>
-      <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
+    <div class="search-and-buttons-row">
+      <button type="button" class="view-btn active" id="btnGeneral" onclick="showView('general')">Classement Général</button>
+      
+      <div class="search-bar" id="searchBarWrap">
+        <span class="search-icon">🔍</span>
+        <input type="text" id="searchInput" placeholder="Rechercher un participant..." autocomplete="off">
+      </div>
+
+      <button type="button" class="view-btn" id="btnAdvanced" onclick="showView('advanced')">Top 5 des joueurs</button>
     </div>
 
-    <div class="bottom-controls-row">
-      <p class="search-hint" id="searchHint">Cliquer sur le nom pour plus de détails</p>
-      <div class="btn-wrapper">
-        <button type="button" class="view-btn active" id="btnGeneral" onclick="showView('general')">Classement Général</button>
-        <button type="button" class="view-btn" id="btnAdvanced" onclick="showView('advanced')">Top 5 des joueurs</button>
-      </div>
-    </div>
+    <p class="search-hint" id="searchHint">Cliquer sur le nom pour plus de détails</p>
   </div>
 
   <div id="generalView">
